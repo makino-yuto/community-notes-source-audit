@@ -1,0 +1,98 @@
+{
+  "status": "machine_observable_url_retrievability_before_semantic_source_review",
+  "snapshot_date": "2026-11-14",
+  "selected_creation_months": [
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08"
+  ],
+  "sample": "300 month-matched AI-API/non-API pairs; one seeded external URL per currently Helpful note",
+  "source_cohort_sha256": "0cce905860faf3e2027ad49146a5f5c360da096b5708e8c3559496b6e85e06d0",
+  "private_probe_log_sha256": "607b56583ebd22b6000807405289a62e0cc59bf4b437f8629d2ca4fa09bcd6fe",
+  "groups": {
+    "AI_API": {
+      "notes": 300,
+      "authors": 20,
+      "max_notes_per_author": 45,
+      "machine_categories": {
+        "open_candidate": 235,
+        "access_barrier": 46,
+        "transient_uncertain": 17,
+        "gone_candidate": 2
+      },
+      "machine_open_candidate_rate": 0.7833333333333333,
+      "machine_open_candidate_wilson_95": [
+        0.7332901513759227,
+        0.8262121649301679
+      ]
+    },
+    "non_API": {
+      "notes": 300,
+      "authors": 291,
+      "max_notes_per_author": 3,
+      "machine_categories": {
+        "open_candidate": 221,
+        "access_barrier": 26,
+        "transient_uncertain": 44,
+        "gone_candidate": 9
+      },
+      "machine_open_candidate_rate": 0.7366666666666667,
+      "machine_open_candidate_wilson_95": [
+        0.6840604965627417,
+        0.7832884970576399
+      ]
+    }
+  },
+  "primary": {
+    "measure": "machine open candidate, not confirmed supporting evidence",
+    "ai_api_minus_non_api_rate_difference": 0.04666666666666667,
+    "month_stratified_pair_bootstrap_95": [
+      -0.02,
+      0.11333333333333333
+    ],
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20261115,
+    "manual_overrides": 0
+  },
+  "post_hoc_corrected_sensitivity": {
+    "status": "two browser-reviewed syntax corrections; not the primary estimate",
+    "override_file_sha256": "48170cdd6260151788906729c3d21295de29dddccb3185702cb1c26e8cc27653",
+    "changed_notes": 2,
+    "machine_categories": {
+      "AI_API": {
+        "open_candidate": 235,
+        "access_barrier": 46,
+        "transient_uncertain": 17,
+        "gone_candidate": 2
+      },
+      "non_API": {
+        "open_candidate": 223,
+        "access_barrier": 26,
+        "transient_uncertain": 44,
+        "gone_candidate": 7
+      }
+    },
+    "ai_api_minus_non_api_rate_difference": 0.04,
+    "month_stratified_pair_bootstrap_95": [
+      -0.02666666666666667,
+      0.10666666666666667
+    ]
+  },
+  "interpretation_limits": [
+    "Descriptive comparison, not a causal effect of AI writing.",
+    "non_API is an observed enrollment category, not verified human authorship.",
+    "A machine-open URL may not contain the cited evidence or support the note.",
+    "Access barriers and uncertain probes are not evidence that a source is gone.",
+    "Only currently Helpful notes with surviving content and a selected external URL are sampled.",
+    "Authors, source hosts, topics, and notes are not independent or fully matched.",
+    "Current web responses can differ from the dated primary probe observations."
+  ]
+}

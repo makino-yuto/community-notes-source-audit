@@ -1,0 +1,23 @@
+{
+  "purpose": "Source-role and citation-support construct-validity audit; no URL probe outcomes used",
+  "cohort_sha256": "0cce905860faf3e2027ad49146a5f5c360da096b5708e8c3559496b6e85e06d0",
+  "script_sha256": "b11680b9e8b4ccebfd624e29024ec21527935afef94816bd2879b01b34f346e8",
+  "seed": 20261116,
+  "pairs": 50,
+  "quota_by_month": {
+    "2025-10": 1,
+    "2025-11": 1,
+    "2025-12": 2,
+    "2026-01": 6,
+    "2026-02": 4,
+    "2026-03": 6,
+    "2026-04": 6,
+    "2026-05": 6,
+    "2026-06": 5,
+    "2026-07": 6,
+    "2026-08": 7
+  },
+  "blinded_packet_sha256": "1232bd0fae87dc077495914523444a4fa6a8ae1bb7bc981a2d916f3e7628e40a",
+  "mapping_key_sha256": "aa6867fb34453d8fcca5ad002296ca1bf12e8488962a5d1c3ce0037584b30697",
+  "frozen_at_utc": "2026-11-15T01:58:46.308564+00:00"
+}

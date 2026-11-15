@@ -1,0 +1,21 @@
+{
+  "snapshot_date": "2026-11-14",
+  "creation_window_utc": [
+    "2025-09-01",
+    "2026-09-01_exclusive"
+  ],
+  "status_rows_created_in_window": 1006931,
+  "current_helpful_status_rows_created_in_window": 89992,
+  "current_helpful_with_notes_row": 88103,
+  "current_helpful_missing_notes_row": 1889,
+  "missing_fraction_of_current_helpful_status_rows": 0.02099075473375411,
+  "status_zip_sha256": "1e369098399a06dbd327cb33684ebc607fe9fffee034c64a2fe6fcfe456ca367",
+  "notes_zip_sha256": {
+    "notes-00000.zip": "760998d5dd6c9196fe54741bbe557a8a498ddb01e4c74d5e6a70f960f0a348b9",
+    "notes-00001.zip": "51bd5e44d14b25f58b8e3848207eef2af54e9e3eb8a0d08943ab9fcc09938d8e",
+    "notes-00002.zip": "2b3417777c64826be30666855aacef577f6d24700e9d8ff3256c591631285e42",
+    "notes-00003.zip": "0213ee33175adef28b08f3f4610ff5101cfcb29f2e2c371acf7e9de74baa4f40",
+    "notes-00004.zip": "fdec38c80b4e1834740a5146c1c5d0073f6623b218a1b23c9a715c9be9d48ce1"
+  },
+  "interpretation": "Missing Notes content among currently Helpful status-history rows; not a verified deletion count and not correctable for absent URL text."
+}

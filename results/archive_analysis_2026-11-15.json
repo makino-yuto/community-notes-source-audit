@@ -1,0 +1,302 @@
+{
+  "analysis_kind": "CDX_200_capture_metadata_only_exact_UTC_window_filter",
+  "sample_note_count": 200,
+  "matched_pairs": 100,
+  "input_sha256": {
+    "sample": "0cb59cc2c0fd472e0bd045d863dc9c22771cc5368ddb7607295e43fc0168197a",
+    "raw_cdx": "9559e1c682c4d06a16844d43bec396447a78767f04535ffbc406d45a2d05128d",
+    "primary_probes": "607b56583ebd22b6000807405289a62e0cc59bf4b437f8629d2ca4fa09bcd6fe"
+  },
+  "query_http_status_counts": {
+    "0": 4,
+    "200": 593,
+    "403": 3
+  },
+  "groups": {
+    "AI_API": {
+      "n": 100,
+      "distinct_selected_urls": 100,
+      "repeated_selected_url_rows": 0,
+      "distinct_urls_with_any_indexed_capture": 68,
+      "anchor_kind_counts": {
+        "first_non_nmr_was_helpful": 100
+      },
+      "primary_category_counts": {
+        "open_candidate": 83,
+        "access_barrier": 10,
+        "transient_uncertain": 6,
+        "gone_candidate": 1
+      },
+      "window_states": {
+        "creation_plus_minus_30d": {
+          "capture_confirmed": 59,
+          "confirmed_none": 39,
+          "query_error": 2,
+          "excluded_calendar_boundary_rows": 8,
+          "cap_hit_queries": 1
+        },
+        "helpful_plus_minus_30d": {
+          "capture_confirmed": 61,
+          "confirmed_none": 39,
+          "excluded_calendar_boundary_rows": 8,
+          "cap_hit_queries": 1
+        },
+        "later_after_helpful_30d": {
+          "capture_confirmed": 46,
+          "confirmed_none": 54,
+          "excluded_calendar_boundary_rows": 0,
+          "cap_hit_queries": 0
+        }
+      },
+      "creation_near_capture_notes": 59,
+      "helpful_near_capture_notes": 61,
+      "helpful_near_wilson_95": [
+        0.5120301704584073,
+        0.6998312599360558
+      ],
+      "later_capture_notes": 46,
+      "both_helpful_near_and_later_notes": 39,
+      "both_wilson_95": [
+        0.3001687400639441,
+        0.4879698295415926
+      ],
+      "any_indexed_200_capture_notes": 68,
+      "primary_non_open_notes": 17,
+      "primary_non_open_with_helpful_near_indexed_200": 5,
+      "primary_non_open_with_any_indexed_200": 8,
+      "primary_non_open_near_by_category": {
+        "transient_uncertain": 1,
+        "access_barrier": 3,
+        "gone_candidate": 1
+      },
+      "primary_non_open_any_by_category": {
+        "transient_uncertain": 1,
+        "access_barrier": 6,
+        "gone_candidate": 1
+      },
+      "digest_pairs_with_early_and_later": 39,
+      "digest_pairs_with_two_nonempty_digests": 39,
+      "selected_pair_same_digest": 1,
+      "selected_pair_different_digest": 38,
+      "selected_pair_mime_differs": 0,
+      "selected_early_capture_after_anchor": 17,
+      "by_month": {
+        "2025-10": {
+          "n": 2,
+          "near": 1,
+          "later": 2,
+          "both": 1
+        },
+        "2025-11": {
+          "n": 2,
+          "near": 1,
+          "later": 1,
+          "both": 1
+        },
+        "2025-12": {
+          "n": 8,
+          "near": 6,
+          "later": 7,
+          "both": 5
+        },
+        "2026-01": {
+          "n": 8,
+          "near": 5,
+          "later": 4,
+          "both": 3
+        },
+        "2026-02": {
+          "n": 9,
+          "near": 5,
+          "later": 3,
+          "both": 3
+        },
+        "2026-03": {
+          "n": 12,
+          "near": 9,
+          "later": 5,
+          "both": 5
+        },
+        "2026-04": {
+          "n": 10,
+          "near": 4,
+          "later": 4,
+          "both": 2
+        },
+        "2026-05": {
+          "n": 11,
+          "near": 7,
+          "later": 4,
+          "both": 4
+        },
+        "2026-06": {
+          "n": 8,
+          "near": 3,
+          "later": 4,
+          "both": 3
+        },
+        "2026-07": {
+          "n": 15,
+          "near": 9,
+          "later": 3,
+          "both": 3
+        },
+        "2026-08": {
+          "n": 15,
+          "near": 11,
+          "later": 9,
+          "both": 9
+        }
+      }
+    },
+    "non_API": {
+      "n": 100,
+      "distinct_selected_urls": 99,
+      "repeated_selected_url_rows": 1,
+      "distinct_urls_with_any_indexed_capture": 58,
+      "anchor_kind_counts": {
+        "first_non_nmr_was_helpful": 100
+      },
+      "primary_category_counts": {
+        "open_candidate": 78,
+        "access_barrier": 9,
+        "transient_uncertain": 13
+      },
+      "window_states": {
+        "creation_plus_minus_30d": {
+          "capture_confirmed": 47,
+          "confirmed_none": 51,
+          "query_error": 1,
+          "capped_unknown": 1,
+          "excluded_calendar_boundary_rows": 116,
+          "cap_hit_queries": 3
+        },
+        "helpful_plus_minus_30d": {
+          "capture_confirmed": 48,
+          "confirmed_none": 49,
+          "query_error": 2,
+          "capped_unknown": 1,
+          "excluded_calendar_boundary_rows": 120,
+          "cap_hit_queries": 3
+        },
+        "later_after_helpful_30d": {
+          "capture_confirmed": 49,
+          "confirmed_none": 49,
+          "query_error": 2,
+          "excluded_calendar_boundary_rows": 0,
+          "cap_hit_queries": 0
+        }
+      },
+      "creation_near_capture_notes": 47,
+      "helpful_near_capture_notes": 48,
+      "helpful_near_wilson_95": [
+        0.384645517580519,
+        0.5768342223477603
+      ],
+      "later_capture_notes": 49,
+      "both_helpful_near_and_later_notes": 38,
+      "both_wilson_95": [
+        0.29097599252478734,
+        0.47790244704488916
+      ],
+      "any_indexed_200_capture_notes": 59,
+      "primary_non_open_notes": 22,
+      "primary_non_open_with_helpful_near_indexed_200": 8,
+      "primary_non_open_with_any_indexed_200": 11,
+      "primary_non_open_near_by_category": {
+        "access_barrier": 5,
+        "transient_uncertain": 3
+      },
+      "primary_non_open_any_by_category": {
+        "transient_uncertain": 5,
+        "access_barrier": 6
+      },
+      "digest_pairs_with_early_and_later": 38,
+      "digest_pairs_with_two_nonempty_digests": 38,
+      "selected_pair_same_digest": 1,
+      "selected_pair_different_digest": 37,
+      "selected_pair_mime_differs": 0,
+      "selected_early_capture_after_anchor": 19,
+      "by_month": {
+        "2025-10": {
+          "n": 2,
+          "near": 1,
+          "later": 1,
+          "both": 1
+        },
+        "2025-11": {
+          "n": 2,
+          "near": 1,
+          "later": 2,
+          "both": 1
+        },
+        "2025-12": {
+          "n": 8,
+          "near": 6,
+          "later": 5,
+          "both": 5
+        },
+        "2026-01": {
+          "n": 8,
+          "near": 4,
+          "later": 1,
+          "both": 1
+        },
+        "2026-02": {
+          "n": 9,
+          "near": 4,
+          "later": 6,
+          "both": 4
+        },
+        "2026-03": {
+          "n": 12,
+          "near": 4,
+          "later": 7,
+          "both": 4
+        },
+        "2026-04": {
+          "n": 10,
+          "near": 3,
+          "later": 7,
+          "both": 3
+        },
+        "2026-05": {
+          "n": 11,
+          "near": 8,
+          "later": 6,
+          "both": 6
+        },
+        "2026-06": {
+          "n": 8,
+          "near": 3,
+          "later": 2,
+          "both": 2
+        },
+        "2026-07": {
+          "n": 15,
+          "near": 9,
+          "later": 8,
+          "both": 7
+        },
+        "2026-08": {
+          "n": 15,
+          "near": 5,
+          "later": 4,
+          "both": 4
+        }
+      }
+    }
+  },
+  "ai_minus_non_api_near_capture_difference": 0.13,
+  "ai_minus_non_api_near_capture_bootstrap_95": [
+    0.0,
+    0.26
+  ],
+  "caveats": [
+    "CDX 200 capture metadata does not verify that a Wayback replay currently loads or supports the note's claim.",
+    "A digest difference can reflect dynamic templates, ads, or navigation, and is not semantic evidence drift.",
+    "All 200 selected anchors are first-non-NMR Helpful timestamps. The near-Helpful window is +/-30 days, and its selected capture may occur after Helpful.",
+    "Calendar-day CDX query bounds were re-filtered to exact UTC windows here; capped queries without in-window captures remain unknown.",
+    "The archive sample is 100 matched pairs from the 600-note primary sample, not a new independent population sample."
+  ]
+}

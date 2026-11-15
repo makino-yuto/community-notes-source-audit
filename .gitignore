@@ -1,0 +1,15 @@
+/data/
+/results/*
+!/results/aggregate_results.json
+!/results/anonymous_pairs.csv
+!/results/support_audit_aggregate.json
+!/results/archive_analysis_2026-11-15.json
+!/results/survivor_selection_2026-11-14.json
+!/results/source_manifest_2026-11-14.json
+!/results/freeze_manifest.json
+!/results/role_sample_freeze_manifest.json
+.venv/
+__pycache__/
+*.py[cod]
+*.partial
+*.log

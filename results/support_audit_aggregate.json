@@ -1,0 +1,67 @@
+{
+  "role_sample": {
+    "n": 100,
+    "by_group": {
+      "AI_API": {
+        "SUPPORT": 46,
+        "BACKGROUND": 2,
+        "SUBJECT": 1,
+        "AMBIGUOUS": 1
+      },
+      "non_API": {
+        "SUPPORT": 39,
+        "SUBJECT": 1,
+        "AMBIGUOUS": 2,
+        "BACKGROUND": 8
+      }
+    },
+    "overall": {
+      "SUPPORT": 85,
+      "SUBJECT": 2,
+      "AMBIGUOUS": 3,
+      "BACKGROUND": 10
+    }
+  },
+  "support_subsample": {
+    "n": 40,
+    "by_group": {
+      "AI_API": {
+        "PARTIAL": 5,
+        "UNASSESSABLE": 2,
+        "FULL": 12,
+        "NONE": 1
+      },
+      "non_API": {
+        "UNASSESSABLE": 7,
+        "FULL": 10,
+        "NONE": 1,
+        "PARTIAL": 2
+      }
+    },
+    "by_machine_category": {
+      "access_barrier": {
+        "UNASSESSABLE": 3,
+        "FULL": 2
+      },
+      "gone_candidate": {
+        "UNASSESSABLE": 1
+      },
+      "open_candidate": {
+        "UNASSESSABLE": 5,
+        "PARTIAL": 7,
+        "FULL": 18,
+        "NONE": 2
+      },
+      "transient_uncertain": {
+        "FULL": 2
+      }
+    },
+    "overall": {
+      "UNASSESSABLE": 9,
+      "PARTIAL": 7,
+      "FULL": 22,
+      "NONE": 2
+    }
+  },
+  "interpretation": "AI-assisted source-role and current-page support coding; not human validated, not note truth, not historic source support."
+}

@@ -1,0 +1,37 @@
+{
+  "pilot_is_separate": true,
+  "files": [
+    {
+      "bytes": 8771,
+      "sha256": "e86a931b291801b0664617c4bf0e81746bf29781445f630b7cdb7bb7096d3667",
+      "path": "protocol.md"
+    },
+    {
+      "bytes": 9968,
+      "sha256": "ad52315aa30c56a5262a3dde65477a1e8a144983c7b8ada6e1f7bf085ac0a026",
+      "path": "src\\build_cohort.py"
+    },
+    {
+      "bytes": 9680,
+      "sha256": "fca07198284fedc963ea28956bfe7a2e833a3d85299cc6c52fd2ee78920105f5",
+      "path": "src\\probe_urls.py"
+    },
+    {
+      "bytes": 6566,
+      "sha256": "55bc94ba1da4bbb0678d86c1ea0139b3c0e191d0a892173ca4decc3388d8aee3",
+      "path": "src\\analyze_probes.py"
+    },
+    {
+      "bytes": 654512,
+      "sha256": "0cce905860faf3e2027ad49146a5f5c360da096b5708e8c3559496b6e85e06d0",
+      "path": "results\\cohort_2026-11-14.json"
+    },
+    {
+      "bytes": 2165,
+      "sha256": "d51511d6788a6a0c8feb77e0f65ed4df47774092e6553eb346727d78c464dd96",
+      "path": "results\\source_manifest_2026-11-14.json"
+    }
+  ],
+  "frozen_at_utc": "2026-11-15T01:54:58.1861563Z",
+  "primary_probes_started": false
+}
