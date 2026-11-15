@@ -1,6 +1,6 @@
 {
   "schema": "community-notes-source-audit-revised-release-v1",
-  "created_utc": "2026-11-15T06:56:46.695181+00:00",
+  "created_utc": "2026-11-15T09:58:21.106335+00:00",
   "publication_status": "Revised research release; official replacement submission is verified separately.",
   "protocol_before_followup_probe": "8fd38172c854d911f08e854ccd29395cd32ca18e",
   "public_artifacts": {
@@ -13,8 +13,8 @@
       "sha256": "b6fabf3d1d3fde07cedcaaf8ae13773bf8af6e19972e3e12ad91aebe8692aafc"
     },
     "README.md": {
-      "bytes": 5690,
-      "sha256": "2cb97c5d05919e1a1aa11e1f13e54d4624b46bb85803557bed192830b5d2de9d"
+      "bytes": 5798,
+      "sha256": "ae72f468bbe1af8696935d8e856f2f4c6dba84b30278aa749d86a1df5e83eea3"
     },
     "assets/fonts/old-standard-tt/METADATA.pb": {
       "bytes": 1205,
@@ -531,6 +531,14 @@
     "tests/test_newwave_rank_bounds.py": {
       "bytes": 1410,
       "sha256": "097d810c8545f2d4830969038a145fdcb9e655a45c5a47f17a909c63d0b02c97"
+    },
+    "paper/Makino_Community_Notes_Source_Audit_Concise.pdf": {
+      "bytes": 297515,
+      "sha256": "9d3ebada1d6c7e565a5bdb9d9d77ef4a8c58317744aa3ba25e638d27560c33a3"
+    },
+    "paper/report_concise.md": {
+      "bytes": 18559,
+      "sha256": "a4f04c8fa09166f55f78b6c945f3c9cfdd82742e2511d7f302023193c0d318b5"
     }
   },
   "withheld_frozen_artifact_hashes": {
@@ -602,9 +610,9 @@
   "layout": {
     "title": "Can Readers Still Check the Source? A Time-Matched Audit of AI-API Community Notes",
     "author": "Yuto Makino",
-    "main_pages": 5,
-    "total_pages": 18,
-    "abstract_words": 184,
+    "main_pages": 4,
+    "total_pages": 8,
+    "abstract_words": 155,
     "page_size_points": [
       612.0,
       792.0
@@ -622,5 +630,37 @@
     "Primary browser and semantic classifications are AI-assisted, without human gold validation.",
     "The public numeric package reproduces arithmetic, not historical source-body observations.",
     "Pseudonymous numeric tables are not differentially private or guaranteed unlinkable."
-  ]
+  ],
+  "technical_record_layout": {
+    "title": "Can Readers Still Check the Source? A Time-Matched Audit of AI-API Community Notes",
+    "author": "Yuto Makino",
+    "main_pages": 5,
+    "total_pages": 18,
+    "abstract_words": 184,
+    "page_size_points": [
+      612.0,
+      792.0
+    ],
+    "margins_points": 72,
+    "body_point_size": 11,
+    "body_leading_points": 15,
+    "fonts_sha256": {
+      "OldStandard-Bold.ttf": "7d831e9d799ad23ee98e889381a9db2a283b2dac7f228dd5c06071decb9c54db",
+      "OldStandard-Italic.ttf": "4b9522f4711317fc06e2413a58b4662c249cb707df193d682b9d640e365ef564",
+      "OldStandard-Regular.ttf": "42717a1280b523a506ca2b0285cca380e77fe214b1f6e3d75a8b925005f19eac"
+    }
+  },
+  "preferred_report": "paper/Makino_Community_Notes_Source_Audit_Concise.pdf",
+  "editorial_revision": {
+    "description": "Condensed presentation only; all scientific data, protocols, analyses and numeric reproduction files unchanged.",
+    "prior_complete_record_commit": "b6a40a2a7dc413f6bed1c88e87041eb91f4f7de8",
+    "main_pages_before_after": [
+      5,
+      4
+    ],
+    "total_pages_before_after": [
+      18,
+      8
+    ]
+  }
 }

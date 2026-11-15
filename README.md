@@ -4,7 +4,7 @@ Companion materials for **Can Readers Still Check the Source? A Time-Matched Aud
 
 This revision audits current source access in a fixed, conditional population. It does not establish note truth, source independence, historical link decay, or a causal advantage of AI authorship. Primary browser and semantic labels are AI-assisted, without human gold validation.
 
-[Read the revised paper](paper/Makino_Community_Notes_Source_Audit_Revised.pdf) | [Manuscript](paper/report_strengthened.md)
+[Read the concise paper (8 pages; 4 main)](paper/Makino_Community_Notes_Source_Audit_Concise.pdf) | [Concise manuscript](paper/report_concise.md) | [Full technical record (18 pages)](paper/Makino_Community_Notes_Source_Audit_Revised.pdf)
 
 ## Main measurements
 
@@ -42,7 +42,7 @@ Use the recorded optional report environment (`pip install -r requirements-repor
 
 ```powershell
 python src/newwave_figures.py --output-dir output/figures
-python src/render_newwave_report.py --sourceMD paper/report_strengthened.md --outputPDF rebuilt.pdf --main-pages 5
+python src/render_newwave_report.py --sourceMD paper/report_concise.md --outputPDF rebuilt.pdf --main-pages 4
 ```
 
 The bundled Old Standard TT fonts retain their OFL license. Re-rendering can change PDF metadata bytes. The published PDF and full artifact hashes are pinned in `release_manifest.json`.
