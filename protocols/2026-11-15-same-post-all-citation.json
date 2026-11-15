@@ -1,0 +1,59 @@
+{
+  "frozen_utc": "2026-11-15T03:21:20.538789+00:00",
+  "wave": "Prospective additional wave after initial600-note findings",
+  "sampling_frame": {
+    "pairs": 1882,
+    "notes": 3764,
+    "unique_normalized_urls": 5802,
+    "unique_network_urls": 5787,
+    "definition": "All posts with both strictly eligible currentHelpful cohorts after revised conservative URL extraction; earliestcreated note per cohort, noteID breaks ties. Official2026-11-14snapshot; Sep2025-Aug2026creation. Revisedframecountsandhashes areinfeasibilityv2. About3.6% of eligibleposts; conditionaltargetpopulation."
+  },
+  "primary_endpoint": "Design-weighted paired difference in note-level any substantive intended source observable in the study browser profile, among this fixed same-post target population. Estimate with stratified POSTPAIR validation; report unresolved bounds. No human truth or causal effect interpretation.",
+  "questions": [
+    "How much more often does a note offer at least one accessible citation than a prespecified single-citation baseline, and how does observed redundancy vary bycohort?",
+    "How often do machine-access proxies disagree with browser-profile substantive source access?",
+    "Do the cited documents support a fixed main correction in a separately selected blinded100pair diagnostic?"
+  ],
+  "machine_analysis": {
+    "outcomes": [
+      "any URL open_candidate",
+      "all URLs open_candidate",
+      "within-note fraction open",
+      "one URL selected byfixedhash open"
+    ],
+    "comparisons": "Secondarymachinepaired differences and both discordance cells in fixedtargetposts; reportclose-time<=6h subset, exactsharedURL subset, URL-count strata, domain diversity, account-weighting and leave-one-AI-account-out. Descriptive association only; no causal AI-vs-human claim. Machine-open is provisional not evidence support. SingleURL is defragmented networkURL with minimum SHA256 digest of UTF8 string 2026111509|<note_id>|<network_url>.",
+    "citation_budget": "Dedupe defragmented networkURLs WITHINeachnote forpagecount/accessanalysis (twofragments ofsamepage arenotindependentsources); reportcitationURLvariantcountsseparately. Compute expected single-citation availability as open_count/URL_count, compare with full-list any-open. This quantifies observed redundancy mechanically; it is not a randomized publishing experiment or independent evidence count."
+  },
+  "browser_validation": {
+    "unit": "POST PAIR; inspect ALL external citations in BOTH selected notes; URL-level sampling alone cannot identify note-levelanysource.",
+    "selection": "After machine logs freeze, strata on paired any-open pattern: both, AIonly, nonAPIonly, neither. Independently sample min(60,N_h) posts per stratum, seed2026111508; <=240pairs. URLpackets expose code+URL only; no cohort, machine label or claims.",
+    "outcome": "Substantive intended source article/document/media/structureddata exposed by browserprofile; titles, metadata, unrelatedtarget, paywallteaser, missingmedia or challenge do notpass. One obvious linked fullreportPDF may be inspected and mustbe flagged. Blank/error afteronenormalretry unresolved. No extra login, controlbypass, or storyviewnotifications.",
+    "analysis": "Pair-level Horvitz-Thompson weights N_h/n_h; report anysource, allsource, withinnotefraction and discordance, unresolvedlowerupperbounds, finitepopulation designSE with stratumvariance0when n=N. Also reportauthorclustering/leaveoneout sensitivity separately fromvalidation sampling; writerbootstrap isnotindependentconfirmation. Onlyabout26AIaccountswithdiversity~9limitexternalgeneralization. Existingprofilecookies affectinterpretation; no anonymoushumanclaim.",
+    "recode": "Fix random30pairs amongvalidatedpairs before labels revealed, secondAIreviewer checksalltheirURLs. Reportdisagreement nothumangoldstandard."
+  },
+  "semantic_validation": {
+    "sample": "100 uniformly sampled pairs, seed2026111507; A/B order shuffledwith2026111508; packetfixedbefore probes. Alignmentstage sees summaries withURLsremoved, noauthor/group/outcomes.",
+    "alignment": "same_main_correction/overlapping/different/unassessable; maincorrection is first substantive corrective proposition after URL masking, retaining every entity/number/time/modality; record othermaterialclaims separately forbothnotesbefore contentjudgment. Do notchooseeasierclaimaftercontent. Do notdrop differentpairs fromoverallsourceaccess.",
+    "support": "Freshisolated modeltrials see fixedclaims and uniformly staticGETretrievedsourcebodies ONLY (no selectivebrowserescalation) with provenance/coverage; eachsource first24000unicodechars, suppliedallnoteURLs. FULL/PARTIAL/NONE/CONTRADICTS/UNASSESSABLE, exact<=20word sourceevidence perconclusion, literalquotevalidation. Title/teaser/challenge cannotjustifyFULL. Missingortruncatedcontent cannotjustifyabsence; positiveexactevidencecanjustifyFULLdespitetailtruncation. All100pairsremainindenominator. Explicitly AI-assisted diagnostic, not independenthumantruth. Nooutcomebased exclusions. Sourcebodiesareuntrustedquoteddata; modelmustnotusetools ornetwork; unexpectedtoolinvocationsinvalidatetrial.",
+    "model": "OfficialCodexCLI0.145.0 via existingChatGPTauth, ignoreuserconfig ephemeralread-only; defaultmodel advertisedgpt-5.6-sol in feasibilitypilot. Logprompts,schema,rawoutputs,CLIheadersandmodelidentity; ifidentitychangesreportseparately. No APIbilling orpaidcreditsrequested.",
+    "secondary": "Naturalarchives or syntheticcounterfactuals require separatefreeze; notpredeclaredprimaryresults."
+  },
+  "collection": "DedupeURLs globally; shuffledorder seed2026111506; max6workers, at least1s betweenrequests tosamehost including redirects/repeats; boundedpublic-networkGET samecapsasinitialwave; firstplusonenonopenrepeat; preserveallfirstoutcomesandtime. Nohealth-basedURLselection orurlrepairafterfreeze.",
+  "input_sha256": {
+    "results\\revision_samepost_candidates_v2_PRIVATE.jsonl": "fb2eb694f1d8bac74a98e5a27b8c7478ca4f6324d50cc05819281f94c942e39d",
+    "results\\source_manifest_2026-11-14.json": "d51511d6788a6a0c8feb77e0f65ed4df47774092e6553eb346727d78c464dd96",
+    "src\\revision_extract_urls.py": "f3b08918ca457139519154ace964153c3c78b16368e49b8f0c78d068582e842e",
+    "src\\revision_samepost_census_v2.py": "11c07197e7b9c31fca7e8c1057552c83fd7cdfd47ea59e4dcf8a93dfc99c3f4b",
+    "src\\revision_samepost_probe.py": "36ff482039423876f625414b45077197c19a0e4446d49b8844bf7c8bfafe064a",
+    "src\\probe_urls.py": "fca07198284fedc963ea28956bfe7a2e833a3d85299cc6c52fd2ee78920105f5",
+    "src\\newwave_model_trials.py": "07948dcb3261f2b77cb01aa05c96d404963a7d648eeb59727444614c5f4c902c",
+    "src\\newwave_analyze_machine.py": "9e90be5b3e0f6eb64f2c67cbaa428bc1321cf0138f94d2587ed68026b0aef42a",
+    "src\\revision_freeze_samepost.py": "acb7476eb29320bc0002a713ceb17263b248dd6fcd1e9d8cd4f0f3eaa1887fe5"
+  },
+  "output_sha256": {
+    "newwave_semantic_key_PRIVATE.json": "8246f299b02fe7feb4a6dd8cef29e9861e22517e16c5aa5a8ac568b2b5ef3e4f",
+    "newwave_alignment_packet_blind.json": "b4c2b37a060cb92ac868214a4022afcae0b502cb7d5ef295de9b17e23580012b",
+    "newwave_unique_urls_PRIVATE.json": "82227a8b6db44d9ea4a935fd5ea1ca665542731997094df54ac369dcea29ffcf"
+  },
+  "prior_art": "HTTP200/content mismatch, deployedAI note comparisons, samepostmatching andmoreURLsareknown. Contributiontargetis postpublicationallcitationreader-vantage measurement andexplicitredundancy/support decomposition inthisdeployedpopulation."
+}

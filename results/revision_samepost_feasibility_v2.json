@@ -1,0 +1,81 @@
+{
+  "analysis_kind": "same_post_design_feasibility_no_live_probes",
+  "snapshot_date": "2026-11-14",
+  "eligibility": "Same non-URL eligibility as build_cohort.py: current Helpful, Sep2025-Aug2026, available noncollaborative note text, observed enrollment not changed after creation; at least one external URL under the revised parser.",
+  "source_manifest_sha256": "d51511d6788a6a0c8feb77e0f65ed4df47774092e6553eb346727d78c464dd96",
+  "extractor_sha256": "f3b08918ca457139519154ace964153c3c78b16368e49b8f0c78d068582e842e",
+  "script_sha256": "11c07197e7b9c31fca7e8c1057552c83fd7cdfd47ea59e4dcf8a93dfc99c3f4b",
+  "private_candidates_sha256": "fb2eb694f1d8bac74a98e5a27b8c7478ca4f6324d50cc05819281f94c942e39d",
+  "eligible_notes_with_nonempty_post_id": {
+    "non_API": 31976,
+    "AI_API": 25530
+  },
+  "url_normalization_flags_among_eligible_notes": {
+    "terminal_punctuation_trimmed": 525,
+    "html_entity_unescaped": 1719,
+    "unmatched_closing_parenthesis_trimmed": 161,
+    "unicode_whitespace_or_format_delimiter_stop": 68,
+    "unmatched_opening_parenthesis_trimmed": 2,
+    "cjk_closing_delimiter_stop": 18,
+    "unicode_path_query_or_fragment_review": 42,
+    "noncanonical_percent_encoding_review": 137,
+    "idna_hostname": 1,
+    "nonstandard_port": 1
+  },
+  "rejected_url_reasons_among_eligible_notes": {
+    "platform_host": 8103,
+    "invalid_hostname": 6,
+    "malformed_or_userinfo": 1,
+    "invalid_idna_host": 1
+  },
+  "eligible_posts_with_any_note": 51904,
+  "eligible_posts_with_both_groups": 1882,
+  "all_cross_group_note_pairs_on_both_posts": 2260,
+  "eligible_helpful_notes_on_both_posts": {
+    "AI_API": 2127,
+    "non_API": 2005
+  },
+  "deterministic_first_each_pair_count": 1882,
+  "first_each_pair_creation_gap_hours": {
+    "median": 1,
+    "p90": 6,
+    "max": 40
+  },
+  "first_each_pair_url_count": {
+    "AI_API": {
+      "2": 1017,
+      "1": 418,
+      "3": 390,
+      "4": 55,
+      "6": 1,
+      "5": 1
+    },
+    "non_API": {
+      "1": 1349,
+      "5": 14,
+      "3": 117,
+      "2": 344,
+      "4": 48,
+      "6": 5,
+      "7": 1,
+      "13": 2,
+      "9": 1,
+      "12": 1
+    }
+  },
+  "first_each_pair_exact_url_overlap_posts": 470,
+  "first_each_pair_exact_host_overlap_posts": 790,
+  "first_each_pair_distinct_authors": {
+    "AI_API": 26,
+    "non_API": 1648
+  },
+  "first_each_pair_same_month": 1874,
+  "private_candidate_file": "revision_samepost_candidates_v2_PRIVATE.jsonl",
+  "caveats": [
+    "Matching the post controls its identifier, not note proposition, timing, source role, author/operator, or selection into Helpful status.",
+    "Selecting first in each group is determined before any retrieval outcomes but can differ in note ages.",
+    "URL extraction fixes known syntax errors but its punctuation heuristic remains ambiguous; raw spans and flags are preserved for review.",
+    "One URL may be non-evidentiary, and neither a link count nor same-host count establishes independent evidentiary support.",
+    "No claim that non_API means human-written; no causal AI effect follows."
+  ]
+}

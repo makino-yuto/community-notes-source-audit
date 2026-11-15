@@ -1,0 +1,114 @@
+{
+  "as_of_utc_date": "2026-11-15",
+  "scope": "Primary-source novelty audit for the AI-API Community Notes source-access study. What-we-can-claim entries are boundaries, not assertions of priority or causal identification.",
+  "items": [
+    {
+      "key": "singh2025",
+      "title": "On the Limitations of LLM-Synthesized Social Media Misinformation Moderation",
+      "authors": "Sahajpreet Singh; Jiaying Wu; Svetlana Churina; Kokil Jaidka",
+      "date": "2025 (ICLR workshop)",
+      "url": "https://openreview.net/pdf/2e692c972f981fec33eb2af7e80cdd5a6d83fb3b.pdf",
+      "what_known": "Synthetic Community-Note-style outputs for 1,000 older tweets; qualitative inspection found incomplete or fabricated source URLs in some model outputs. Citation invalidity in AI-written notes is already recognized, though no deployment-level prevalence was estimated.",
+      "what_we_can_claim": "Study the different population of deployed AI-API notes that actually became Helpful, with dated observed retrieval and browser-visible intended-content outcomes. Do not claim to discover citation failure in AI notes first."
+    },
+    {
+      "key": "zhang2026",
+      "title": "When 200 OK Is Not an Answer: Silent Fetch Failures in Agentic Web Content Acquisition",
+      "authors": "Shuyang Zhang",
+      "date": "2026-10-31 (arXiv preprint)",
+      "url": "https://arxiv.org/abs/2611.00884",
+      "what_known": "Measured static-versus-rendered content on 10,307 URLs, including 4,795 ExpertQA citations; reported that about one fifth of static HTTP-200 responses lacked main content and evaluated detection heuristics.",
+      "what_we_can_claim": "Apply a similar distinction to an independently sampled, deployed Community Notes population and quantify the resulting group-specific measurement error. Do not present HTTP-status versus readable-content mismatch or its taxonomy as a new discovery."
+    },
+    {
+      "key": "rao2026",
+      "title": "Detecting and Correcting Reference Hallucinations in Commercial LLMs and Deep Research Agents",
+      "authors": "Delip Rao; Eric Wong; Chris Callison-Burch",
+      "date": "2026-04-03 (arXiv preprint)",
+      "url": "https://arxiv.org/abs/2604.03173",
+      "what_known": "Large citation-URL health and Wayback analysis across model and agent outputs; released urlhealth and tested agentic correction of non-resolving citations.",
+      "what_we_can_claim": "A Community Notes field audit of reader-visible intended sources and source role; archival lookup is an established technique, so a few rescues are demonstrations rather than a newly invented method or general rescue rate."
+    },
+    {
+      "key": "li_bakker2026",
+      "title": "AI Fact-Checking in the Wild: A Field Evaluation of LLM-Written Community Notes on X",
+      "authors": "Haiwen Li; Michiel A. Bakker",
+      "date": "2026-04-03; revised 2026-08-19 (arXiv preprint)",
+      "url": "https://arxiv.org/abs/2604.02592",
+      "what_known": "Compared deployed LLM and human-written notes on the same tweets, with rater-level and common-rater outcomes. Rater tags suggested better sources for LLM notes; the paper did not directly inspect whether cited source bodies remained readable.",
+      "what_we_can_claim": "Extend a same-post comparison from perceived helpfulness/source quality to observed citation inspectability. Same-post matching alone is not novel and does not identify an AI causal effect."
+    },
+    {
+      "key": "gong_wu2026",
+      "title": "Characterizing AI Fact-Checkers and Their Contributions on Community Notes",
+      "authors": "Yilin Gong; Siqi Wu",
+      "date": "2026-05-15 (arXiv preprint)",
+      "url": "https://arxiv.org/abs/2605.16566",
+      "what_known": "Analyzed deployed AI writers and note outcomes; controlled for fact-checked post and note submission order when studying ratings and helpfulness, and identified first-mover effects.",
+      "what_we_can_claim": "Use same-post pairs for an evidence-access outcome that this work did not measure. Do not claim the first deployed AI/human or same-post comparison."
+    },
+    {
+      "key": "purnell2026",
+      "title": "AI Writers on Community Notes: An Evaluation of Seven Months of Data",
+      "authors": "Spence Purnell",
+      "date": "2026-06-16 (R Street Institute policy study)",
+      "url": "https://www.rstreet.org/research/ai-writers-on-community-notes-an-evaluation-of-seven-months-of-data/",
+      "what_known": "Official-data analysis found AI notes averaged 2.2 URLs versus 1.4 for human notes and raters selected the 'cites good sources' tag more often for AI notes. It examined link density, domains, and rater perceptions, not live intended-page access.",
+      "what_we_can_claim": "Measure whether additional links produce reader-visible source redundancy and separate per-link quality from any-link availability. Higher AI link count and favorable rater tags are prior findings."
+    },
+    {
+      "key": "borenstein2025",
+      "title": "Can Community Notes Replace Professional Fact-Checkers?",
+      "authors": "Nadav Borenstein; Greta Warren; Desmond Elliott; Isabelle Augenstein",
+      "date": "2025-07 (ACL short paper)",
+      "url": "https://aclanthology.org/2025.acl-short.42/",
+      "what_known": "Used LLM annotations of a large Community Notes corpus to characterize cited source types and reliance on professional fact-checkers.",
+      "what_we_can_claim": "Source-role labels are a necessary control for the access audit; they are not an original source-taxonomy contribution."
+    },
+    {
+      "key": "wu_et_al2026",
+      "title": "Beyond the Crowd: LLM-Augmented Community Notes for Governing Health Misinformation",
+      "authors": "Jiaying Wu; Zihang Fu; Haonan Wang; Fanxiao Li; Jiafeng Guo; Preslav Nakov; Min-Yen Kan",
+      "date": "2026-07 (ACL long paper)",
+      "url": "https://aclanthology.org/2026.acl-long.233/",
+      "what_known": "Studied health notes and an LLM framework with evaluation of evidence relevance, correctness, and utility, including whether selected source snippets support notes.",
+      "what_we_can_claim": "A dated access audit of real deployed AI-API versus non-API notes across topics is a different empirical target. Content-support coding alone is not a first, and AI-only support judgments must be labeled exploratory."
+    },
+    {
+      "key": "miller_et_al2026",
+      "title": "Community-Driven API and AI Writer Design for Openly Scaling Community Notes",
+      "authors": "Brad Miller; Jay Baxter; Jiansong Chao; Keith Coleman; Sophie Hilgard; Daniel Ortiz",
+      "date": "2026-09-30 (arXiv preprint)",
+      "url": "https://arxiv.org/abs/2609.40067",
+      "what_known": "Official Community Writer design and field description; states the Writer contributes a large fraction of Helpful AI notes and that AI note writing adds coverage. AI writer concentration and deployment existence are already documented.",
+      "what_we_can_claim": "Quantify how writer concentration affects this audit's estimand and uncertainty; do not attribute a pseudonymous sampled API account to Community Writer without verified linkage."
+    },
+    {
+      "key": "community_writer_code2026",
+      "title": "Community Writer open-source repository",
+      "authors": "xAI / Community Writer maintainers",
+      "date": "Accessed 2026-11-15; repository publication date not asserted",
+      "url": "https://github.com/xai-org/community-writer",
+      "what_known": "The published README describes a screenshot rejector that verifies cited sources against page captures before note submission; it says production uses a modified browser package.",
+      "what_we_can_claim": "Motivate post-publication revalidation and preservation of evidence receipts, not the invention of a first pre-submission URL check. Avoid claiming exactly how private production browser code behaves."
+    },
+    {
+      "key": "solovev_proellochs2025",
+      "title": "References to unbiased sources increase the helpfulness of community fact-checks",
+      "authors": "Kirill Solovev; Nicolas Pröllochs",
+      "date": "2025 (Scientific Reports)",
+      "url": "https://www.nature.com/articles/s41598-025-09372-6",
+      "what_known": "Observed that external links and source bias relate to helpfulness ratings in Community Notes. It does not measure whether linked intended content is currently retrievable.",
+      "what_we_can_claim": "Distinguish rated helpfulness/source reputation from observed link access and content support. Do not treat current Helpful status as independent source verification."
+    },
+    {
+      "key": "x_data_dictionary",
+      "title": "Community Notes: Downloading data",
+      "authors": "X Community Notes",
+      "date": "Accessed 2026-11-15; living documentation",
+      "url": "https://github.com/twitter/communitynotes/blob/main/documentation/under-the-hood/download-data.md",
+      "what_known": "Defines notes, ratings, enrollment states including apiEarnedIn, and deletion behavior; public ratings include helpfulGoodSources and source-related negative tags. Downloads are best-effort cumulative snapshots.",
+      "what_we_can_claim": "Define the observed API-enrollment cohort and its limitations precisely; non-API is not verified human authorship, and current snapshot cannot recover deleted note text or prove historical enrollment state."
+    }
+  ]
+}
