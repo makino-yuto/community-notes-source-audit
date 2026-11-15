@@ -1,0 +1,455 @@
+{
+  "analysis_kind": "newwave_anonymous_numeric_reproduction",
+  "source_file_sha256": {
+    "data/machine_pairs_anonymous.csv": "2d89ae33aef8902f9f03b8ab0adb1effafc20bb4f80d52e6a262748d99e4f05a",
+    "data/browser_pairs_anonymous.csv": "1c83f60ac7da4c44d455a03f18647b24ffcbfb0fc1b2acaf77909abba521e3e4"
+  },
+  "machine": {
+    "overall": {
+      "pairs": 1882,
+      "means": {
+        "ai": {
+          "urls": 2.047290116896918,
+          "any_open": 0.9038257173219979,
+          "all_open": 0.6179596174282678,
+          "open_fraction": 0.7682695713779668,
+          "fixed_single_open": 0.7582359192348566,
+          "redundancy_random_single": 0.13555614594403118
+        },
+        "non": {
+          "urls": 1.4527098831030818,
+          "any_open": 0.8140276301806588,
+          "all_open": 0.7077577045696068,
+          "open_fraction": 0.7658517359367518,
+          "fixed_single_open": 0.7619553666312433,
+          "redundancy_random_single": 0.048175894243906996
+        }
+      },
+      "AI_API_minus_non_API": {
+        "urls": 0.5945802337938364,
+        "any_open": 0.08979808714133908,
+        "all_open": -0.08979808714133908,
+        "open_fraction": 0.0024178354412149883,
+        "fixed_single_open": -0.0037194473963867436,
+        "redundancy_random_single": 0.08738025170012417
+      },
+      "any_open_pair_cells": {
+        "both": 1436,
+        "ai_only": 265,
+        "non_api_only": 96,
+        "neither": 85
+      }
+    },
+    "url_count_pair_cells": {
+      "AI_more": 1123,
+      "equal": 536,
+      "non_API_more": 223
+    },
+    "note": "Complete fixed same-post frame; machine open is a transport/content proxy, not substantive browser access or claim support."
+  },
+  "browser": {
+    "sampled_pairs": 240,
+    "target_pairs": 1882,
+    "group_rates": {
+      "ai": {
+        "any": {
+          "lower": {
+            "estimate": 0.9104233085370174,
+            "design_se": 0.024624400049104524,
+            "normal_95": [
+              0.8621603712998661,
+              0.9586862457741686
+            ]
+          },
+          "upper": {
+            "estimate": 0.9532855118668082,
+            "design_se": 0.01779574810993224,
+            "normal_95": [
+              0.9184064864933943,
+              0.9881645372402221
+            ]
+          }
+        },
+        "all": {
+          "lower": {
+            "estimate": 0.6557297201558625,
+            "design_se": 0.04651893763925779,
+            "normal_95": [
+              0.5645542777838525,
+              0.7469051625278725
+            ]
+          },
+          "upper": {
+            "estimate": 0.8333244775061991,
+            "design_se": 0.035316179315633106,
+            "normal_95": [
+              0.7641060379759997,
+              0.9025429170363984
+            ]
+          }
+        },
+        "fraction": {
+          "lower": {
+            "estimate": 0.7937920651788878,
+            "design_se": 0.029713128290684718,
+            "normal_95": [
+              0.7355554038611276,
+              0.852028726496648
+            ]
+          },
+          "upper": {
+            "estimate": 0.900647213366395,
+            "design_se": 0.022095601784310158,
+            "normal_95": [
+              0.8573406296524081,
+              0.9439537970803819
+            ]
+          }
+        }
+      },
+      "non": {
+        "any": {
+          "lower": {
+            "estimate": 0.8191285866099894,
+            "design_se": 0.030327505309142903,
+            "normal_95": [
+              0.759687768463122,
+              0.8785694047568569
+            ]
+          },
+          "upper": {
+            "estimate": 0.916126461211477,
+            "design_se": 0.019035779545937125,
+            "normal_95": [
+              0.878817018883796,
+              0.953435903539158
+            ]
+          }
+        },
+        "all": {
+          "lower": {
+            "estimate": 0.7297290116896918,
+            "design_se": 0.039773659754732515,
+            "normal_95": [
+              0.6517740710370659,
+              0.8076839523423178
+            ]
+          },
+          "upper": {
+            "estimate": 0.8952089975203683,
+            "design_se": 0.022579157770800086,
+            "normal_95": [
+              0.8509546614883524,
+              0.9394633335523842
+            ]
+          }
+        },
+        "fraction": {
+          "lower": {
+            "estimate": 0.7790928681072147,
+            "design_se": 0.03173461007462606,
+            "normal_95": [
+              0.7168941752975256,
+              0.8412915609169037
+            ]
+          },
+          "upper": {
+            "estimate": 0.9058802692171449,
+            "design_se": 0.019895573110844396,
+            "normal_95": [
+              0.8668856624681064,
+              0.9448748759661835
+            ]
+          }
+        }
+      }
+    },
+    "paired_any_source": {
+      "identified_lower": {
+        "estimate": -0.005703152674459794,
+        "design_se": 0.01918393543647046,
+        "normal_95": [
+          -0.04330297521168358,
+          0.03189666986276399
+        ]
+      },
+      "identified_upper": {
+        "estimate": 0.134156925256819,
+        "design_se": 0.02566558084915745,
+        "normal_95": [
+          0.08385331115016945,
+          0.18446053936346854
+        ]
+      },
+      "unresolved_as_inaccessible": {
+        "estimate": 0.09129472192702799,
+        "design_se": 0.03186219702673361,
+        "normal_95": [
+          0.02884596328631092,
+          0.15374348056774506
+        ]
+      },
+      "approx_bonferroni_95_outer_interval": [
+        -0.04870207788796188,
+        0.19168382817768578
+      ]
+    },
+    "paired_all_sources": {
+      "identified_lower": {
+        "estimate": -0.23947927736450583,
+        "design_se": 0.04853247165399082,
+        "normal_95": [
+          -0.3346011738870389,
+          -0.14435738084197275
+        ]
+      },
+      "identified_upper": {
+        "estimate": 0.10359546581650726,
+        "design_se": 0.046257068538914446,
+        "normal_95": [
+          0.012933277449834121,
+          0.19425765418318042
+        ]
+      },
+      "unresolved_as_inaccessible": {
+        "estimate": -0.07399929153382924,
+        "design_se": 0.052818370336541215,
+        "normal_95": [
+          -0.17752139511554876,
+          0.02952281204789027
+        ]
+      },
+      "approx_bonferroni_95_outer_interval": [
+        -0.34826009170717065,
+        0.20727618541063908
+      ]
+    },
+    "paired_source_fraction": {
+      "identified_lower": {
+        "estimate": -0.11208820403825717,
+        "design_se": 0.028155746233007522,
+        "normal_95": [
+          -0.16727245261280121,
+          -0.05690395546371313
+        ]
+      },
+      "identified_upper": {
+        "estimate": 0.12155434525918055,
+        "design_se": 0.03078745980905082,
+        "normal_95": [
+          0.06121203285796653,
+          0.18189665766039456
+        ]
+      },
+      "unresolved_as_inaccessible": {
+        "estimate": 0.014699197071673161,
+        "design_se": 0.03399263209957924,
+        "normal_95": [
+          -0.051925137583222314,
+          0.08132353172656864
+        ]
+      },
+      "approx_bonferroni_95_outer_interval": [
+        -0.17519657044267295,
+        0.19056144165121475
+      ]
+    },
+    "known_pair_cells": {
+      "both": {
+        "estimate": 0.7772848034006377,
+        "design_se": 0.03409933997087461,
+        "normal_95": [
+          0.7104513251611363,
+          0.844118281640139
+        ]
+      },
+      "ai_only": {
+        "estimate": 0.04216259298618491,
+        "design_se": 0.007203101424678282,
+        "normal_95": [
+          0.028044773616826325,
+          0.0562804123555435
+        ]
+      },
+      "non_api_only": {
+        "estimate": 0.0058537017357421185,
+        "design_se": 0.001286496339582683,
+        "normal_95": [
+          0.0033322152439174487,
+          0.008375188227566789
+        ]
+      },
+      "neither": {
+        "estimate": 0.04086078639744953,
+        "design_se": 0.017754200146736718,
+        "normal_95": [
+          0.006063193535529816,
+          0.07565837925936925
+        ]
+      },
+      "undetermined_estimate": 0.1338381154799858
+    },
+    "sensitivities": {
+      "auth_unknown": {
+        "identified_lower": {
+          "estimate": -0.07076691462982643,
+          "design_se": 0.030653849522658247,
+          "normal_95": [
+            -0.13084735568174694,
+            -0.010686473577905933
+          ]
+        },
+        "identified_upper": {
+          "estimate": 0.24001948281969535,
+          "design_se": 0.03854428988629095,
+          "normal_95": [
+            0.16447406283289362,
+            0.31556490280649707
+          ]
+        },
+        "unresolved_as_inaccessible": {
+          "estimate": 0.1320935175345377,
+          "design_se": 0.04194112821670161,
+          "normal_95": [
+            0.04989041675882594,
+            0.2142966183102495
+          ]
+        },
+        "approx_bonferroni_95_outer_interval": [
+          -0.13947453656150421,
+          0.32641275930442365
+        ]
+      },
+      "abstract_unknown": {
+        "identified_lower": {
+          "estimate": -0.005703152674459794,
+          "design_se": 0.01918393543647046,
+          "normal_95": [
+            -0.04330297521168358,
+            0.03189666986276399
+          ]
+        },
+        "identified_upper": {
+          "estimate": 0.134156925256819,
+          "design_se": 0.02566558084915745,
+          "normal_95": [
+            0.08385331115016945,
+            0.18446053936346854
+          ]
+        },
+        "unresolved_as_inaccessible": {
+          "estimate": 0.09129472192702799,
+          "design_se": 0.03186219702673361,
+          "normal_95": [
+            0.02884596328631092,
+            0.15374348056774506
+          ]
+        },
+        "approx_bonferroni_95_outer_interval": [
+          -0.04870207788796188,
+          0.19168382817768578
+        ]
+      },
+      "pdf_unknown": {
+        "identified_lower": {
+          "estimate": -0.005703152674459794,
+          "design_se": 0.01918393543647046,
+          "normal_95": [
+            -0.04330297521168358,
+            0.03189666986276399
+          ]
+        },
+        "identified_upper": {
+          "estimate": 0.14687389302160822,
+          "design_se": 0.028154468033326416,
+          "normal_95": [
+            0.09169214967240419,
+            0.20205563637081225
+          ]
+        },
+        "unresolved_as_inaccessible": {
+          "estimate": 0.10401168969181722,
+          "design_se": 0.034053746796018074,
+          "normal_95": [
+            0.03726757243297553,
+            0.1707558069506589
+          ]
+        },
+        "approx_bonferroni_95_outer_interval": [
+          -0.04870207788796188,
+          0.20997939446577235
+        ]
+      },
+      "all_three_unknown": {
+        "identified_lower": {
+          "estimate": -0.07076691462982643,
+          "design_se": 0.030653849522658247,
+          "normal_95": [
+            -0.13084735568174694,
+            -0.010686473577905933
+          ]
+        },
+        "identified_upper": {
+          "estimate": 0.2527364505844846,
+          "design_se": 0.03978496157201286,
+          "normal_95": [
+            0.1747593587770293,
+            0.33071354239193984
+          ]
+        },
+        "unresolved_as_inaccessible": {
+          "estimate": 0.14481048529932694,
+          "design_se": 0.04344832845143513,
+          "normal_95": [
+            0.059653326346047156,
+            0.22996764425260674
+          ]
+        },
+        "approx_bonferroni_95_outer_interval": [
+          -0.13947453656150421,
+          0.3419105719696522
+        ]
+      }
+    },
+    "note": "Stratum-weighted pair sampling with finite-population variance. Unresolved citations bound access; intervals omit AI judgment error, network time change, and generalization beyond the fixed frame."
+  },
+  "browser_url_label_counts_aggregate_only": {
+    "not_accessible": 105,
+    "accessible": 486,
+    "unresolved": 83
+  },
+  "browser_recode_aggregate_only": {
+    "url_count": 87,
+    "exact_outcome_agreement": 0.8390804597701149,
+    "confusion": {
+      "primary_accessible__recode_accessible": 47,
+      "primary_accessible__recode_not_accessible": 5,
+      "primary_accessible__recode_unresolved": 3,
+      "primary_not_accessible__recode_not_accessible": 21,
+      "primary_not_accessible__recode_unresolved": 1,
+      "primary_unresolved__recode_accessible": 4,
+      "primary_unresolved__recode_not_accessible": 1,
+      "primary_unresolved__recode_unresolved": 5
+    },
+    "note": "Two AI-assisted browser passes; agreement is not human-ground-truth accuracy. Primary labels are not replaced by recode labels."
+  },
+  "machine_robustness_aggregate_only": {
+    "within_6h": {
+      "pairs": 1671,
+      "any_open_paired_difference": 0.0885697187312986
+    },
+    "shared_exact_url": {
+      "pairs": 475,
+      "any_open_paired_difference": 0.04842105263157892
+    },
+    "equal_url_count": {
+      "pairs": 536,
+      "any_open_paired_difference": 0.026119402985074647
+    },
+    "mean_distinct_hosts": {
+      "AI_API": 1.938894792773645,
+      "non_API": 1.377258235919235
+    }
+  },
+  "scope": "These anonymous pair tables reproduce numeric results. They do not expose source URLs, texts or historical page bodies, so they cannot independently re-audit source semantics or browser accessibility."
+}

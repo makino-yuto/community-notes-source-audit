@@ -1,0 +1,3 @@
+# Scientific manifests pin exact bytes, including recorded line endings.
+# Disable platform-dependent newline conversion for research artifacts.
+* -text

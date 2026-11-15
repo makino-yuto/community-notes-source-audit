@@ -1,0 +1,122 @@
+{
+  "schema": "newwave-public-numeric-v1",
+  "snapshot": "2026-11-14 official Community Notes releases",
+  "target": "Currently Helpful same-post AI-API/non-API eligible note pairs; descriptive association, not causal authorship effect",
+  "frozen_public_protocol_commit": "8fd3817",
+  "browser_population_strata": {
+    "both": {
+      "population_pairs": 1436,
+      "sampled_pairs": 60
+    },
+    "ai_only": {
+      "population_pairs": 265,
+      "sampled_pairs": 60
+    },
+    "non_api_only": {
+      "population_pairs": 96,
+      "sampled_pairs": 60
+    },
+    "neither": {
+      "population_pairs": 85,
+      "sampled_pairs": 60
+    }
+  },
+  "files": {
+    "data/machine_pairs_anonymous.csv": {
+      "rows": 1882,
+      "columns": [
+        "ai_urls",
+        "ai_any_open",
+        "ai_all_open",
+        "ai_open_fraction",
+        "ai_fixed_single_open",
+        "ai_redundancy_random_single",
+        "non_urls",
+        "non_any_open",
+        "non_all_open",
+        "non_open_fraction",
+        "non_fixed_single_open",
+        "non_redundancy_random_single"
+      ],
+      "sha256": "2d89ae33aef8902f9f03b8ab0adb1effafc20bb4f80d52e6a262748d99e4f05a"
+    },
+    "data/browser_pairs_anonymous.csv": {
+      "rows": 240,
+      "columns": [
+        "stratum",
+        "ai_any_lower",
+        "ai_any_upper",
+        "ai_all_lower",
+        "ai_all_upper",
+        "ai_fraction_lower",
+        "ai_fraction_upper",
+        "ai_any_lower_auth_unknown",
+        "ai_any_upper_auth_unknown",
+        "ai_any_lower_abstract_unknown",
+        "ai_any_upper_abstract_unknown",
+        "ai_any_lower_pdf_unknown",
+        "ai_any_upper_pdf_unknown",
+        "ai_any_lower_all_three_unknown",
+        "ai_any_upper_all_three_unknown",
+        "non_any_lower",
+        "non_any_upper",
+        "non_all_lower",
+        "non_all_upper",
+        "non_fraction_lower",
+        "non_fraction_upper",
+        "non_any_lower_auth_unknown",
+        "non_any_upper_auth_unknown",
+        "non_any_lower_abstract_unknown",
+        "non_any_upper_abstract_unknown",
+        "non_any_lower_pdf_unknown",
+        "non_any_upper_pdf_unknown",
+        "non_any_lower_all_three_unknown",
+        "non_any_upper_all_three_unknown"
+      ],
+      "sha256": "1c83f60ac7da4c44d455a03f18647b24ffcbfb0fc1b2acaf77909abba521e3e4"
+    }
+  },
+  "browser_url_label_counts_aggregate_only": {
+    "not_accessible": 105,
+    "accessible": 486,
+    "unresolved": 83
+  },
+  "browser_recode_aggregate_only": {
+    "url_count": 87,
+    "exact_outcome_agreement": 0.8390804597701149,
+    "confusion": {
+      "primary_accessible__recode_accessible": 47,
+      "primary_accessible__recode_not_accessible": 5,
+      "primary_accessible__recode_unresolved": 3,
+      "primary_not_accessible__recode_not_accessible": 21,
+      "primary_not_accessible__recode_unresolved": 1,
+      "primary_unresolved__recode_accessible": 4,
+      "primary_unresolved__recode_not_accessible": 1,
+      "primary_unresolved__recode_unresolved": 5
+    },
+    "note": "Two AI-assisted browser passes; agreement is not human-ground-truth accuracy. Primary labels are not replaced by recode labels."
+  },
+  "machine_robustness_aggregate_only": {
+    "within_6h": {
+      "pairs": 1671,
+      "any_open_paired_difference": 0.0885697187312986
+    },
+    "shared_exact_url": {
+      "pairs": 475,
+      "any_open_paired_difference": 0.04842105263157892
+    },
+    "equal_url_count": {
+      "pairs": 536,
+      "any_open_paired_difference": 0.026119402985074647
+    },
+    "mean_distinct_hosts": {
+      "AI_API": 1.938894792773645,
+      "non_API": 1.377258235919235
+    }
+  },
+  "frozen_aggregate_sha256": {
+    "machine": "4254f9f3e8fb19c27a5a1a536617f50ba7bb6e5b3a888cdf29be04a19884b3cb",
+    "browser": "d94d0ddb3898b2446b6cf186107d3da621919c967637e67532d62a6461f77b7f"
+  },
+  "privacy": "Cryptographically shuffled rows separately in each table. No post/note/author/URL identifiers, domains, host counts, gap/shared-link flags, exact dates, text, quotes, or browser case details. Author cluster codes omitted. This is not differential privacy and does not guarantee that numeric rows cannot be linked using external data. It permits arithmetic recomputation, not independent historical web-content review."
+}
