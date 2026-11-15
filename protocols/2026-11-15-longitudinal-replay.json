@@ -1,0 +1,49 @@
+{
+  "input_counts": {
+    "eligible_for_replay": 41,
+    "frozen_main_claims": 200,
+    "panel_units": 100
+  },
+  "inputs": {
+    "cdx_runlog_sha256": "ed9f96bddea2c7bdb4992f42e4e9f6472b5757f6ea5ebc19c6745627d6a8818a",
+    "claims_extractor_sha256": "ab62f1072d2d075bfcdfb7c3d28af2f0915347465daade5f9b93b7b98012cba1",
+    "current_parser_sha256": "c51bd2a08c72ab5e97d2825d155cc30c38d41e322a239cf2c334411f538ccdfd",
+    "frozen_claims_sha256": "125f670032cf6ea46962ce00bed7163c3887176f7cc475d3fc5a8360d5de8585",
+    "pre_source_claim_log_sha256": "282fbde3e1cfe8100d2baa9798fdb0c0aa169d349a4bfd91893d18b1e096d8b1",
+    "pre_source_pair_key_sha256": "8246f299b02fe7feb4a6dd8cef29e9861e22517e16c5aa5a8ac568b2b5ef3e4f",
+    "replay_script_sha256": "988925c65ce10fb6eb427e7fce90228d60cd3ce615cdd46249d38954119159ce",
+    "selection_sha256": "b7002926296de4f046f78e0aff601d882779ea375bddb5a0628ed69e89cd6ffb"
+  },
+  "prepared_utc": "2026-11-15T06:09:22+00:00",
+  "private_input_filenames": {
+    "cdx_runlog": "newwave_longitudinal_cdx_v2_runlog_PRIVATE.jsonl",
+    "frozen_claims": "newwave_longitudinal_claims_PRIVATE.jsonl",
+    "selection": "newwave_longitudinal_replay_selection_PRIVATE.json"
+  },
+  "public_methods": {
+    "body": "At most 2 MB decoded body; same frozen HTML/PDF/text parser as current-content pass; PDF first 50 pages and text first 120000 characters; later semantic judge receives first 24000 characters per source.",
+    "capture_choice": "Nearest exact-original HTTP200 permitted-MIME pre-anchor capture plus one preselected next-nearest fallback from valid exhausted CDX results only.",
+    "coverage": "Record all 100 panel units as assessable, nonassessable, policy-censored, CDX-missing, archive-failed or budget/service-unattempted unknown; no unknown=zero imputation.",
+    "error_page_policy": "Archive transport/status/provenance/parse errors are not judged for claim support. A readable Archive wrapper or error page must be flagged nonassessable during blinded source review.",
+    "fallback_only": [
+      "transport_failure",
+      "non200",
+      "provenance_failure",
+      "parse_or_empty_unassessable"
+    ],
+    "frame": "All 100 preselected URL+first-Helpful-anchor units remain in denominator; no substitution or outcome-based selection.",
+    "network": "One worker, at least 10 seconds between request starts including redirects/fallback, no environment proxy or netrc, connect timeout 5 seconds, per-read timeout 10 seconds, stream guards before every blocking read and combined CDX+replay 90-minute wall cap; do not begin body replay after CDX service-wide stop and stop on replay HTTP429.",
+    "no_fallback_for": [
+      "lack_of_claim_support",
+      "semantic_nonassessability",
+      "body_too_large_unassessable",
+      "archive_http_429",
+      "budget_not_attempted"
+    ],
+    "replay_mode": "Raw https://web.archive.org/web/{timestamp}id_/{exact-original-URL}; at most three archive-only redirects; require exact selected timestamp and original URL at every hop; verify Memento-Datetime if present.",
+    "source_safety": "Never replay original hosts previously blocked by browser safety policy; retain censored units in denominator. No alternative archive endpoint, live-source redirect, proxy, credentials or subresources."
+  },
+  "schema": "newwave-longitudinal-archive-body-replay-v1",
+  "status": "FROZEN BEFORE ANY V2 PANEL ARCHIVED BODY REQUEST",
+  "v2_panel_archived_body_requests_at_plan_time": 0
+}
