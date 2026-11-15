@@ -48,8 +48,13 @@ def digest(data: bytes) -> str:
 def safe_replay_url(address: str, original: str, *, selected_timestamp: str,
                     start_millis: int, end_millis: int) -> tuple[bool, str, str | None]:
     """Check every hop stays on an exact-original Archive identity replay."""
-    parsed = urlsplit(address)
-    if parsed.scheme != "https" or parsed.hostname != "web.archive.org" or parsed.port not in (None, 443):
+    try:
+        parsed = urlsplit(address)
+        safe_endpoint = (parsed.scheme == "https" and parsed.hostname == "web.archive.org" and
+                         parsed.port in (None, 443))
+    except ValueError:
+        return False, "malformed_replay_url", None
+    if not safe_endpoint:
         return False, "outside_archive_https_endpoint", None
     if parsed.username or parsed.password or parsed.fragment:
         return False, "replay_url_has_userinfo_or_fragment", None
@@ -122,7 +127,7 @@ def prepare(protocol_path: Path, selection_path: Path, claims_path: Path,
             "no_fallback_for": ["lack_of_claim_support", "semantic_nonassessability", "body_too_large_unassessable", "archive_http_429", "budget_not_attempted"],
             "source_safety": "Never replay original hosts previously blocked by browser safety policy; retain censored units in denominator. No alternative archive endpoint, live-source redirect, proxy, credentials or subresources.",
             "replay_mode": "Raw https://web.archive.org/web/{timestamp}id_/{exact-original-URL}; at most three archive-only redirects; require exact selected timestamp and original URL at every hop; verify Memento-Datetime if present.",
-            "network": "One worker, at least 10 seconds between request starts including redirects/fallback, connect timeout 5 seconds, read timeout 20 seconds; stop on HTTP429 or combined CDX+replay 90-minute wall cap.",
+            "network": "One worker, at least 10 seconds between request starts including redirects/fallback, no environment proxy or netrc, connect timeout 5 seconds, per-read timeout 10 seconds, stream guards before every blocking read and combined CDX+replay 90-minute wall cap; stop on HTTP429.",
             "body": "At most 2 MB decoded body; same frozen HTML/PDF/text parser as current-content pass; PDF first 50 pages and text first 120000 characters; later semantic judge receives first 24000 characters per source.",
             "coverage": "Record all 100 panel units as assessable, nonassessable, policy-censored, CDX-missing, archive-failed or budget/service-unattempted unknown; no unknown=zero imputation.",
             "error_page_policy": "Archive transport/status/provenance/parse errors are not judged for claim support. A readable Archive wrapper or error page must be flagged nonassessable during blinded source review.",
@@ -182,7 +187,7 @@ def fetch_capture(entry: dict, capture: dict, rate: Rate, deadline: float) -> di
         "started_utc": now(), "redirect_chain": [],
     }
     session = requests.Session()
-    session.trust_env = True
+    session.trust_env = False
     session.headers.update({"User-Agent": "Apart-Epistemics-Longitudinal/1.0 (research; one capture)",
                             "Accept": "text/html,application/pdf,text/plain,application/json,application/xml"})
     try:
@@ -200,10 +205,15 @@ def fetch_capture(entry: dict, capture: dict, rate: Rate, deadline: float) -> di
                 row.update({"outcome": "budget_not_attempted", "reason": "90_minute_cap",
                             "finished_utc": now()})
                 return row
+            if deadline - time.monotonic() < 25:
+                row.update({"outcome": "budget_not_attempted", "reason": "insufficient_time_for_bounded_request",
+                            "finished_utc": now()})
+                return row
             hop_record = {"url": address, "started_utc": now(),
                           "resolved_timestamp": resolved_timestamp}
+            request_started = time.monotonic()
             try:
-                response = session.get(address, allow_redirects=False, timeout=(5, 20), stream=True)
+                response = session.get(address, allow_redirects=False, timeout=(5, 10), stream=True)
                 if response.url != address:
                     response.close()
                     row["redirect_chain"].append({**hop_record, "effective_url": response.url})
@@ -245,7 +255,22 @@ def fetch_capture(entry: dict, capture: dict, rate: Rate, deadline: float) -> di
                 chunks = []
                 size = 0
                 too_large = False
-                for chunk in response.iter_content(chunk_size=65536):
+                chunks_iter = response.iter_content(chunk_size=65536)
+                while True:
+                    # Requests' read timeout is an inactivity limit. Guard
+                    # before each blocking read as well as after each chunk.
+                    remaining_stage = deadline - time.monotonic()
+                    remaining_request = request_started + 30 - time.monotonic()
+                    if remaining_stage < 12 or remaining_request < 12:
+                        response.close()
+                        row["body_bytes_observed"] = size
+                        row.update({"outcome": "budget_not_attempted" if remaining_stage < 12 else "transport_failure",
+                                    "reason": "bounded_stream_deadline", "finished_utc": now()})
+                        return row
+                    try:
+                        chunk = next(chunks_iter)
+                    except StopIteration:
+                        break
                     if not chunk:
                         continue
                     size += len(chunk)

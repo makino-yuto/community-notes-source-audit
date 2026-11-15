@@ -24,8 +24,10 @@ class ReplaySelectionTests(unittest.TestCase):
             }
         old = capture("20260101000001", "A")
         latest = capture("20260101000009", "B")
+        duplicate_address_with_other_digest = capture("20260101000009", "Z")
         result = {"outcome": "valid_positive_exact_original_http200_candidate",
-                  "captures": [old, latest, latest.copy(), capture("20260101000010", "C", candidate=False)]}
+                  "captures": [old, latest, duplicate_address_with_other_digest,
+                               capture("20260101000010", "C", candidate=False)]}
         selected = select.selected_candidates(result, url)
         self.assertEqual([row["digest"] for row in selected], ["B", "A"])
         self.assertEqual(len(selected), 2)

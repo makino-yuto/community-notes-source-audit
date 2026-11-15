@@ -47,7 +47,7 @@ def selected_candidates(result: dict | None, network_url: str) -> list[dict]:
     # Keep the panel unit, but do not select a body from incomplete metadata.
     if result is None or not result.get("outcome", "").startswith("valid_"):
         return []
-    unique: dict[tuple[str, ...], dict] = {}
+    unique: dict[tuple[str, str], dict] = {}
     for row in result.get("captures", []):
         if not row.get("primary_body_candidate"):
             continue
@@ -56,7 +56,13 @@ def selected_candidates(result: dict | None, network_url: str) -> list[dict]:
             raise ValueError("CDX result candidate flag inconsistent with frozen rule")
         if not isinstance(row.get("timestamp_start_millis"), int):
             raise ValueError("Candidate capture lacks a valid UTC timestamp")
-        unique.setdefault(capture_tuple(row), row)
+        # Wayback replay addresses are identified by timestamp + original.
+        # Two CDX metadata rows for that same address are not independent
+        # fallback captures, even when digest or length differs.
+        address_key = (row["timestamp"], row["original"])
+        previous = unique.get(address_key)
+        if previous is None or capture_tuple(row) < capture_tuple(previous):
+            unique[address_key] = row
     # Nearest pre-anchor first; exact ties break lexically on the remaining
     # CDX fields, as declared before archived bodies were opened.
     return sorted(unique.values(), key=lambda row: (
@@ -118,6 +124,10 @@ def freeze(protocol_path: Path, queries_path: Path, cdx_manifest_path: Path,
         raise ValueError("Current content collection incomplete")
     if len({row["url_sha256"] for row in current_content}) != len(current_content):
         raise ValueError("Duplicate current-content URL")
+    expected_urls = {(row["url_sha256"], row["url"]) for row in content_manifest["urls"]}
+    actual_urls = {(row["url_sha256"], row["url"]) for row in current_content}
+    if len(expected_urls) != len(current_content) or actual_urls != expected_urls:
+        raise ValueError("Current-content URL set differs from frozen manifest")
 
     panel = [item for item in ordered if item["unconditional_panel_selected"]]
     if len(panel) != 100:

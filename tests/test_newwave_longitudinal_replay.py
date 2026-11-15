@@ -35,6 +35,14 @@ class ReplayTests(unittest.TestCase):
                 address, original, selected_timestamp=self.timestamp,
                 start_millis=self.start, end_millis=self.anchor)[0])
 
+    def test_malformed_archive_port_is_recordable_failure(self):
+        original = "https://example.org/article"
+        address = f"https://web.archive.org:bad/web/{self.timestamp}id_/{original}"
+        self.assertEqual(replay.safe_replay_url(
+            address, original, selected_timestamp=self.timestamp,
+            start_millis=self.start, end_millis=self.anchor)[:2],
+            (False, "malformed_replay_url"))
+
     def test_memento_date_mismatch_rejected(self):
         self.assertEqual(replay.memento_check(
             {"Memento-Datetime": "Wed, 03 Sep 2025 03:04:05 GMT"},
