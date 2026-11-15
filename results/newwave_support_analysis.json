@@ -1,0 +1,659 @@
+{
+  "analysis_kind": "AI_assisted_fixed_claim_all_citation_source_support_diagnostic",
+  "sample": {
+    "post_pairs": 100,
+    "notes": 200,
+    "notes_per_group": 100,
+    "source_slots": 357,
+    "distinct_collected_network_urls": 319,
+    "original_post_or_media_available_notes": 0
+  },
+  "execution": {
+    "original_journal_records": 186,
+    "original_valid_used": 185,
+    "original_timeout_records_preserved": 1,
+    "original_unjournaled_completion_sets_preserved_not_used": 14,
+    "prospective_retry_attempts": 15,
+    "retry_valid": 14,
+    "retry_invalid_as_UNASSESSABLE": 1,
+    "selected_model_advertised_counts": {
+      "gpt-5.6-sol": 199,
+      "unavailable": 1
+    },
+    "technical_amendment_public_commit": "d1b316a64c0412868e7a4cb653e32b9f35807c3c"
+  },
+  "raw": {
+    "by_group": {
+      "AI_API": {
+        "n": 100,
+        "label_counts": {
+          "FULL": 20,
+          "PARTIAL": 39,
+          "NONE": 5,
+          "CONTRADICTS": 1,
+          "UNASSESSABLE": 35
+        },
+        "label_rates": {
+          "FULL": 0.2,
+          "PARTIAL": 0.39,
+          "NONE": 0.05,
+          "CONTRADICTS": 0.01,
+          "UNASSESSABLE": 0.35
+        },
+        "FULL_or_PARTIAL_n": 59,
+        "FULL_or_PARTIAL_rate": 0.59
+      },
+      "non_API": {
+        "n": 100,
+        "label_counts": {
+          "FULL": 15,
+          "PARTIAL": 33,
+          "NONE": 15,
+          "CONTRADICTS": 1,
+          "UNASSESSABLE": 36
+        },
+        "label_rates": {
+          "FULL": 0.15,
+          "PARTIAL": 0.33,
+          "NONE": 0.15,
+          "CONTRADICTS": 0.01,
+          "UNASSESSABLE": 0.36
+        },
+        "FULL_or_PARTIAL_n": 48,
+        "FULL_or_PARTIAL_rate": 0.48
+      }
+    },
+    "paired_differences": {
+      "FULL": {
+        "pairs": 100,
+        "AI_API_minus_non_API": 0.05,
+        "discordance": {
+          "both": 8,
+          "AI_API_only": 12,
+          "non_API_only": 7,
+          "neither": 73
+        },
+        "post_pair_bootstrap_95_descriptive": [
+          -0.03,
+          0.13
+        ],
+        "equal_AI_author_average_difference": 0.1992476101073386,
+        "leave_one_AI_author_out_difference_range": [
+          0.03409090909090909,
+          0.0898876404494382
+        ]
+      },
+      "PARTIAL": {
+        "pairs": 100,
+        "AI_API_minus_non_API": 0.06,
+        "discordance": {
+          "both": 21,
+          "AI_API_only": 18,
+          "non_API_only": 12,
+          "neither": 49
+        },
+        "post_pair_bootstrap_95_descriptive": [
+          -0.04,
+          0.17
+        ],
+        "equal_AI_author_average_difference": 0.04249561398882666,
+        "leave_one_AI_author_out_difference_range": [
+          0.02247191011235955,
+          0.09090909090909091
+        ]
+      },
+      "NONE": {
+        "pairs": 100,
+        "AI_API_minus_non_API": -0.1,
+        "discordance": {
+          "both": 2,
+          "AI_API_only": 3,
+          "non_API_only": 13,
+          "neither": 82
+        },
+        "post_pair_bootstrap_95_descriptive": [
+          -0.18,
+          -0.03
+        ],
+        "equal_AI_author_average_difference": -0.058831967429252494,
+        "leave_one_AI_author_out_difference_range": [
+          -0.12195121951219512,
+          -0.08045977011494253
+        ]
+      },
+      "CONTRADICTS": {
+        "pairs": 100,
+        "AI_API_minus_non_API": 0.0,
+        "discordance": {
+          "both": 0,
+          "AI_API_only": 1,
+          "non_API_only": 1,
+          "neither": 98
+        },
+        "post_pair_bootstrap_95_descriptive": [
+          -0.03,
+          0.03
+        ],
+        "equal_AI_author_average_difference": 0.0006993006993006995,
+        "leave_one_AI_author_out_difference_range": [
+          -0.011111111111111112,
+          0.011235955056179775
+        ]
+      },
+      "UNASSESSABLE": {
+        "pairs": 100,
+        "AI_API_minus_non_API": -0.01,
+        "discordance": {
+          "both": 17,
+          "AI_API_only": 18,
+          "non_API_only": 19,
+          "neither": 46
+        },
+        "post_pair_bootstrap_95_descriptive": [
+          -0.13,
+          0.11
+        ],
+        "equal_AI_author_average_difference": -0.18361055736621348,
+        "leave_one_AI_author_out_difference_range": [
+          -0.04597701149425287,
+          0.012195121951219513
+        ]
+      },
+      "FULL_or_PARTIAL": {
+        "pairs": 100,
+        "AI_API_minus_non_API": 0.11,
+        "discordance": {
+          "both": 38,
+          "AI_API_only": 21,
+          "non_API_only": 10,
+          "neither": 31
+        },
+        "post_pair_bootstrap_95_descriptive": [
+          0.0,
+          0.22
+        ],
+        "equal_AI_author_average_difference": 0.24174322409616528,
+        "leave_one_AI_author_out_difference_range": [
+          0.07865168539325842,
+          0.1348314606741573
+        ]
+      }
+    }
+  },
+  "strict": {
+    "by_group": {
+      "AI_API": {
+        "n": 100,
+        "label_counts": {
+          "FULL": 16,
+          "PARTIAL": 30,
+          "NONE": 5,
+          "CONTRADICTS": 1,
+          "UNASSESSABLE": 48
+        },
+        "label_rates": {
+          "FULL": 0.16,
+          "PARTIAL": 0.3,
+          "NONE": 0.05,
+          "CONTRADICTS": 0.01,
+          "UNASSESSABLE": 0.48
+        },
+        "FULL_or_PARTIAL_n": 46,
+        "FULL_or_PARTIAL_rate": 0.46
+      },
+      "non_API": {
+        "n": 100,
+        "label_counts": {
+          "FULL": 13,
+          "PARTIAL": 30,
+          "NONE": 15,
+          "CONTRADICTS": 1,
+          "UNASSESSABLE": 41
+        },
+        "label_rates": {
+          "FULL": 0.13,
+          "PARTIAL": 0.3,
+          "NONE": 0.15,
+          "CONTRADICTS": 0.01,
+          "UNASSESSABLE": 0.41
+        },
+        "FULL_or_PARTIAL_n": 43,
+        "FULL_or_PARTIAL_rate": 0.43
+      }
+    },
+    "paired_differences": {
+      "FULL": {
+        "pairs": 100,
+        "AI_API_minus_non_API": 0.03,
+        "discordance": {
+          "both": 5,
+          "AI_API_only": 11,
+          "non_API_only": 8,
+          "neither": 76
+        },
+        "post_pair_bootstrap_95_descriptive": [
+          -0.06,
+          0.12
+        ],
+        "equal_AI_author_average_difference": 0.18703041553720287,
+        "leave_one_AI_author_out_difference_range": [
+          0.011363636363636364,
+          0.06741573033707865
+        ]
+      },
+      "PARTIAL": {
+        "pairs": 100,
+        "AI_API_minus_non_API": 0.0,
+        "discordance": {
+          "both": 16,
+          "AI_API_only": 14,
+          "non_API_only": 14,
+          "neither": 56
+        },
+        "post_pair_bootstrap_95_descriptive": [
+          -0.1,
+          0.11
+        ],
+        "equal_AI_author_average_difference": -0.06478762564735416,
+        "leave_one_AI_author_out_difference_range": [
+          -0.02247191011235955,
+          0.024096385542168676
+        ]
+      },
+      "NONE": {
+        "pairs": 100,
+        "AI_API_minus_non_API": -0.1,
+        "discordance": {
+          "both": 2,
+          "AI_API_only": 3,
+          "non_API_only": 13,
+          "neither": 82
+        },
+        "post_pair_bootstrap_95_descriptive": [
+          -0.18,
+          -0.03
+        ],
+        "equal_AI_author_average_difference": -0.058831967429252494,
+        "leave_one_AI_author_out_difference_range": [
+          -0.12195121951219512,
+          -0.08045977011494253
+        ]
+      },
+      "CONTRADICTS": {
+        "pairs": 100,
+        "AI_API_minus_non_API": 0.0,
+        "discordance": {
+          "both": 0,
+          "AI_API_only": 1,
+          "non_API_only": 1,
+          "neither": 98
+        },
+        "post_pair_bootstrap_95_descriptive": [
+          -0.03,
+          0.03
+        ],
+        "equal_AI_author_average_difference": 0.0006993006993006995,
+        "leave_one_AI_author_out_difference_range": [
+          -0.011111111111111112,
+          0.011235955056179775
+        ]
+      },
+      "UNASSESSABLE": {
+        "pairs": 100,
+        "AI_API_minus_non_API": 0.07,
+        "discordance": {
+          "both": 22,
+          "AI_API_only": 26,
+          "non_API_only": 19,
+          "neither": 33
+        },
+        "post_pair_bootstrap_95_descriptive": [
+          -0.06,
+          0.2
+        ],
+        "equal_AI_author_average_difference": -0.06411012315989692,
+        "leave_one_AI_author_out_difference_range": [
+          0.03614457831325301,
+          0.0975609756097561
+        ]
+      },
+      "FULL_or_PARTIAL": {
+        "pairs": 100,
+        "AI_API_minus_non_API": 0.03,
+        "discordance": {
+          "both": 27,
+          "AI_API_only": 19,
+          "non_API_only": 16,
+          "neither": 38
+        },
+        "post_pair_bootstrap_95_descriptive": [
+          -0.09,
+          0.15
+        ],
+        "equal_AI_author_average_difference": 0.12224278988984873,
+        "leave_one_AI_author_out_difference_range": [
+          0.011235955056179775,
+          0.06741573033707865
+        ]
+      }
+    }
+  },
+  "strict_rule": "Any invalid execution or literal-evidence/source-coverage validation failure is UNASSESSABLE; original raw records are unchanged.",
+  "validation_audit": {
+    "all_selected_cases_revalidated": 200,
+    "evidence_positive_or_contradicts_cases_checked": 109,
+    "evidence_positive_or_contradicts_cases_with_validation_error": 18,
+    "all_such_errors_flagged_and_strict_downgraded": true,
+    "saved_vs_recomputed_error_mismatches": 0,
+    "cases_with_any_validation_error": 19,
+    "error_event_counts": {
+      "quote_not_literal": 6,
+      "quote_word_limit": 15,
+      "invalid_execution": 1
+    },
+    "raw_to_strict_downgrade_counts": {
+      "FULL": 6,
+      "PARTIAL": 12
+    }
+  },
+  "source_role_diagnostics": {
+    "AI_API": {
+      "role_counts": {
+        "SUPPORT": 82,
+        "BACKGROUND": 47,
+        "AMBIGUOUS": 56,
+        "SUBJECT": 22
+      },
+      "substantive_observation_counts": {
+        "substantive": 136,
+        "SUPPORT_and_substantive": 82,
+        "not_substantive": 71
+      }
+    },
+    "non_API": {
+      "role_counts": {
+        "SUBJECT": 13,
+        "AMBIGUOUS": 40,
+        "SUPPORT": 53,
+        "BACKGROUND": 41
+      },
+      "substantive_observation_counts": {
+        "substantive": 93,
+        "not_substantive": 54,
+        "SUPPORT_and_substantive": 50
+      }
+    }
+  },
+  "independent_contradiction_packet_review": {
+    "reviewer_type": "independent_root_AI_packet_review",
+    "complete_packets_reviewed": 2,
+    "robust_factual_contradictions_confirmed": 0,
+    "raw_model_CONTRADICTS_labels_retained": 2,
+    "strict_model_CONTRADICTS_labels_retained": 2,
+    "model_labels_changed_by_review": 0,
+    "interpretation": "No independently confirmed contradiction was established from these supplied packets; technical quote validity does not establish logical opposition or note falsehood.",
+    "private_case_reasons_withheld": true,
+    "human_gold_standard": false
+  },
+  "coverage": {
+    "AI_API": {
+      "notes": 100,
+      "source_slots": 210,
+      "notes_all_sources_empty": 7,
+      "notes_any_empty_source": 29,
+      "notes_any_input_truncation": 17,
+      "notes_any_body_cap": 5,
+      "notes_all_sources_model_non_substantive": 14,
+      "empty_main_text_slots": 30,
+      "input_truncated_slots": 20,
+      "body_capped_2mb_slots": 5,
+      "pdf_slots": 3,
+      "policy_unassessable_slots": 1,
+      "non_http_response_slots": 5
+    },
+    "non_API": {
+      "notes": 100,
+      "source_slots": 147,
+      "notes_all_sources_empty": 10,
+      "notes_any_empty_source": 20,
+      "notes_any_input_truncation": 9,
+      "notes_any_body_cap": 3,
+      "notes_all_sources_model_non_substantive": 27,
+      "empty_main_text_slots": 24,
+      "input_truncated_slots": 10,
+      "body_capped_2mb_slots": 3,
+      "pdf_slots": 2,
+      "policy_unassessable_slots": 0,
+      "non_http_response_slots": 3
+    }
+  },
+  "independent_AI_recode": {
+    "frozen_before_primary_comparison": true,
+    "raw_primary": {
+      "n": 20,
+      "exact_agreement_n": 17,
+      "exact_agreement_rate": 0.85,
+      "agreement_wilson_95_descriptive": [
+        0.6395811352592431,
+        0.9476312541037835
+      ],
+      "cohen_kappa": 0.7752808988764045,
+      "chance_expected_agreement": 0.3325,
+      "confusion_matrix_rows_primary_columns_independent_AI": {
+        "FULL": {
+          "FULL": 2,
+          "PARTIAL": 0,
+          "NONE": 0,
+          "CONTRADICTS": 0,
+          "UNASSESSABLE": 0
+        },
+        "PARTIAL": {
+          "FULL": 1,
+          "PARTIAL": 8,
+          "NONE": 2,
+          "CONTRADICTS": 0,
+          "UNASSESSABLE": 0
+        },
+        "NONE": {
+          "FULL": 0,
+          "PARTIAL": 0,
+          "NONE": 1,
+          "CONTRADICTS": 0,
+          "UNASSESSABLE": 0
+        },
+        "CONTRADICTS": {
+          "FULL": 0,
+          "PARTIAL": 0,
+          "NONE": 0,
+          "CONTRADICTS": 0,
+          "UNASSESSABLE": 0
+        },
+        "UNASSESSABLE": {
+          "FULL": 0,
+          "PARTIAL": 0,
+          "NONE": 0,
+          "CONTRADICTS": 0,
+          "UNASSESSABLE": 6
+        }
+      },
+      "human_gold_standard": false
+    },
+    "strict_primary": {
+      "n": 20,
+      "exact_agreement_n": 15,
+      "exact_agreement_rate": 0.75,
+      "agreement_wilson_95_descriptive": [
+        0.531299122381256,
+        0.8881382985923343
+      ],
+      "cohen_kappa": 0.6309963099630996,
+      "chance_expected_agreement": 0.3225,
+      "confusion_matrix_rows_primary_columns_independent_AI": {
+        "FULL": {
+          "FULL": 2,
+          "PARTIAL": 0,
+          "NONE": 0,
+          "CONTRADICTS": 0,
+          "UNASSESSABLE": 0
+        },
+        "PARTIAL": {
+          "FULL": 1,
+          "PARTIAL": 6,
+          "NONE": 2,
+          "CONTRADICTS": 0,
+          "UNASSESSABLE": 0
+        },
+        "NONE": {
+          "FULL": 0,
+          "PARTIAL": 0,
+          "NONE": 1,
+          "CONTRADICTS": 0,
+          "UNASSESSABLE": 0
+        },
+        "CONTRADICTS": {
+          "FULL": 0,
+          "PARTIAL": 0,
+          "NONE": 0,
+          "CONTRADICTS": 0,
+          "UNASSESSABLE": 0
+        },
+        "UNASSESSABLE": {
+          "FULL": 0,
+          "PARTIAL": 2,
+          "NONE": 0,
+          "CONTRADICTS": 0,
+          "UNASSESSABLE": 6
+        }
+      },
+      "human_gold_standard": false
+    },
+    "independent_recode_label_counts": {
+      "UNASSESSABLE": 6,
+      "PARTIAL": 8,
+      "NONE": 3,
+      "FULL": 3
+    }
+  },
+  "alignment_strata_diagnostic_only": {
+    "different": {
+      "pairs": 20,
+      "strict_label_counts_by_group": {
+        "AI_API": {
+          "FULL": 2,
+          "PARTIAL": 6,
+          "NONE": 1,
+          "CONTRADICTS": 0,
+          "UNASSESSABLE": 11
+        },
+        "non_API": {
+          "FULL": 3,
+          "PARTIAL": 3,
+          "NONE": 5,
+          "CONTRADICTS": 0,
+          "UNASSESSABLE": 9
+        }
+      }
+    },
+    "overlapping": {
+      "pairs": 36,
+      "strict_label_counts_by_group": {
+        "AI_API": {
+          "FULL": 6,
+          "PARTIAL": 12,
+          "NONE": 2,
+          "CONTRADICTS": 0,
+          "UNASSESSABLE": 16
+        },
+        "non_API": {
+          "FULL": 5,
+          "PARTIAL": 15,
+          "NONE": 4,
+          "CONTRADICTS": 1,
+          "UNASSESSABLE": 11
+        }
+      }
+    },
+    "same_main_correction": {
+      "pairs": 43,
+      "strict_label_counts_by_group": {
+        "AI_API": {
+          "FULL": 8,
+          "PARTIAL": 12,
+          "NONE": 2,
+          "CONTRADICTS": 1,
+          "UNASSESSABLE": 20
+        },
+        "non_API": {
+          "FULL": 5,
+          "PARTIAL": 11,
+          "NONE": 6,
+          "CONTRADICTS": 0,
+          "UNASSESSABLE": 21
+        }
+      }
+    },
+    "unassessable": {
+      "pairs": 1,
+      "strict_label_counts_by_group": {
+        "AI_API": {
+          "FULL": 0,
+          "PARTIAL": 0,
+          "NONE": 0,
+          "CONTRADICTS": 0,
+          "UNASSESSABLE": 1
+        },
+        "non_API": {
+          "FULL": 0,
+          "PARTIAL": 1,
+          "NONE": 0,
+          "CONTRADICTS": 0,
+          "UNASSESSABLE": 0
+        }
+      }
+    }
+  },
+  "account_concentration": {
+    "AI_API": {
+      "distinct_accounts": 13,
+      "top_1_note_share": 0.18,
+      "top_10_note_share": 0.97,
+      "effective_accounts_inverse_hhi": 7.8125
+    },
+    "non_API": {
+      "distinct_accounts": 96,
+      "top_1_note_share": 0.04,
+      "top_10_note_share": 0.14,
+      "effective_accounts_inverse_hhi": 87.71929824561403
+    }
+  },
+  "uncertainty": {
+    "method": "Post-pair percentile bootstrap, retaining both cohort notes together; descriptive sensitivity only",
+    "draws": 10000,
+    "seed": 2026111514,
+    "account_sensitivity": "Equal-AI-account means and leave-one-AI-account-out ranges change or perturb the post-weighted estimand.",
+    "not_captured": "Systematic model mistakes, model dependence, source extraction/censoring, nonrandom source choice, and conditional-frame selection are not resolved by bootstrap intervals."
+  },
+  "input_sha256": {
+    "packet": "fe88000e7fd1074d838bd098038e03889466494d8312e5e4ddb53317c5165a8f",
+    "original_journal": "bb62a60a808500785548daf8a12b07e411c4d3f3bbdaeeb7055a8aa0af44235f",
+    "retry_journal": "ce06723cd0e289c66c7cea84a9466450e912f7966aab91d1142af19107d23b33",
+    "technical_amendment": "1ac3570af005fd927e0d7a154103bb4c3503f45e94d2506f6bf7004511560254",
+    "key": "8246f299b02fe7feb4a6dd8cef29e9861e22517e16c5aa5a8ac568b2b5ef3e4f",
+    "independent_recode": "fccd7efa1dd5a901cc9c0687ff7fc2554de4cdd1b11fda5216c58c54defbf5b5",
+    "recode_selection": "ac496f31c35672cca551ecd879e106214500f89f55003e71443ad87ec8610c63",
+    "contradiction_review": "2fe0c57baa39594cafadc835981f3f1a01a9c2f0716ff2f394554b69084438f7",
+    "alignment": "282fbde3e1cfe8100d2baa9798fdb0c0aa169d349a4bfd91893d18b1e096d8b1",
+    "candidates": "fb2eb694f1d8bac74a98e5a27b8c7478ca4f6324d50cc05819281f94c942e39d"
+  },
+  "analysis_script_sha256": "5717dde73fe8833406cde3c983af7532a8b8a42f183bc800397f972571907710",
+  "limitations": [
+    "AI-vs-AI reliability diagnostic, not human gold or factual truth certification.",
+    "Current static retrieved text support, not historical availability or semantic drift.",
+    "Source roles describe intended citation roles, not truth or authority.",
+    "A literal quote can still fail to entail a fixed claim; strict validation is necessary, not sufficient.",
+    "Original posts/media are unavailable; exact visual identity cannot be inferred from unspecified background articles.",
+    "Same-post pairs may make different corrections; alignment labels also showed limited recode reliability.",
+    "Observed API enrollment is not proof of AI composition; non-API is not verified human writing.",
+    "Conditional currently-Helpful same-post sample, not a causal authorship effect or population-wide rate."
+  ]
+}
