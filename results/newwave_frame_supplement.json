@@ -1,0 +1,17 @@
+{
+  "analysis_kind": "frame_descriptor_crosschecks",
+  "target_pairs": 1882,
+  "selected_author_accounts": {
+    "ai": {
+      "count": 26,
+      "top_10_share": 0.9399574920297555,
+      "inverse_hhi": 8.782616889171013
+    },
+    "non_api": {
+      "count": 1648,
+      "top_10_share": 0.05579171094580234,
+      "inverse_hhi": 797.0126012601261
+    }
+  },
+  "descriptor_note": "Same frozen candidate file; no new source measurements."
+}

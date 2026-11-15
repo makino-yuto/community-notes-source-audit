@@ -1,0 +1,228 @@
+{
+  "analysis_kind": "post_result_secondary_conservative_finite_sample_design_outer_interval",
+  "created_utc": "2026-11-15T05:39:34.720479+00:00",
+  "status": "Conceived after outcomes; a secondary sensitivity, not a primary-analysis substitution or new label collection.",
+  "population_post_pairs": 1882,
+  "sampled_post_pairs": 240,
+  "familywise_alpha": 0.05,
+  "one_sided_tail_alpha": {
+    "numerator": 1,
+    "denominator": 320
+  },
+  "tail_bounds_used_for_simultaneous_claim": 16,
+  "coverage_argument": "Each stratum is sampled by SRS without replacement. For fixed endpoint d in {-1,0,+1}, its positive-count and negative-count marginals are hypergeometric. Inclusive exact-tail inversion bounds each required count one-sided with noncoverage <=1/320. Four required tails per stratum (lower dL plus, upper dL minus, upper dU plus, lower dU minus) across four strata give at least 95% joint coverage by the union bound, with no independence assumption between categories or strata required for that bound. Summing count differences and dividing by 1882 yields an outer interval for both finite-population missing-content endpoints simultaneously.",
+  "unused_scalar_bounds": "Both scalar one-sided limits are displayed for auditability, but only the specified 16 directional limits enter the familywise claim; simultaneous coverage of every displayed scalar limit is not asserted.",
+  "integer_comparison": "Tail numerator multiplied by 320 is compared strictly with comb(N,n); integer arithmetic avoids numerical tail-threshold error.",
+  "strata": {
+    "both": {
+      "population_pairs": 1436,
+      "sampled_pairs": 60,
+      "dL": {
+        "sample_counts": {
+          "positive": 0,
+          "zero": 58,
+          "negative": 2
+        },
+        "population_positive_count_one_sided_bounds": [
+          0,
+          128
+        ],
+        "population_negative_count_one_sided_bounds": [
+          3,
+          217
+        ],
+        "sample_endpoint_mean": -0.03333333333333333,
+        "conservative_population_endpoint_total_lower": -217
+      },
+      "dU": {
+        "sample_counts": {
+          "positive": 4,
+          "zero": 56,
+          "negative": 0
+        },
+        "population_positive_count_one_sided_bounds": [
+          16,
+          289
+        ],
+        "population_negative_count_one_sided_bounds": [
+          0,
+          128
+        ],
+        "sample_endpoint_mean": 0.06666666666666667,
+        "conservative_population_endpoint_total_upper": 289
+      }
+    },
+    "ai_only": {
+      "population_pairs": 265,
+      "sampled_pairs": 60,
+      "dL": {
+        "sample_counts": {
+          "positive": 16,
+          "zero": 43,
+          "negative": 1
+        },
+        "population_positive_count_one_sided_bounds": [
+          39,
+          112
+        ],
+        "population_negative_count_one_sided_bounds": [
+          1,
+          29
+        ],
+        "sample_endpoint_mean": 0.25,
+        "conservative_population_endpoint_total_lower": 10
+      },
+      "dU": {
+        "sample_counts": {
+          "positive": 31,
+          "zero": 29,
+          "negative": 0
+        },
+        "population_positive_count_one_sided_bounds": [
+          95,
+          178
+        ],
+        "population_negative_count_one_sided_bounds": [
+          0,
+          21
+        ],
+        "sample_endpoint_mean": 0.5166666666666667,
+        "conservative_population_endpoint_total_upper": 178
+      }
+    },
+    "non_api_only": {
+      "population_pairs": 96,
+      "sampled_pairs": 60,
+      "dL": {
+        "sample_counts": {
+          "positive": 1,
+          "zero": 46,
+          "negative": 13
+        },
+        "population_positive_count_one_sided_bounds": [
+          1,
+          8
+        ],
+        "population_negative_count_one_sided_bounds": [
+          14,
+          31
+        ],
+        "sample_endpoint_mean": -0.2,
+        "conservative_population_endpoint_total_lower": -30
+      },
+      "dU": {
+        "sample_counts": {
+          "positive": 6,
+          "zero": 48,
+          "negative": 6
+        },
+        "population_positive_count_one_sided_bounds": [
+          6,
+          18
+        ],
+        "population_negative_count_one_sided_bounds": [
+          6,
+          18
+        ],
+        "sample_endpoint_mean": 0.0,
+        "conservative_population_endpoint_total_upper": 12
+      }
+    },
+    "neither": {
+      "population_pairs": 85,
+      "sampled_pairs": 60,
+      "dL": {
+        "sample_counts": {
+          "positive": 5,
+          "zero": 43,
+          "negative": 12
+        },
+        "population_positive_count_one_sided_bounds": [
+          5,
+          14
+        ],
+        "population_negative_count_one_sided_bounds": [
+          12,
+          25
+        ],
+        "sample_endpoint_mean": -0.11666666666666667,
+        "conservative_population_endpoint_total_lower": -20
+      },
+      "dU": {
+        "sample_counts": {
+          "positive": 15,
+          "zero": 44,
+          "negative": 1
+        },
+        "population_positive_count_one_sided_bounds": [
+          16,
+          29
+        ],
+        "population_negative_count_one_sided_bounds": [
+          1,
+          6
+        ],
+        "sample_endpoint_mean": 0.23333333333333334,
+        "conservative_population_endpoint_total_upper": 28
+      }
+    }
+  },
+  "frozen_primary_reproduced": {
+    "estimated_missing_content_bounds": [
+      -0.005703152674459794,
+      0.134156925256819
+    ],
+    "approx_normal_bonferroni_outer_interval": [
+      -0.04870207788796188,
+      0.19168382817768578
+    ]
+  },
+  "finite_sample_conservative_outer_interval": {
+    "lower_total": -257,
+    "upper_total": 507,
+    "denominator": 1882,
+    "bounds": [
+      -0.1365568544102019,
+      0.269394261424017
+    ]
+  },
+  "independent_exhaustive_small_state_verification": {
+    "independent_method": "Exhaustively enumerated every sample subset as a bitmask; no hypergeometric PMF was used to form the verification distributions. Compared inclusive tails and exhaustive K scans with integer-sum tails and binary inversions.",
+    "population_sizes": [
+      1,
+      16
+    ],
+    "all_sample_sizes_including_zero_and_census": true,
+    "all_population_positive_counts": true,
+    "N_n_K_configurations": 1784,
+    "tail_comparisons": 25192,
+    "binary_inversion_vs_exhaustive_scan_checks": 968,
+    "census_collapse_checks": 152,
+    "configurations_with_nonzero_scalar_noncoverage": 143,
+    "maximum_lower_bound_noncoverage": {
+      "numerator": 1,
+      "denominator": 330,
+      "probability": 0.0030303030303030303
+    },
+    "maximum_upper_bound_noncoverage": {
+      "numerator": 1,
+      "denominator": 330,
+      "probability": 0.0030303030303030303
+    },
+    "every_one_sided_failure_probability_at_most_1_over_320": true
+  },
+  "limitations": [
+    "Coverage is conditional on the fixed target population, random pair-sampling design, and fixed correct AI-assisted browser observations/endpoint states; it does not cover AI classification error, changing pages, browser-profile differences, or generalization to new authors/posts.",
+    "The interval is conservative because 16 tails receive equal Bonferroni allocation, count-category feasibility is not jointly optimized, and primary unknown-content bounds can themselves be conservative for shared URLs.",
+    "The point estimates and unknown-content bounds remain those of the frozen primary analysis. This sensitivity changes only the sampling-uncertainty calculation."
+  ],
+  "input_sha256": {
+    "newwave_browser_freeze.json": "f954945dba7fa45d635c816ebb9a8e5c8a97a36842d4ddd247df318eec2919d8",
+    "newwave_browser_key_PRIVATE.json": "df19517a61a6850d3cf3613aae84ff5835b227afb535ab3fe6afb62ae2c16670",
+    "newwave_browser_aggregate_with_recode.json": "d94d0ddb3898b2446b6cf186107d3da621919c967637e67532d62a6461f77b7f",
+    "newwave_browser_a_normalized.jsonl": "21c0a8f5fc153cb75747320a5a6a36c87e1ad4b64b98ffe3c43ece0cf1ab9c00",
+    "newwave_browser_b.jsonl": "024d22437b8e8fa12751440b5c801a14949a746eca46bac34048697f477c0789",
+    "newwave_browser_c_normalized.jsonl": "3b765cac05f9e4b6f7943bd00846dd11608e439e8ca2a4228598ebd921df748f"
+  },
+  "script_sha256": "4db0bddcda7e957dc349743f614ae5299a6622a0d503be238960a53e2087589f"
+}

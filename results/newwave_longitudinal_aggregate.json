@@ -1,0 +1,104 @@
+{
+  "both_semantically_assessable_distinct_notes": 18,
+  "both_semantically_assessable_units": 18,
+  "counts": {
+    "effective_unknown_judgment_items": 8,
+    "invalid_or_failed_model_items": 8,
+    "panel_units": 100,
+    "parser_paired_units": 31,
+    "raw_model_executions_valid": 54
+  },
+  "detailed_transitions_conditional_on_both_assessed": {
+    "FULL->FULL": 3,
+    "NONE->NONE": 4,
+    "NONE->PARTIAL": 1,
+    "PARTIAL->FULL": 1,
+    "PARTIAL->NONE": 2,
+    "PARTIAL->PARTIAL": 7
+  },
+  "exploratory_group_counts": {
+    "AI_API": {
+      "both_semantically_assessable": 12,
+      "current_full_complete_case": 3,
+      "historical_full_complete_case": 2,
+      "lower_sum": -49,
+      "panel": 65,
+      "parser_paired": 20,
+      "upper_sum": 52
+    },
+    "non_API": {
+      "both_semantically_assessable": 6,
+      "current_full_complete_case": 1,
+      "historical_full_complete_case": 1,
+      "lower_sum": -27,
+      "panel": 35,
+      "parser_paired": 11,
+      "upper_sum": 27
+    }
+  },
+  "frozen_packet_sha256": "5700d260dae77adc428389b2d2436af65a1202d8acd7777071cda8174ac4a2a6",
+  "full_current_minus_historical_100_unit_missingness_bounds": {
+    "lower": -0.76,
+    "unit": "proportion",
+    "upper": 0.79
+  },
+  "full_support_transitions_conditional_on_both_assessed": {
+    "both_full": 3,
+    "current_full_only": 1,
+    "historical_full_only": 0,
+    "neither_full": 14
+  },
+  "independent_review_candidates": {
+    "all_full_label_change": 1,
+    "with_different_judged_text": 1,
+    "with_identical_judged_text": 0
+  },
+  "interpretation": "AI source-to-claim labels are not note truth. Unknown includes invalid judgments, UNASSESSABLE bodies, and the 69 units without parser-level pairs. Bounds retain all 100 units. Label changes do not establish semantic source drift; candidates require separate identity/text review. Most successful captures predate note creation.",
+  "judgment_protocol_sha256": "958fe79187d1d0e34821a271bb6743b869720135585c453fc1cbfa7c76f7a249",
+  "judgment_v1_log_sha256": "d7441ccd4df7b09aa96a392596ada098500159589d50468de87c5c9902c1dc33",
+  "judgment_v2_log_sha256": "4ff72cd56ce65df4300b35578a5826cf6154f917503037eee2c17388eb09dd28",
+  "labels_among_31_parser_pairs": {
+    "current": {
+      "FULL": 6,
+      "INVALID_OR_INCONSISTENT_EXECUTION": 3,
+      "NONE": 6,
+      "PARTIAL": 10,
+      "UNASSESSABLE": 6
+    },
+    "historical": {
+      "FULL": 5,
+      "INVALID_OR_INCONSISTENT_EXECUTION": 5,
+      "NONE": 7,
+      "PARTIAL": 11,
+      "UNASSESSABLE": 3
+    }
+  },
+  "no_retry_continuation_protocol_sha256": "59061103b9e2b0e16787f50203748ee98cf2c9ea536898962e62c88a5adae11e",
+  "prespecified_descriptive_paired_gate_met": false,
+  "replay_outcomes_on_all_100_units": {
+    "body_replayed_parseable_text": 31,
+    "body_too_large_unassessable": 1,
+    "cdx_error_no_body_replay": 1,
+    "no_eligible_exact_original_capture": 58,
+    "transport_failure": 9
+  },
+  "replay_sha256": "504fae5f402b2946cb3dc3e09175da79f478b5e41bc1c843440a3062ff629c14",
+  "schema": "newwave-longitudinal-aggregate-v1",
+  "selection_sha256": "b7002926296de4f046f78e0aff601d882779ea375bddb5a0628ed69e89cd6ffb",
+  "source_text_diagnostics_on_31_parser_pairs": {
+    "equal_judged_first_24000_characters_hash": 7,
+    "equal_saved_main_text_hash": 7,
+    "same_valid_ai_label": 16
+  },
+  "timing": {
+    "post_note_creation_and_both_assessable": 2,
+    "post_note_creation_both_assessable_distinct_notes": 2,
+    "post_note_creation_captures_among_31_parser_pairs": 6,
+    "post_note_creation_full_transitions": {
+      "both_full": 0,
+      "current_full_only": 0,
+      "historical_full_only": 0,
+      "neither_full": 2
+    }
+  }
+}

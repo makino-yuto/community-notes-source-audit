@@ -1,3 +1,8 @@
 # Scientific manifests pin exact bytes, including recorded line endings.
 # Disable platform-dependent newline conversion for research artifacts.
 * -text
+
+# Rendered research assets are binary; preserve their bytes and omit text diffs.
+*.pdf binary
+*.png binary
+*.ttf binary

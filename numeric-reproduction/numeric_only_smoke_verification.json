@@ -1,0 +1,16 @@
+{
+  "analysis_kind": "standalone_numeric_package_only_smoke_test",
+  "minimal_inputs": [
+    "manifest.json",
+    "data/machine_pairs_anonymous.csv",
+    "data/browser_pairs_anonymous.csv",
+    "src/reproduce_newwave_secondary_public.py"
+  ],
+  "ran_default_package_path_with_self_test": true,
+  "output_matches_staged_result_exactly": true,
+  "base_csv_and_manifest_bytes_match_smoke_copies": true,
+  "network_or_private_inputs_required": false,
+  "script_sha256": "e0fc7061bbec5e2ef2f3165ea32106479a79e6b76f57dff26d995616fb0c8b66",
+  "result_sha256": "aaef505ad6ce40614b621059ac46af4dad67134a958b38d94ea33256326429d5",
+  "limitations": "Arithmetic portability test, not historical source-label validation."
+}

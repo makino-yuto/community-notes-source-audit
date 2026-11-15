@@ -1,0 +1,14 @@
+{
+  "notes": 200,
+  "pairs": 100,
+  "content_urls": 319,
+  "source_slots": 357,
+  "packet_sha256": "fe88000e7fd1074d838bd098038e03889466494d8312e5e4ddb53317c5165a8f",
+  "inputs_sha256": {
+    "newwave_semantic_key_PRIVATE.json": "8246f299b02fe7feb4a6dd8cef29e9861e22517e16c5aa5a8ac568b2b5ef3e4f",
+    "revision_samepost_candidates_v2_PRIVATE.jsonl": "fb2eb694f1d8bac74a98e5a27b8c7478ca4f6324d50cc05819281f94c942e39d",
+    "newwave_alignment_trials_PRIVATE.jsonl": "282fbde3e1cfe8100d2baa9798fdb0c0aa169d349a4bfd91893d18b1e096d8b1",
+    "newwave_semantic_content_PRIVATE.jsonl": "c257722d92953e1a3e27b63831155dd547e56fd5580e3018df84ffb1e4db1d72",
+    "newwave_prepare_support_packet.py": "bc0ef28808e5244bba18b2f48d4ed8f22673496fb04ac6701aa1f685d5c6f05d"
+  }
+}

@@ -1,0 +1,5 @@
+# Optional report/figure rebuild environment used for this revision.
+matplotlib==3.11.2
+reportlab==5.1.0
+mistune==3.4.0
+pypdf==7.1.0

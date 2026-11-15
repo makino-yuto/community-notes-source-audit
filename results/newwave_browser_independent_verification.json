@@ -1,0 +1,140 @@
+{
+  "analysis_kind": "independent_browser_and_machine_arithmetic_verification",
+  "input_sha256": {
+    "browser_c_original": "ec2ae9ae6e0b3c273d1ee2182d083440c1aed63dcb4821bd7d16c9b8594d8281",
+    "browser_aggregate": "a61898eb279792b829a74d4ced9e7e69c515fa622c62adf32bfd879449437b9a",
+    "machine_aggregate": "4254f9f3e8fb19c27a5a1a536617f50ba7bb6e5b3a888cdf29be04a19884b3cb"
+  },
+  "checks": {
+    "target_population_matches": true,
+    "sample_size_matches": true,
+    "url_count_matches": true,
+    "baseline_point_matches": true,
+    "baseline_lower_matches": true,
+    "baseline_upper_matches": true,
+    "baseline_point_se_matches": true,
+    "baseline_lower_se_matches": true,
+    "baseline_upper_se_matches": true,
+    "outer_interval_matches": true
+  },
+  "frame_strata_independently_match_machine_census": true,
+  "machine_redundancy_algebra_independently_matches": true,
+  "machine_mixed_open_and_non_open_note_counts": {
+    "AI_API": 538,
+    "non_API": 200
+  },
+  "url_label_counts": {
+    "not_accessible": 105,
+    "accessible": 486,
+    "unresolved": 83
+  },
+  "policy_not_observed_urls": 9,
+  "sensitivity": {
+    "baseline": {
+      "newly_unknown_urls": 0,
+      "paired_any_source_difference": {
+        "identified_lower": {
+          "estimate": -0.005703152674459794,
+          "design_se": 0.01918393543647046
+        },
+        "identified_upper": {
+          "estimate": 0.134156925256819,
+          "design_se": 0.02566558084915745
+        },
+        "unresolved_as_inaccessible": {
+          "estimate": 0.09129472192702799,
+          "design_se": 0.03186219702673361
+        },
+        "approx_bonferroni_95_outer_interval": [
+          -0.04870207788796188,
+          0.19168382817768578
+        ]
+      }
+    },
+    "authenticated_access_to_unknown": {
+      "newly_unknown_urls": 53,
+      "paired_any_source_difference": {
+        "identified_lower": {
+          "estimate": -0.07076691462982643,
+          "design_se": 0.030653849522658247
+        },
+        "identified_upper": {
+          "estimate": 0.24001948281969535,
+          "design_se": 0.03854428988629095
+        },
+        "unresolved_as_inaccessible": {
+          "estimate": 0.1320935175345377,
+          "design_se": 0.04194112821670161
+        },
+        "approx_bonferroni_95_outer_interval": [
+          -0.13947453656150421,
+          0.32641275930442365
+        ]
+      }
+    },
+    "abstract_only_to_unknown": {
+      "newly_unknown_urls": 2,
+      "paired_any_source_difference": {
+        "identified_lower": {
+          "estimate": -0.005703152674459794,
+          "design_se": 0.01918393543647046
+        },
+        "identified_upper": {
+          "estimate": 0.134156925256819,
+          "design_se": 0.02566558084915745
+        },
+        "unresolved_as_inaccessible": {
+          "estimate": 0.09129472192702799,
+          "design_se": 0.03186219702673361
+        },
+        "approx_bonferroni_95_outer_interval": [
+          -0.04870207788796188,
+          0.19168382817768578
+        ]
+      }
+    },
+    "one_hop_pdf_to_unknown": {
+      "newly_unknown_urls": 1,
+      "paired_any_source_difference": {
+        "identified_lower": {
+          "estimate": -0.005703152674459794,
+          "design_se": 0.01918393543647046
+        },
+        "identified_upper": {
+          "estimate": 0.14687389302160822,
+          "design_se": 0.028154468033326416
+        },
+        "unresolved_as_inaccessible": {
+          "estimate": 0.10401168969181722,
+          "design_se": 0.034053746796018074
+        },
+        "approx_bonferroni_95_outer_interval": [
+          -0.04870207788796188,
+          0.20997939446577235
+        ]
+      }
+    },
+    "all_three_to_unknown": {
+      "newly_unknown_urls": 56,
+      "paired_any_source_difference": {
+        "identified_lower": {
+          "estimate": -0.07076691462982643,
+          "design_se": 0.030653849522658247
+        },
+        "identified_upper": {
+          "estimate": 0.2527364505844846,
+          "design_se": 0.03978496157201286
+        },
+        "unresolved_as_inaccessible": {
+          "estimate": 0.14481048529932694,
+          "design_se": 0.04344832845143513
+        },
+        "approx_bonferroni_95_outer_interval": [
+          -0.13947453656150421,
+          0.3419105719696522
+        ]
+      }
+    }
+  },
+  "interpretation": "Sensitivity turns profile-authenticated, abstract-only, or one-hop-PDF accessible content into unresolved, not inaccessible. Denominators and post-pair design weights remain fixed. Normal finite-population intervals cover only random sampling of pairs within four machine-defined strata; they do not cover browser annotation error, site changes, or dependence among URLs and authors."
+}

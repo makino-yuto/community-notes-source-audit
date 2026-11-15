@@ -1,0 +1,24 @@
+{
+  "analysis_kind": "public_numeric_secondary_reproduction_matches_private_key_aggregates",
+  "public_runtime_inputs": "Unchanged numeric package manifest and two anonymous CSVs only; no private inputs or network.",
+  "aggregate_numeric_values_compared": 153,
+  "all_compared_values_match_to_1e_minus_12": true,
+  "matched_analyses": [
+    "Note-level weighted machine/browser joint fractions, net contrasts and endpoint design SEs",
+    "Conditional diagnostics using exact census denominators",
+    "Exact-tail stratum counts and scalar population limits",
+    "Finite-sample interval and frozen primary bounds/normal interval",
+    "Independent exhaustive small-state verification"
+  ],
+  "comparison_input_sha256": {
+    "secondary_reproduced.json": "aaef505ad6ce40614b621059ac46af4dad67134a958b38d94ea33256326429d5",
+    "newwave_measurement_disagreement_secondary.json": "b2b0e05beb51a8d914d49bf6ca8ff5a627226a42ad4a5071eafad0b12484246e",
+    "newwave_finite_sample_bounds_secondary.json": "b41516877bd2c942f50302c5f77ce5f55c73656f84e277ff4f235d7d72384440"
+  },
+  "unchanged_base_csv_sha256": {
+    "manifest.json": "7282260374eb2e866ee9ee0e4eee7ae738aed07d41024d6e6decc386fd6ecbfd",
+    "data/machine_pairs_anonymous.csv": "2d89ae33aef8902f9f03b8ab0adb1effafc20bb4f80d52e6a262748d99e4f05a",
+    "data/browser_pairs_anonymous.csv": "1c83f60ac7da4c44d455a03f18647b24ffcbfb0fc1b2acaf77909abba521e3e4"
+  },
+  "limitations": "This verifies arithmetic against aggregate analyses, not historical source labels. Reference-level cross-channel disagreement is not reconstructible from the public CSVs and is excluded."
+}

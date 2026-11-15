@@ -1,0 +1,19 @@
+{
+  "analysis_kind": "independent_secondary_arithmetic_verification",
+  "weighted_estimates_independently_checked_with_exact_rational_sums": 36,
+  "joint_fraction_net_difference_identities_checked": 8,
+  "exact_hypergeometric_boundary_and_neighbor_inequalities_checked": 64,
+  "exact_global_endpoint_totals_reproduced": [
+    -257,
+    507
+  ],
+  "frozen_primary_input_hashes_match": true,
+  "new_result_script_hashes_match": true,
+  "limitations": "Arithmetic verification is not independent source-label adjudication or empirical validation of the hypothetical fixed-page-state sampling model.",
+  "input_sha256": {
+    "newwave_measurement_disagreement_secondary.json": "b2b0e05beb51a8d914d49bf6ca8ff5a627226a42ad4a5071eafad0b12484246e",
+    "newwave_finite_sample_bounds_secondary.json": "b41516877bd2c942f50302c5f77ce5f55c73656f84e277ff4f235d7d72384440",
+    "newwave_browser_aggregate_with_recode.json": "d94d0ddb3898b2446b6cf186107d3da621919c967637e67532d62a6461f77b7f"
+  },
+  "script_sha256": "4a5ea25a0e0427979934e714b418dd16eb94f1b11069b7635d8dfebb5f2fb4b1"
+}

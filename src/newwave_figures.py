@@ -1,7 +1,7 @@
 """Figure 1 from public aggregates only; no case-level data or support funnel.
 
 Example: python src/newwave_figures.py --output-dir output/figures
-The thick browser contrast is an identified set, not a confidence interval.
+The thick browser contrast shows conservative bounds, not a confidence interval.
 """
 from __future__ import annotations
 
@@ -63,7 +63,7 @@ def make_figure(machine_path: Path, browser_path: Path, output_dir: Path, font_d
     fig.text(.075, .94, 'Machine access census', fontsize=11, weight='bold')
     fig.text(.075, .885, f'{n:,} same-post pairs; all cited URLs', fontsize=8.5)
     fig.text(.55, .94, 'B', fontsize=12, weight='bold')
-    fig.text(.60, .94, 'Browser-profile validation', fontsize=11, weight='bold')
+    fig.text(.60, .94, 'AI-assisted browser audit', fontsize=11, weight='bold')
     fig.text(.60, .885, f"{browser['sampled_pairs']:,} sampled pairs; weighted estimates", fontsize=8.5)
     groups = ['AI_API', 'non_API']
     for y, group in zip([1, 0], groups):
@@ -110,13 +110,13 @@ def make_figure(machine_path: Path, browser_path: Path, output_dir: Path, font_d
     ax_b_diff.plot(outer, [0, 0], color='#4D4D4D', lw=1, zorder=1)
     ax_b_diff.plot(outer, [0, 0], ls='', marker='|', markersize=10, color='#4D4D4D')
     ax_b_diff.add_patch(Rectangle((lower, -.07), upper - lower, .14, color='#6B4774', zorder=3))
-    ax_b_diff.text((lower + upper) / 2, .28, f'Identified set: {lower:+.1f} to {upper:+.1f}', ha='center', fontsize=8.3, color='#56365E')
+    ax_b_diff.text((lower + upper) / 2, .28, f'Conservative bounds: {lower:+.1f} to {upper:+.1f}', ha='center', fontsize=8.3, color='#56365E')
     ax_b_diff.text((outer[0] + outer[1]) / 2, -.36, f'95% outer interval: {outer[0]:+.1f} to {outer[1]:+.1f}', ha='center', fontsize=8.2)
     ax_b_diff.set(ylim=(-.65, .65), xlim=(-10, 25), xticks=[-10, 0, 10, 20], yticks=[])
     ax_b_diff.set_title('Paired cohort difference', loc='left', fontsize=8.7, pad=7)
     ax_b_diff.set_xlabel('Difference (percentage points)', fontsize=8.5, labelpad=3)
     ax_b_diff.spines['left'].set_visible(False)
-    fig.text(.60, .055, 'Thick: identified set. Thin: outer design interval.', fontsize=8, color='#444444')
+    fig.text(.60, .055, 'Thick: bounds. Thin: outer 95% interval.', fontsize=8, color='#444444')
     output_dir.mkdir(parents=True, exist_ok=True)
     stem = output_dir / 'newwave_access_figure1'
     fig.savefig(stem.with_suffix('.png'), dpi=400)
@@ -125,16 +125,19 @@ def make_figure(machine_path: Path, browser_path: Path, output_dir: Path, font_d
     caption = (f'Figure 1. Current citation access and uncertainty in the same-post target population. '
                f'(A) Machine census of {n:,} pairs: filled diamonds show any cited URL being machine-open; '
                'open circles show the expected open probability for one uniformly chosen distinct citation within each note. '
-               f'(B) Stratified browser-profile validation of {browser["sampled_pairs"]:,} pairs. Group segments show '
+               f'(B) Stratified AI-assisted browser-profile classifications of {browser["sampled_pairs"]:,} pairs. Group segments show '
                'weighted lower and upper estimates when unresolved content is respectively unavailable or available. '
-               f'The paired difference has an unresolved-content identified set of {lower:+.1f} to {upper:+.1f} percentage points '
+               f'The paired difference has conservative unresolved-content bounds of {lower:+.1f} to {upper:+.1f} percentage points '
                f'(thick segment), with a Bonferroni 95% outer design interval of {outer[0]:+.1f} to {outer[1]:+.1f} points '
-               '(thin line). The identified set is not a confidence interval. Browser-profile access may depend on existing '
+               '(thin line). The thick segment is not a confidence interval. Bounds are conservative when the same unknown '
+               'URL occurs in both notes. Intervals condition on AI classifications and exclude annotation error. '
+               'Browser-profile access may depend on existing '
                'cookies and does not establish claim support. Neither panel estimates a causal authorship effect.')
     (output_dir / 'newwave_access_figure1_caption.txt').write_text(caption + '\n', encoding='utf-8')
     metadata = {'machine_aggregate_sha256': sha(machine_path), 'browser_aggregate_sha256': sha(browser_path),
                 'utility_sha256': sha(Path(__file__)), 'width_inches': 6.5, 'height_inches': 3.72, 'png_dpi': 400,
-                'font': 'Old Standard TT', 'paired_identified_set_percentage_points': [lower, upper],
+                'font': 'Old Standard TT', 'paired_conservative_bounds_percentage_points': [lower, upper],
+                'bounds_interpretation': 'Conservative primary bounds; shared-URL consistency is a separate sensitivity analysis.',
                 'outer_95_design_interval_percentage_points': outer, 'caption': caption,
                 'outputs_sha256': {suffix: sha(stem.with_suffix(suffix)) for suffix in ['.pdf', '.png']}}
     (output_dir / 'newwave_access_figure1_manifest.json').write_text(json.dumps(metadata, indent=2) + '\n', encoding='utf-8')

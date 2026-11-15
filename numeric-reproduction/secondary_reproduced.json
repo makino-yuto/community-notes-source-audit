@@ -1,0 +1,346 @@
+{
+  "schema": "newwave-secondary-public-reproduction-v1",
+  "status": "Secondary analyses conceived after field results. Frozen primary analysis and labels are unchanged.",
+  "units": {
+    "population_post_pairs": 1882,
+    "sampled_post_pairs": 240,
+    "population_notes_per_group": 1882,
+    "sampled_notes_per_group": 240
+  },
+  "note_level_any_source": {
+    "AI_API": {
+      "population_notes": 1882,
+      "sampled_notes": 240,
+      "exact_census_machine_positive_notes": 1701,
+      "exact_census_machine_negative_notes": 181,
+      "weighted_estimates": {
+        "machine_positive": {
+          "estimate": 0.9038257173219979,
+          "design_se": 0.0
+        },
+        "browser_lower": {
+          "estimate": 0.9104233085370174,
+          "design_se": 0.024624400049104517
+        },
+        "browser_upper": {
+          "estimate": 0.9532855118668084,
+          "design_se": 0.017795748109932254
+        },
+        "machine_positive_browser_negative_lower": {
+          "estimate": 0.030127523910733263,
+          "design_se": 0.01769326798330621
+        },
+        "machine_positive_browser_negative_upper": {
+          "estimate": 0.057908253630889125,
+          "design_se": 0.024508906199760292
+        },
+        "machine_negative_browser_positive_lower": {
+          "estimate": 0.06450584484590861,
+          "design_se": 0.002382140774532459
+        },
+        "machine_negative_browser_positive_upper": {
+          "estimate": 0.07958731845554375,
+          "design_se": 0.0019070707546047837
+        },
+        "browser_minus_machine_lower": {
+          "estimate": 0.006597591215019485,
+          "design_se": 0.024624400049104517
+        },
+        "browser_minus_machine_upper": {
+          "estimate": 0.04945979454481048,
+          "design_se": 0.017795748109932254
+        }
+      },
+      "conditional_fractions_using_exact_census_denominators": {
+        "browser_negative_among_machine_positive": {
+          "denominator_probability": 0.9038257173219979,
+          "lower": 0.03333333333333333,
+          "upper": 0.06407015481089555,
+          "endpoint_design_se": [
+            0.019575973159660368,
+            0.02711684977539616
+          ]
+        },
+        "browser_positive_among_machine_negative": {
+          "denominator_probability": 0.0961742826780021,
+          "lower": 0.6707182320441991,
+          "upper": 0.8275322283609579,
+          "endpoint_design_se": [
+            0.02476899965563585,
+            0.019829321326885103
+          ]
+        }
+      }
+    },
+    "non_API": {
+      "population_notes": 1882,
+      "sampled_notes": 240,
+      "exact_census_machine_positive_notes": 1532,
+      "exact_census_machine_negative_notes": 350,
+      "weighted_estimates": {
+        "machine_positive": {
+          "estimate": 0.8140276301806588,
+          "design_se": 0.0
+        },
+        "browser_lower": {
+          "estimate": 0.8191285866099894,
+          "design_se": 0.030327505309142903
+        },
+        "browser_upper": {
+          "estimate": 0.9161264612114771,
+          "design_se": 0.019035779545937142
+        },
+        "machine_positive_browser_negative_lower": {
+          "estimate": 0.02883457314913213,
+          "design_se": 0.01748439976706704
+        },
+        "machine_positive_browser_negative_upper": {
+          "estimate": 0.0831030818278427,
+          "design_se": 0.02920445894174859
+        },
+        "machine_negative_browser_positive_lower": {
+          "estimate": 0.08820403825717321,
+          "design_se": 0.008176622542089852
+        },
+        "machine_negative_browser_positive_upper": {
+          "estimate": 0.1309334041799504,
+          "design_se": 0.007527062355720511
+        },
+        "browser_minus_machine_lower": {
+          "estimate": 0.005100956429330502,
+          "design_se": 0.030327505309142903
+        },
+        "browser_minus_machine_upper": {
+          "estimate": 0.10209883103081827,
+          "design_se": 0.019035779545937142
+        }
+      },
+      "conditional_fractions_using_exact_census_denominators": {
+        "browser_negative_among_machine_positive": {
+          "denominator_probability": 0.8140276301806588,
+          "lower": 0.03542210617928634,
+          "upper": 0.102088772845953,
+          "endpoint_design_se": [
+            0.0214788775206398,
+            0.035876495906247294
+          ]
+        },
+        "browser_positive_among_machine_negative": {
+          "denominator_probability": 0.18597236981934118,
+          "lower": 0.4742857142857141,
+          "upper": 0.7040476190476188,
+          "endpoint_design_se": [
+            0.04396686749775171,
+            0.040474089581331425
+          ]
+        }
+      }
+    }
+  },
+  "finite_sample_sensitivity": {
+    "estimated_missing_content_bounds": [
+      -0.005703152674459794,
+      0.134156925256819
+    ],
+    "endpoint_design_se": [
+      0.01918393543647046,
+      0.02566558084915745
+    ],
+    "approx_normal_bonferroni_outer_interval": [
+      -0.04870207788796188,
+      0.19168382817768578
+    ],
+    "strata": {
+      "both": {
+        "population_pairs": 1436,
+        "sampled_pairs": 60,
+        "dL": {
+          "sample_counts": {
+            "positive": 0,
+            "zero": 58,
+            "negative": 2
+          },
+          "population_positive_count_one_sided_bounds": [
+            0,
+            128
+          ],
+          "population_negative_count_one_sided_bounds": [
+            3,
+            217
+          ]
+        },
+        "dU": {
+          "sample_counts": {
+            "positive": 4,
+            "zero": 56,
+            "negative": 0
+          },
+          "population_positive_count_one_sided_bounds": [
+            16,
+            289
+          ],
+          "population_negative_count_one_sided_bounds": [
+            0,
+            128
+          ]
+        }
+      },
+      "ai_only": {
+        "population_pairs": 265,
+        "sampled_pairs": 60,
+        "dL": {
+          "sample_counts": {
+            "positive": 16,
+            "zero": 43,
+            "negative": 1
+          },
+          "population_positive_count_one_sided_bounds": [
+            39,
+            112
+          ],
+          "population_negative_count_one_sided_bounds": [
+            1,
+            29
+          ]
+        },
+        "dU": {
+          "sample_counts": {
+            "positive": 31,
+            "zero": 29,
+            "negative": 0
+          },
+          "population_positive_count_one_sided_bounds": [
+            95,
+            178
+          ],
+          "population_negative_count_one_sided_bounds": [
+            0,
+            21
+          ]
+        }
+      },
+      "non_api_only": {
+        "population_pairs": 96,
+        "sampled_pairs": 60,
+        "dL": {
+          "sample_counts": {
+            "positive": 1,
+            "zero": 46,
+            "negative": 13
+          },
+          "population_positive_count_one_sided_bounds": [
+            1,
+            8
+          ],
+          "population_negative_count_one_sided_bounds": [
+            14,
+            31
+          ]
+        },
+        "dU": {
+          "sample_counts": {
+            "positive": 6,
+            "zero": 48,
+            "negative": 6
+          },
+          "population_positive_count_one_sided_bounds": [
+            6,
+            18
+          ],
+          "population_negative_count_one_sided_bounds": [
+            6,
+            18
+          ]
+        }
+      },
+      "neither": {
+        "population_pairs": 85,
+        "sampled_pairs": 60,
+        "dL": {
+          "sample_counts": {
+            "positive": 5,
+            "zero": 43,
+            "negative": 12
+          },
+          "population_positive_count_one_sided_bounds": [
+            5,
+            14
+          ],
+          "population_negative_count_one_sided_bounds": [
+            12,
+            25
+          ]
+        },
+        "dU": {
+          "sample_counts": {
+            "positive": 15,
+            "zero": 44,
+            "negative": 1
+          },
+          "population_positive_count_one_sided_bounds": [
+            16,
+            29
+          ],
+          "population_negative_count_one_sided_bounds": [
+            1,
+            6
+          ]
+        }
+      }
+    },
+    "finite_sample_conservative_outer_interval": {
+      "lower_total": -257,
+      "upper_total": 507,
+      "denominator": 1882,
+      "bounds": [
+        -0.1365568544102019,
+        0.269394261424017
+      ]
+    },
+    "familywise_alpha": 0.05,
+    "one_sided_tail_alpha": {
+      "numerator": 1,
+      "denominator": 320
+    },
+    "directional_tail_bounds_used": 16
+  },
+  "interpretation": [
+    "Machine open_candidate and AI-assisted browser-profile content are distinct measurement channels, not factual truth or human-verified classifier accuracy.",
+    "Disagreement ranges are weighted estimated missing-content endpoints, not confidence intervals. Joint fractions use all notes as denominator; conditional diagnostics use exact census machine-positive/negative denominators.",
+    "At least 95% finite-population design coverage follows from sixteen directional exact-tail count bounds at alpha=1/320 each and the union bound, conditional on fixed endpoints and random pair sampling. It excludes annotation error, changing pages and external generalization.",
+    "The outer lower limit uses lower Kplus minus upper Kminus for dL; the outer upper uses upper Kplus minus lower Kminus for dU, summed over strata and divided by 1882. Both scalar limits are displayed, but joint coverage of every displayed limit is not asserted.",
+    "The independently shuffled CSVs are never joined. Browser stratum defines each note's machine-any status. The 674 unique URLs are not a representative URL sample.",
+    "Reference-level machine/browser matches are omitted from the public tables; within-note random-reference cross-channel disagreement cannot be reconstructed and is not attempted."
+  ],
+  "input_sha256": {
+    "manifest.json": "7282260374eb2e866ee9ee0e4eee7ae738aed07d41024d6e6decc386fd6ecbfd",
+    "data/machine_pairs_anonymous.csv": "2d89ae33aef8902f9f03b8ab0adb1effafc20bb4f80d52e6a262748d99e4f05a",
+    "data/browser_pairs_anonymous.csv": "1c83f60ac7da4c44d455a03f18647b24ffcbfb0fc1b2acaf77909abba521e3e4"
+  },
+  "script_sha256": "e0fc7061bbec5e2ef2f3165ea32106479a79e6b76f57dff26d995616fb0c8b66",
+  "independent_exhaustive_small_state_verification": {
+    "independent_method": "Exhaustively enumerated every sample subset as a bitmask; no hypergeometric PMF was used to form the verification distributions. Compared inclusive tails and exhaustive K scans with integer-sum tails and binary inversions.",
+    "population_sizes": [
+      1,
+      16
+    ],
+    "all_sample_sizes_including_zero_and_census": true,
+    "all_population_positive_counts": true,
+    "N_n_K_configurations": 1784,
+    "tail_comparisons": 25192,
+    "binary_inversion_vs_exhaustive_scan_checks": 968,
+    "census_collapse_checks": 152,
+    "configurations_with_nonzero_scalar_noncoverage": 143,
+    "maximum_lower_bound_noncoverage": {
+      "numerator": 1,
+      "denominator": 330,
+      "probability": 0.0030303030303030303
+    },
+    "maximum_upper_bound_noncoverage": {
+      "numerator": 1,
+      "denominator": 330,
+      "probability": 0.0030303030303030303
+    },
+    "every_one_sided_failure_probability_at_most_1_over_320": true
+  }
+}

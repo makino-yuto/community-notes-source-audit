@@ -1,0 +1,236 @@
+{
+  "analysis_kind": "exploratory_deterministic_offline_citation_priority",
+  "created_utc": "2026-11-15T05:03:47.371944+00:00",
+  "prospective_status": "Exploratory, specified after browser observations and overall results; no preregistration claim, fitting, parameter search, or outcome-based link choice.",
+  "policy": "Minimum frozen SHA-256 rank among machine open_candidates, or original minimum-hash link if no candidate. Optional abstaining variant offers no link in that case.",
+  "baseline": "Expected success of one uniformly chosen distinct network citation and the original fixed-hash citation.",
+  "interpretation": "Offline access comparison in the same browser-label sample; not a reader intervention, factual verification, or independent-source evidence.",
+  "target_pairs": 1882,
+  "sample_pairs": 240,
+  "browser_urls": 674,
+  "input_sha256": {
+    "script": "6ee727d91ff1adaa9f95d255d5245176c488115982cd726bfd13239b9cb1d5e6",
+    "freeze": "f954945dba7fa45d635c816ebb9a8e5c8a97a36842d4ddd247df318eec2919d8",
+    "labels": {
+      "newwave_browser_a_normalized.jsonl": "21c0a8f5fc153cb75747320a5a6a36c87e1ad4b64b98ffe3c43ece0cf1ab9c00",
+      "newwave_browser_b.jsonl": "024d22437b8e8fa12751440b5c801a14949a746eca46bac34048697f477c0789",
+      "newwave_browser_c_normalized.jsonl": "3b765cac05f9e4b6f7943bd00846dd11608e439e8ca2a4228598ebd921df748f"
+    }
+  },
+  "groups": {
+    "AI_API": {
+      "prioritized_lower": {
+        "estimate": 0.7888505136379739,
+        "design_se": 0.03939891392688966,
+        "normal_95": [
+          0.7116300613112766,
+          0.8660709659646711
+        ]
+      },
+      "prioritized_upper": {
+        "estimate": 0.9174017003188099,
+        "design_se": 0.024682528096314243,
+        "normal_95": [
+          0.869024834202636,
+          0.9657785664349837
+        ]
+      },
+      "fixed_hash_lower": {
+        "estimate": 0.7563761955366631,
+        "design_se": 0.041705225850491946,
+        "normal_95": [
+          0.67463545490259,
+          0.8381169361707362
+        ]
+      },
+      "fixed_hash_upper": {
+        "estimate": 0.8769040028338647,
+        "design_se": 0.03160707205496972,
+        "normal_95": [
+          0.8149552799493617,
+          0.9388527257183678
+        ]
+      },
+      "uniform_lower": {
+        "estimate": 0.7937920651788878,
+        "design_se": 0.029713128290684718,
+        "normal_95": [
+          0.7355554038611276,
+          0.852028726496648
+        ]
+      },
+      "uniform_upper": {
+        "estimate": 0.900647213366395,
+        "design_se": 0.022095601784310148,
+        "normal_95": [
+          0.8573406296524081,
+          0.9439537970803819
+        ]
+      },
+      "priority_gain_vs_uniform_lower": {
+        "estimate": -0.04233601960089736,
+        "design_se": 0.024111612702698768,
+        "normal_95": [
+          -0.08959391210736542,
+          0.004921872905570696
+        ]
+      },
+      "priority_gain_vs_uniform_upper": {
+        "estimate": 0.054148955012398185,
+        "design_se": 0.018466846454099867,
+        "normal_95": [
+          0.01795460105433124,
+          0.09034330897046514
+        ]
+      },
+      "priority_gain_vs_uniform_unknown_zero": {
+        "estimate": -0.004941551540913901,
+        "design_se": 0.0257646561550443,
+        "normal_95": [
+          -0.055439349678858954,
+          0.045556246597031155
+        ]
+      },
+      "machine_positive_coverage": {
+        "estimate": 0.9038257173219979,
+        "design_se": 0.0,
+        "normal_95": [
+          0.9038257173219979,
+          0.9038257173219979
+        ]
+      },
+      "abstaining_priority_success_lower": {
+        "estimate": 0.7301009564293306,
+        "design_se": 0.03931939768446033,
+        "normal_95": [
+          0.6530363530739808,
+          0.8071655597846804
+        ]
+      },
+      "abstaining_priority_success_upper": {
+        "estimate": 0.8435706695005314,
+        "design_se": 0.024586860093195675,
+        "normal_95": [
+          0.7953813092249428,
+          0.89176002977612
+        ]
+      },
+      "selected_differs_from_hash": {
+        "estimate": 0.1600247963159759,
+        "design_se": 0.036874915055378196,
+        "normal_95": [
+          0.08775129087446083,
+          0.232298301757491
+        ]
+      }
+    },
+    "non_API": {
+      "prioritized_lower": {
+        "estimate": 0.7873007438894793,
+        "design_se": 0.03406797671474698,
+        "normal_95": [
+          0.7205287365024261,
+          0.8540727512765326
+        ]
+      },
+      "prioritized_upper": {
+        "estimate": 0.9120793482111229,
+        "design_se": 0.019091389533422196,
+        "normal_95": [
+          0.8746609123107905,
+          0.9494977841114554
+        ]
+      },
+      "fixed_hash_lower": {
+        "estimate": 0.7720332979100248,
+        "design_se": 0.035694213891090884,
+        "normal_95": [
+          0.7020739242270174,
+          0.8419926715930323
+        ]
+      },
+      "fixed_hash_upper": {
+        "estimate": 0.8976620616365567,
+        "design_se": 0.022569046570058416,
+        "normal_95": [
+          0.853427543193835,
+          0.9418965800792785
+        ]
+      },
+      "uniform_lower": {
+        "estimate": 0.7790928681072147,
+        "design_se": 0.03173461007462608,
+        "normal_95": [
+          0.7168941752975256,
+          0.8412915609169037
+        ]
+      },
+      "uniform_upper": {
+        "estimate": 0.9058802692171449,
+        "design_se": 0.019895573110844382,
+        "normal_95": [
+          0.8668856624681064,
+          0.9448748759661835
+        ]
+      },
+      "priority_gain_vs_uniform_lower": {
+        "estimate": -0.008067658519305698,
+        "design_se": 0.010957846298844469,
+        "normal_95": [
+          -0.029544642613166385,
+          0.01340932557455499
+        ]
+      },
+      "priority_gain_vs_uniform_upper": {
+        "estimate": 0.022474613295548472,
+        "design_se": 0.010400243173381235,
+        "normal_95": [
+          0.002090511245262692,
+          0.042858715345834256
+        ]
+      },
+      "priority_gain_vs_uniform_unknown_zero": {
+        "estimate": 0.008207875782264736,
+        "design_se": 0.01393117567479013,
+        "normal_95": [
+          -0.019096726802624406,
+          0.03551247836715388
+        ]
+      },
+      "machine_positive_coverage": {
+        "estimate": 0.8140276301806588,
+        "design_se": 0.0,
+        "normal_95": [
+          0.8140276301806588,
+          0.8140276301806588
+        ]
+      },
+      "abstaining_priority_success_lower": {
+        "estimate": 0.7037902940134609,
+        "design_se": 0.03308965494266294,
+        "normal_95": [
+          0.6389357620649838,
+          0.7686448259619381
+        ]
+      },
+      "abstaining_priority_success_upper": {
+        "estimate": 0.7834927382217498,
+        "design_se": 0.017497531927983218,
+        "normal_95": [
+          0.749198205824563,
+          0.8177872706189366
+        ]
+      },
+      "selected_differs_from_hash": {
+        "estimate": 0.06868579525327666,
+        "design_se": 0.02690313691112271,
+        "normal_95": [
+          0.015956615836325988,
+          0.12141497467022733
+        ]
+      }
+    }
+  },
+  "uncertainty": "Finite-population sampling intervals conditional on AI labels. Gain bounds share each unknown URL across policies. Annotation, time and profile uncertainty are excluded.",
+  "cost": "Existing all-citation machine pass; no additional requests. Census used 5,787 URL query units for 3,764 notes."
+}

@@ -1,0 +1,443 @@
+{
+  "analysis_kind": "newwave_samepost_all_external_citation_machine_proxy_census",
+  "snapshot_date": "2026-11-14",
+  "input_sha256": {
+    "candidates": "fb2eb694f1d8bac74a98e5a27b8c7478ca4f6324d50cc05819281f94c942e39d",
+    "probe_manifest": "09db307fda77fae5e4c7872ca5fea07dc7307c2040a9cd9958c56c3bd6e49b6d",
+    "probe_log": "57fd958d45c6a2a8cfe34f43bf09d371aaeefd0e94d3bfd319f5ce104def9adc",
+    "analysis_script": "9e90be5b3e0f6eb64f2c67cbaa428bc1321cf0138f94d2587ed68026b0aef42a"
+  },
+  "frame": {
+    "selected_post_pairs": 1882,
+    "selected_notes": 3764,
+    "distinct_probed_network_urls": 5787,
+    "manifest_url_references": 6587,
+    "post_condition": "Both strictly eligible groups have a currently Helpful note on the same post; earliest created note per group selected before URL probes."
+  },
+  "machine_proxy": {
+    "positive": "open_candidate",
+    "other_categories": [
+      "access_barrier",
+      "gone_candidate",
+      "transient_uncertain"
+    ],
+    "interpretation": "Open candidates are not verified intended pages or supporting evidence; non-open candidates include browser-readable barriers and unresolved requests."
+  },
+  "single_url_baseline": {
+    "fixed_hash_rule": "minimum SHA-256 of UTF-8 '2026111509|<note_id>|<defragmented_network_url>', URL tie-break",
+    "random_single_expectation": "Within-note open fraction is the expected machine-open probability for one uniformly selected distinct network URL; redundancy_vs_random_single = any_open - open_fraction."
+  },
+  "overall": {
+    "pairs": 1882,
+    "means": {
+      "AI_API": {
+        "any_open": 0.9038257173219979,
+        "all_open": 0.6179596174282678,
+        "open_fraction": 0.7682695713779668,
+        "fixed_single_open": 0.7582359192348566,
+        "redundancy_vs_random_single": 0.13555614594403118,
+        "redundancy_vs_fixed_single": 0.14558979808714134
+      },
+      "non_API": {
+        "any_open": 0.8140276301806588,
+        "all_open": 0.7077577045696068,
+        "open_fraction": 0.7658517359367518,
+        "fixed_single_open": 0.7619553666312433,
+        "redundancy_vs_random_single": 0.048175894243906996,
+        "redundancy_vs_fixed_single": 0.052072263549415514
+      }
+    },
+    "ai_minus_non_api": {
+      "any_open": 0.08979808714133908,
+      "all_open": -0.08979808714133908,
+      "open_fraction": 0.0024178354412149883,
+      "fixed_single_open": -0.0037194473963867436,
+      "redundancy_vs_random_single": 0.08738025170012417,
+      "redundancy_vs_fixed_single": 0.09351753453772582
+    },
+    "any_open_discordance": {
+      "both_open": 1436,
+      "ai_only_open": 265,
+      "non_api_only_open": 96,
+      "neither_open": 85
+    }
+  },
+  "exploratory_post_bootstrap_95": {
+    "any_open": [
+      0.07065621679064825,
+      0.10839532412327312
+    ],
+    "all_open": [
+      -0.11636556854410202,
+      -0.06269925611052073
+    ],
+    "open_fraction": [
+      -0.017287666946939,
+      0.0215377486930356
+    ],
+    "fixed_single_open": [
+      -0.02764346439957492,
+      0.020722635494155154
+    ],
+    "redundancy_vs_random_single": [
+      0.07582990048385904,
+      0.09892895096402005
+    ],
+    "redundancy_vs_fixed_single": [
+      0.07490701381509034,
+      0.11317747077577045
+    ]
+  },
+  "bootstrap_draws": 2000,
+  "subgroups": {
+    "created_within_6_hours": {
+      "pairs": 1671,
+      "means": {
+        "AI_API": {
+          "any_open": 0.9030520646319569,
+          "all_open": 0.6163973668461998,
+          "open_fraction": 0.7680331139038501,
+          "fixed_single_open": 0.7600239377618193,
+          "redundancy_vs_random_single": 0.13501895072810693,
+          "redundancy_vs_fixed_single": 0.14302812687013763
+        },
+        "non_API": {
+          "any_open": 0.8144823459006583,
+          "all_open": 0.713345302214243,
+          "open_fraction": 0.7679661451654269,
+          "fixed_single_open": 0.7636146020347098,
+          "redundancy_vs_random_single": 0.04651620073523126,
+          "redundancy_vs_fixed_single": 0.050867743865948535
+        }
+      },
+      "ai_minus_non_api": {
+        "any_open": 0.0885697187312986,
+        "all_open": -0.09694793536804314,
+        "open_fraction": 6.696873842315654e-05,
+        "fixed_single_open": -0.0035906642728904536,
+        "redundancy_vs_random_single": 0.08850274999287568,
+        "redundancy_vs_fixed_single": 0.0921603830041891
+      },
+      "any_open_discordance": {
+        "both_open": 1276,
+        "ai_only_open": 233,
+        "non_api_only_open": 85,
+        "neither_open": 77
+      }
+    },
+    "shared_exact_network_url": {
+      "pairs": 475,
+      "means": {
+        "AI_API": {
+          "any_open": 0.9010526315789473,
+          "all_open": 0.6126315789473684,
+          "open_fraction": 0.7657894736842106,
+          "fixed_single_open": 0.7621052631578947,
+          "redundancy_vs_random_single": 0.13526315789473684,
+          "redundancy_vs_fixed_single": 0.13894736842105262
+        },
+        "non_API": {
+          "any_open": 0.8526315789473684,
+          "all_open": 0.6757894736842105,
+          "open_fraction": 0.7735997686524002,
+          "fixed_single_open": 0.7494736842105263,
+          "redundancy_vs_random_single": 0.07903181029496818,
+          "redundancy_vs_fixed_single": 0.1031578947368421
+        }
+      },
+      "ai_minus_non_api": {
+        "any_open": 0.04842105263157892,
+        "all_open": -0.06315789473684208,
+        "open_fraction": -0.007810294968189635,
+        "fixed_single_open": 0.012631578947368438,
+        "redundancy_vs_random_single": 0.05623134759976865,
+        "redundancy_vs_fixed_single": 0.035789473684210524
+      },
+      "any_open_discordance": {
+        "both_open": 397,
+        "ai_only_open": 31,
+        "non_api_only_open": 8,
+        "neither_open": 39
+      }
+    },
+    "equal_network_url_count": {
+      "pairs": 536,
+      "means": {
+        "AI_API": {
+          "any_open": 0.8264925373134329,
+          "all_open": 0.6865671641791045,
+          "open_fraction": 0.7593283582089553,
+          "fixed_single_open": 0.7555970149253731,
+          "redundancy_vs_random_single": 0.06716417910447761,
+          "redundancy_vs_fixed_single": 0.0708955223880597
+        },
+        "non_API": {
+          "any_open": 0.8003731343283582,
+          "all_open": 0.664179104477612,
+          "open_fraction": 0.734297263681592,
+          "fixed_single_open": 0.7313432835820896,
+          "redundancy_vs_random_single": 0.06607587064676616,
+          "redundancy_vs_fixed_single": 0.06902985074626866
+        }
+      },
+      "ai_minus_non_api": {
+        "any_open": 0.026119402985074647,
+        "all_open": 0.02238805970149249,
+        "open_fraction": 0.025031094527363296,
+        "fixed_single_open": 0.02425373134328357,
+        "redundancy_vs_random_single": 0.0010883084577114482,
+        "redundancy_vs_fixed_single": 0.0018656716417910363
+      },
+      "any_open_discordance": {
+        "both_open": 388,
+        "ai_only_open": 55,
+        "non_api_only_open": 41,
+        "neither_open": 52
+      }
+    },
+    "equal_network_url_count_by_size": {
+      "1": {
+        "pairs": 312,
+        "means": {
+          "AI_API": {
+            "any_open": 0.7467948717948718,
+            "all_open": 0.7467948717948718,
+            "open_fraction": 0.7467948717948718,
+            "fixed_single_open": 0.7467948717948718,
+            "redundancy_vs_random_single": 0.0,
+            "redundancy_vs_fixed_single": 0.0
+          },
+          "non_API": {
+            "any_open": 0.7211538461538461,
+            "all_open": 0.7211538461538461,
+            "open_fraction": 0.7211538461538461,
+            "fixed_single_open": 0.7211538461538461,
+            "redundancy_vs_random_single": 0.0,
+            "redundancy_vs_fixed_single": 0.0
+          }
+        },
+        "ai_minus_non_api": {
+          "any_open": 0.02564102564102566,
+          "all_open": 0.02564102564102566,
+          "open_fraction": 0.02564102564102566,
+          "fixed_single_open": 0.02564102564102566,
+          "redundancy_vs_random_single": 0.0,
+          "redundancy_vs_fixed_single": 0.0
+        },
+        "any_open_discordance": {
+          "both_open": 191,
+          "ai_only_open": 42,
+          "non_api_only_open": 34,
+          "neither_open": 45
+        }
+      },
+      "2": {
+        "pairs": 182,
+        "means": {
+          "AI_API": {
+            "any_open": 0.9340659340659341,
+            "all_open": 0.6263736263736264,
+            "open_fraction": 0.7802197802197802,
+            "fixed_single_open": 0.7802197802197802,
+            "redundancy_vs_random_single": 0.15384615384615385,
+            "redundancy_vs_fixed_single": 0.15384615384615385
+          },
+          "non_API": {
+            "any_open": 0.8901098901098901,
+            "all_open": 0.6098901098901099,
+            "open_fraction": 0.75,
+            "fixed_single_open": 0.7472527472527473,
+            "redundancy_vs_random_single": 0.1401098901098901,
+            "redundancy_vs_fixed_single": 0.14285714285714285
+          }
+        },
+        "ai_minus_non_api": {
+          "any_open": 0.04395604395604402,
+          "all_open": 0.016483516483516425,
+          "open_fraction": 0.030219780219780223,
+          "fixed_single_open": 0.03296703296703296,
+          "redundancy_vs_random_single": 0.013736263736263743,
+          "redundancy_vs_fixed_single": 0.010989010989011005
+        },
+        "any_open_discordance": {
+          "both_open": 157,
+          "ai_only_open": 13,
+          "non_api_only_open": 5,
+          "neither_open": 7
+        }
+      },
+      "3": {
+        "pairs": 39,
+        "means": {
+          "AI_API": {
+            "any_open": 0.9487179487179487,
+            "all_open": 0.5384615384615384,
+            "open_fraction": 0.7692307692307693,
+            "fixed_single_open": 0.717948717948718,
+            "redundancy_vs_random_single": 0.17948717948717952,
+            "redundancy_vs_fixed_single": 0.23076923076923078
+          },
+          "non_API": {
+            "any_open": 1.0,
+            "all_open": 0.5128205128205128,
+            "open_fraction": 0.7777777777777778,
+            "fixed_single_open": 0.7692307692307693,
+            "redundancy_vs_random_single": 0.22222222222222227,
+            "redundancy_vs_fixed_single": 0.23076923076923078
+          }
+        },
+        "ai_minus_non_api": {
+          "any_open": -0.05128205128205132,
+          "all_open": 0.02564102564102566,
+          "open_fraction": -0.008547008547008517,
+          "fixed_single_open": -0.05128205128205132,
+          "redundancy_vs_random_single": -0.04273504273504275,
+          "redundancy_vs_fixed_single": 0.0
+        },
+        "any_open_discordance": {
+          "both_open": 37,
+          "ai_only_open": 0,
+          "non_api_only_open": 2,
+          "neither_open": 0
+        }
+      },
+      "4": {
+        "pairs": 3,
+        "means": {
+          "AI_API": {
+            "any_open": 1.0,
+            "all_open": 0.0,
+            "open_fraction": 0.6666666666666666,
+            "fixed_single_open": 0.6666666666666666,
+            "redundancy_vs_random_single": 0.3333333333333333,
+            "redundancy_vs_fixed_single": 0.3333333333333333
+          },
+          "non_API": {
+            "any_open": 1.0,
+            "all_open": 0.0,
+            "open_fraction": 0.5833333333333334,
+            "fixed_single_open": 0.3333333333333333,
+            "redundancy_vs_random_single": 0.4166666666666667,
+            "redundancy_vs_fixed_single": 0.6666666666666666
+          }
+        },
+        "ai_minus_non_api": {
+          "any_open": 0.0,
+          "all_open": 0.0,
+          "open_fraction": 0.08333333333333326,
+          "fixed_single_open": 0.3333333333333333,
+          "redundancy_vs_random_single": -0.08333333333333337,
+          "redundancy_vs_fixed_single": -0.3333333333333333
+        },
+        "any_open_discordance": {
+          "both_open": 3,
+          "ai_only_open": 0,
+          "non_api_only_open": 0,
+          "neither_open": 0
+        }
+      }
+    }
+  },
+  "citations": {
+    "AI_API": {
+      "total_citation_variants": 3853,
+      "total_note_network_url_references": 3853,
+      "mean_citation_variants_per_note": 2.047290116896918,
+      "mean_distinct_network_urls_per_note": 2.047290116896918,
+      "mean_distinct_hosts_per_note": 1.938894792773645,
+      "network_url_count_distribution": {
+        "1": 418,
+        "2": 1017,
+        "3": 390,
+        "4": 55,
+        "5": 1,
+        "6": 1
+      },
+      "machine_category_counts_per_note_network_reference": {
+        "open_candidate": 2956,
+        "access_barrier": 563,
+        "transient_uncertain": 282,
+        "gone_candidate": 52
+      }
+    },
+    "non_API": {
+      "total_citation_variants": 2734,
+      "total_note_network_url_references": 2734,
+      "mean_citation_variants_per_note": 1.4527098831030818,
+      "mean_distinct_network_urls_per_note": 1.4527098831030818,
+      "mean_distinct_hosts_per_note": 1.377258235919235,
+      "network_url_count_distribution": {
+        "1": 1349,
+        "2": 344,
+        "3": 117,
+        "4": 48,
+        "5": 14,
+        "6": 5,
+        "7": 1,
+        "9": 1,
+        "12": 1,
+        "13": 2
+      },
+      "machine_category_counts_per_note_network_reference": {
+        "open_candidate": 2093,
+        "transient_uncertain": 261,
+        "access_barrier": 325,
+        "gone_candidate": 55
+      }
+    }
+  },
+  "paired_network_url_count_comparison": {
+    "AI_more": 1123,
+    "equal": 536,
+    "non_API_more": 223
+  },
+  "ai_author_sensitivity": {
+    "distinct_ai_authors": 26,
+    "top_1_share": 0.14133900106269925,
+    "top_10_share": 0.9399574920297555,
+    "effective_ai_authors_inverse_hhi": 8.782616889171013,
+    "equal_ai_author_average_paired_difference": {
+      "any_open": 0.07857953671182814,
+      "all_open": -0.08297374785181243,
+      "open_fraction": -0.0029862390543163348,
+      "fixed_single_open": -0.020145447220866117,
+      "redundancy_vs_random_single": 0.08156577576614447,
+      "redundancy_vs_fixed_single": 0.09872498393269426
+    },
+    "leave_one_ai_author_out_range": {
+      "any_open": [
+        0.08666666666666667,
+        0.09467821782178218
+      ],
+      "all_open": [
+        -0.09840571742715779,
+        -0.06851742468989959
+      ],
+      "open_fraction": [
+        -0.0028482628482628517,
+        0.012006451906038437
+      ],
+      "fixed_single_open": [
+        -0.00909090909090909,
+        0.00426829268292683
+      ],
+      "redundancy_vs_random_single": [
+        0.07718433368167567,
+        0.09205587339177224
+      ],
+      "redundancy_vs_fixed_single": [
+        0.08505611340815121,
+        0.09840571742715779
+      ]
+    },
+    "note": "Equal-author and leave-one-author-out summaries change or perturb the post-weighted estimand; pseudonymous author IDs are intentionally omitted."
+  },
+  "limitations": [
+    "Descriptive currently Helpful same-post cohort; not a causal effect of AI authorship or of adding citations.",
+    "non_API is not verified human-written; observed API enrollment is a snapshot-constrained proxy.",
+    "Machine-open status does not imply intended content, correct source role, semantic support, or current note truth.",
+    "Same-post pairing does not align note propositions; authors and source choices remain different.",
+    "The post bootstrap is exploratory superpopulation sensitivity; the eligible frame itself is a census.",
+    "Citation fragments are retained as variants but collapse to one HTTP network path within a note."
+  ]
+}

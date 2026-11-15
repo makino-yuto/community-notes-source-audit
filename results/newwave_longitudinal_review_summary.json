@@ -1,0 +1,21 @@
+{
+  "schema": "newwave-longitudinal-review-aggregate-v1",
+  "review_type": "independent AI source-text review; not human ground truth",
+  "frozen_primary_analysis_sha256": "c28bc2d58ae48309e85d90f9c7f7de234887377077e87a8042c3d2074ac2a113",
+  "blinded_review_packet_sha256": "e52168f4bdcdae1806fa4c19984a389285f694046329bde06256b1ca11a591d5",
+  "independent_review_sha256": "798f8f73792ada5b078faa4ff31fb4c56f82dec90b0e47ee11bc827192480668",
+  "label_difference_cases_reviewed": 4,
+  "material_source_support_drift_confirmed": 0,
+  "review_observations_aggregate": {
+    "claim_relevant_passages_unchanged": 2,
+    "extracted_main_text_identical": 1,
+    "historical_extraction_surfaced_unrelated_listing": 1
+  },
+  "posthoc_listing_censor_sensitivity": {
+    "primary_both_assessable_units": 18,
+    "censored_both_assessable_units": 17,
+    "primary_full_support_difference_bounds_proportion": [-0.76, 0.79],
+    "censored_full_support_difference_bounds_proportion": [-0.77, 0.79]
+  },
+  "interpretation": "Frozen primary labels remain unchanged. The post hoc sensitivity treats an unrelated historical listing as unknown, not lack of support. No source-version drift or note-time support claim is established."
+}

@@ -1,0 +1,52 @@
+{
+  "analysis_kind": "posthoc_within_pair_shared_unknown_url_logical_bounds",
+  "target_population_pairs": 1882,
+  "sampled_pairs": 240,
+  "counts": {
+    "sampled_pairs": 240,
+    "lower_tightened_pairs": 6,
+    "upper_tightened_pairs": 5,
+    "either_tightened_pairs": 6,
+    "either_tightened_neither": 6,
+    "shared_unresolved_pairs": 8,
+    "either_tightened_non_api_only": 0,
+    "either_tightened_ai_only": 0,
+    "either_tightened_both": 0
+  },
+  "frozen_primary_bounds_reproduced": {
+    "lower": {
+      "estimate": -0.005703152674459794,
+      "design_se": 0.01918393543647046
+    },
+    "upper": {
+      "estimate": 0.134156925256819,
+      "design_se": 0.02566558084915745
+    }
+  },
+  "shared_url_logical_bounds": {
+    "lower": {
+      "estimate": -0.0011866808359900813,
+      "design_se": 0.019160952140540827
+    },
+    "upper": {
+      "estimate": 0.13039319872476088,
+      "design_se": 0.025655398640895086
+    },
+    "approx_bonferroni_95_outer_interval": [
+      -0.04413409122730613,
+      0.18789727921625538
+    ]
+  },
+  "input_sha256": {
+    "browser_freeze": "f954945dba7fa45d635c816ebb9a8e5c8a97a36842d4ddd247df318eec2919d8",
+    "private_key": "df19517a61a6850d3cf3613aae84ff5835b227afb535ab3fe6afb62ae2c16670",
+    "original_browser_logs": {
+      "newwave_browser_a.jsonl": "36eafd04ffd55f764afd79cd4f742ccf25650b59c0f148b390814d83efda6552",
+      "newwave_browser_b.jsonl": "024d22437b8e8fa12751440b5c801a14949a746eca46bac34048697f477c0789",
+      "newwave_browser_c.jsonl": "ec2ae9ae6e0b3c273d1ee2182d083440c1aed63dcb4821bd7d16c9b8594d8281"
+    },
+    "frozen_browser_aggregate": "d94d0ddb3898b2446b6cf186107d3da621919c967637e67532d62a6461f77b7f",
+    "script": "faea14f2eddcd5446bf612659e6f14dec5afe637f1789b305fc930c810c44cba"
+  },
+  "interpretation": "Post hoc logical sensitivity, not a replacement primary analysis. The same URL code has one unknown state within a post pair. Pairwise extrema are weighted with the original frozen design and finite-population SE. Cross-pair shared URLs are not jointly optimized, so bounds can remain conservative globally. No new source observations or outcome-based relabeling."
+}

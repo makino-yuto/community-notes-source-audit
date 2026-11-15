@@ -1,0 +1,25 @@
+{
+  "n": 100,
+  "counts": {
+    "different": 20,
+    "same_main_correction": 43,
+    "overlapping": 36,
+    "unassessable": 1
+  },
+  "recode_n": 20,
+  "agreement_n": 11,
+  "kappa": 0.29133858267716545,
+  "cross_tab": {
+    "same_main_correction|overlapping": 4,
+    "same_main_correction|same_main_correction": 8,
+    "different|different": 2,
+    "overlapping|different": 3,
+    "same_main_correction|different": 2,
+    "overlapping|overlapping": 1
+  },
+  "primary_file_sha256": "282fbde3e1cfe8100d2baa9798fdb0c0aa169d349a4bfd91893d18b1e096d8b1",
+  "recode_file_sha256": "1853f315023969e335b3068b83617320a2b5eb31e9889739f5b2e2384e534830",
+  "analysis_kind": "aggregate_only_alignment_reliability_public_summary",
+  "private_source_sha256": "0055c696e37b89f33487bad9eb28c0699cdb4f75f8a16308b88991f187d8e36a",
+  "privacy_note": "Individual disagreement records and opaque pair codes omitted; aggregate alignment and reliability counts unchanged."
+}

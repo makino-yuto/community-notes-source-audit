@@ -1,4 +1,4 @@
-"""Render a new four-page main paper in the retained official template geometry.
+"""Render a paper in the retained official template geometry with an explicit main-page gate.
 
 Usage: python src/render_newwave_report.py --sourceMD report.md --outputPDF paper.pdf
 Use <!-- PAGEBREAK --> (or [[PAGEBREAK]]) between planned main pages.
@@ -221,6 +221,20 @@ def table_flowable(node, styles):
         longest = max(len(plain(row[column])) for row in cells)
         weights.append(max(5, min(55, longest)) ** .6 * (.75 if is_numeric else 1))
     widths = [FRAME_WIDTH * w / sum(weights) for w in weights]
+    # Preserve reasonably short identifiers/hashes as one code token when the
+    # frame has room, instead of splitting a commit's final digits onto a line.
+    minimums = []
+    for column in range(count):
+        tokens = [child['raw'] for row in cells for child in row[column].get('children', [])
+                  if child['type'] == 'codespan']
+        needed = max([pdfmetrics.stringWidth(clean(token), 'Courier', 9) + 12
+                      for token in tokens] or [0])
+        minimums.append(needed if needed <= .55 * FRAME_WIDTH else 0)
+    deficit = sum(max(0, floor - width) for floor, width in zip(minimums, widths))
+    slack = sum(max(0, width - floor) for floor, width in zip(minimums, widths))
+    if deficit and slack >= deficit:
+        widths = [floor if width < floor else width - deficit * (width - floor) / slack
+                  for floor, width in zip(minimums, widths)]
     data = [[Paragraph(inline(cell.get('children', [])), styles['table_head' if i == 0 else 'table'])
              for cell in row] for i, row in enumerate(cells)]
     table = Table(data, colWidths=widths, repeatRows=1, hAlign='LEFT')
@@ -282,6 +296,7 @@ def render(source, output, figure, font_dir, expected_main_pages=4):
     abstract_words = 0
     in_abstract = False
     in_references = False
+    in_appendix = False
     last_was_pagebreak = False
     index = abstract_index
     while index < len(nodes):
@@ -314,6 +329,7 @@ def render(source, output, figure, font_dir, expected_main_pages=4):
                         story.append(PageBreak())
                     story.append(SectionMarker(section))
                     in_references = section == 'references'
+                    in_appendix = section == 'appendix'
                 elif key.startswith('llm usage'):
                     in_references = False
                 paragraph = Paragraph(inline(node['children']), styles['h2' if level <= 2 else 'h3'])
@@ -343,14 +359,29 @@ def render(source, output, figure, font_dir, expected_main_pages=4):
                 if in_abstract:
                     abstract_words += len(text.split())
                     style = styles['abstract']
-                elif re.match(r'^(?:Figure|Table)\s+\d+[.:]', text):
-                    style = (ParagraphStyle('NewTableCaption', parent=styles['caption'], keepWithNext=True)
+                elif re.match(r'^(?:Figure|Table)\s+(?:[A-Z]+\d+|\d+)[.:]', text):
+                    style = (ParagraphStyle('NewTableCaption', parent=styles['caption'], keepWithNext=False)
                              if text.startswith('Table ') else styles['caption'])
                 else:
                     style = styles['reference' if in_references else 'body']
                 story.append(Paragraph(inline(node['children']), style))
         elif kind == 'table':
-            story.extend([table_flowable(node, styles), Spacer(1, 7)])
+            table = table_flowable(node, styles)
+            # Keep short appendix tables and their captions together. Larger
+            # tables continue normally with a repeated header on each page.
+            caption = (story[-1] if story and isinstance(story[-1], Paragraph)
+                       and re.match(r'^Table\s+(?:[A-Z]+\d+|\d+)[.:]', story[-1].getPlainText())
+                       else None)
+            short = len(node['children'][1]['children']) <= 5
+            height = table.wrap(FRAME_WIDTH, PAGE_HEIGHT - 2 * MARGIN)[1]
+            if caption:
+                height += caption.wrap(FRAME_WIDTH, PAGE_HEIGHT - 2 * MARGIN)[1]
+            if in_appendix and short and height <= .6 * (PAGE_HEIGHT - 2 * MARGIN):
+                group = [story.pop(), table] if caption else [table]
+                story.append(KeepTogether(group))
+            else:
+                story.append(table)
+            story.append(Spacer(1, 7))
         elif kind == 'list':
             ordered = node.get('attrs', {}).get('ordered', False)
             for i, item in enumerate(node['children'], node.get('attrs', {}).get('start', 1)):

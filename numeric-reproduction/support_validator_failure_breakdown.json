@@ -1,0 +1,139 @@
+{
+  "analysis_kind": "post_result_secondary_frozen_evidence_validator_failure_breakdown",
+  "created_utc": "2026-11-15T05:46:52.563106+00:00",
+  "status": "Post-result descriptive breakdown; no source observations, raw labels, strict labels, or frozen analyses were changed.",
+  "selection": {
+    "selected_notes": 200,
+    "selected_post_pairs": 100,
+    "notes_per_group": 100,
+    "selected_original_valid_journal_records": 185,
+    "selected_retry_records": 15,
+    "selected_retry_valid": 14,
+    "selected_retry_invalid": 1,
+    "unjournaled_original_completions_used": 0
+  },
+  "category_definitions": {
+    "nonliteral_only": "At least one quoted span failed literal occurrence, with no quote-length failure.",
+    "length_only": "At least one source exceeded the cumulative 20 whitespace-delimited word limit, with no nonliteral quote failure.",
+    "both_nonliteral_and_length": "The selected case had both nonliteral-quote and quote-length failures.",
+    "invalid_execution": "The selected technical retry was invalid; UNASSESSABLE in both raw and strict summaries, not an additional positive-label downgrade.",
+    "other_validation_failure": "Other frozen validator failures, including missing positive evidence or incomplete source-observation coverage; none occurred.",
+    "no_validation_failure": "Valid execution with no frozen validator error, irrespective of semantic label."
+  },
+  "by_group": {
+    "AI_API": {
+      "selected_notes_denominator": 100,
+      "valid_executions": 99,
+      "exclusive_case_categories": {
+        "nonliteral_only": 2,
+        "length_only": 8,
+        "both_nonliteral_and_length": 3,
+        "other_validation_failure": 0,
+        "invalid_execution": 1,
+        "no_validation_failure": 86
+      },
+      "overlapping_failure_case_counts": {
+        "any_nonliteral_cases": 5,
+        "any_length_cases": 11
+      },
+      "validator_event_counts": {
+        "quote_not_literal": 5,
+        "quote_word_limit": 11,
+        "invalid_execution": 1,
+        "missing_positive_evidence": 0,
+        "source_coverage": 0
+      },
+      "raw_evidence_positive_or_contradicts_cases": 60,
+      "evidence_positive_cases_failing_validator": 13,
+      "positive_to_UNASSESSABLE_under_frozen_strict_rule": 13,
+      "raw_labels_reproduced_unchanged": {
+        "FULL": 20,
+        "PARTIAL": 39,
+        "NONE": 5,
+        "CONTRADICTS": 1,
+        "UNASSESSABLE": 35
+      },
+      "strict_labels_reproduced_unchanged": {
+        "FULL": 16,
+        "PARTIAL": 30,
+        "NONE": 5,
+        "CONTRADICTS": 1,
+        "UNASSESSABLE": 48
+      }
+    },
+    "non_API": {
+      "selected_notes_denominator": 100,
+      "valid_executions": 100,
+      "exclusive_case_categories": {
+        "nonliteral_only": 1,
+        "length_only": 4,
+        "both_nonliteral_and_length": 0,
+        "other_validation_failure": 0,
+        "invalid_execution": 0,
+        "no_validation_failure": 95
+      },
+      "overlapping_failure_case_counts": {
+        "any_nonliteral_cases": 1,
+        "any_length_cases": 4
+      },
+      "validator_event_counts": {
+        "quote_not_literal": 1,
+        "quote_word_limit": 4,
+        "invalid_execution": 0,
+        "missing_positive_evidence": 0,
+        "source_coverage": 0
+      },
+      "raw_evidence_positive_or_contradicts_cases": 49,
+      "evidence_positive_cases_failing_validator": 5,
+      "positive_to_UNASSESSABLE_under_frozen_strict_rule": 5,
+      "raw_labels_reproduced_unchanged": {
+        "FULL": 15,
+        "PARTIAL": 33,
+        "NONE": 15,
+        "CONTRADICTS": 1,
+        "UNASSESSABLE": 36
+      },
+      "strict_labels_reproduced_unchanged": {
+        "FULL": 13,
+        "PARTIAL": 30,
+        "NONE": 15,
+        "CONTRADICTS": 1,
+        "UNASSESSABLE": 41
+      }
+    }
+  },
+  "totals": {
+    "selected_notes": 200,
+    "exclusive_case_categories": {
+      "nonliteral_only": 3,
+      "length_only": 12,
+      "both_nonliteral_and_length": 3,
+      "other_validation_failure": 0,
+      "invalid_execution": 1,
+      "no_validation_failure": 181
+    },
+    "any_nonliteral_cases": 6,
+    "any_length_cases": 15,
+    "overlap_both_cases": 3,
+    "evidence_positive_cases_failing_validator": 18,
+    "invalid_executions_already_UNASSESSABLE": 1
+  },
+  "checks": {
+    "input_hashes_match_frozen_support_analysis": true,
+    "all_199_valid_selected_executions_independently_revalidated": true,
+    "stored_vs_recomputed_error_mismatches": 0,
+    "raw_group_label_counts_match_frozen_analysis": true,
+    "strict_group_label_counts_match_frozen_analysis": true
+  },
+  "interpretation": "These are technical evidence-format and execution-compliance categories, not human-verified semantic error rates. A literal quote need not entail the claim, and exceeding the quote-word limit does not imply that the source lacks support. Source coverage here checks observation records for all supplied sources, not semantic adequacy of extracted text.",
+  "privacy": "Aggregate counts and file hashes only; no note/post/account/source identifiers, source URLs, source text, quotations, or opaque case codes are released.",
+  "input_sha256": {
+    "packet": "fe88000e7fd1074d838bd098038e03889466494d8312e5e4ddb53317c5165a8f",
+    "original_journal": "bb62a60a808500785548daf8a12b07e411c4d3f3bbdaeeb7055a8aa0af44235f",
+    "retry_journal": "ce06723cd0e289c66c7cea84a9466450e912f7966aab91d1142af19107d23b33",
+    "technical_amendment": "1ac3570af005fd927e0d7a154103bb4c3503f45e94d2506f6bf7004511560254",
+    "key": "8246f299b02fe7feb4a6dd8cef29e9861e22517e16c5aa5a8ac568b2b5ef3e4f"
+  },
+  "frozen_support_aggregate_sha256": "1410bd2927fb78e6d0095d3d5007a234c4c9e9ced528a0298cd64d11ea36c28b",
+  "script_sha256": "c1c950e3c77ef98a120cbf6da087cfa464b450f778afcfcbba5f46b3b0477d9c"
+}

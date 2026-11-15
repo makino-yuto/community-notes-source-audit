@@ -1,0 +1,86 @@
+{
+  "analysis_kind": "synthetic_known_answer_support_rubric_controls",
+  "families": 10,
+  "cases": 60,
+  "valid_executions": 60,
+  "model_advertised_counts": {
+    "gpt-5.6-sol": 60
+  },
+  "results": {
+    "raw": {
+      "correct": 52,
+      "total": 60,
+      "confusion": {
+        "CONTRADICTS__CONTRADICTS": 10,
+        "FULL__FULL": 10,
+        "NONE__NONE": 2,
+        "NONE__PARTIAL": 8,
+        "PARTIAL__PARTIAL": 10,
+        "UNASSESSABLE__UNASSESSABLE": 20
+      },
+      "by_gold": {
+        "FULL": {
+          "total": 10,
+          "correct": 10
+        },
+        "PARTIAL": {
+          "total": 10,
+          "correct": 10
+        },
+        "CONTRADICTS": {
+          "total": 10,
+          "correct": 10
+        },
+        "UNASSESSABLE": {
+          "total": 20,
+          "correct": 20
+        },
+        "NONE": {
+          "total": 10,
+          "correct": 2
+        }
+      }
+    },
+    "strict": {
+      "correct": 52,
+      "total": 60,
+      "confusion": {
+        "CONTRADICTS__CONTRADICTS": 10,
+        "FULL__FULL": 10,
+        "NONE__NONE": 2,
+        "NONE__PARTIAL": 8,
+        "PARTIAL__PARTIAL": 10,
+        "UNASSESSABLE__UNASSESSABLE": 20
+      },
+      "by_gold": {
+        "FULL": {
+          "total": 10,
+          "correct": 10
+        },
+        "PARTIAL": {
+          "total": 10,
+          "correct": 10
+        },
+        "CONTRADICTS": {
+          "total": 10,
+          "correct": 10
+        },
+        "UNASSESSABLE": {
+          "total": 20,
+          "correct": 20
+        },
+        "NONE": {
+          "total": 10,
+          "correct": 2
+        }
+      }
+    }
+  },
+  "hashes": {
+    "trials": "af33d47abd8f948f23dd9646fb572c668e37700320e2313e8c594cb4c323b190",
+    "protocol": "794cdba3ee57d329b4156c516ace3c5dcf226e0d0342c6c812649ecab871c8af",
+    "packet": "eca878808b9e5d6c67de5bd0967dfc6ea0f2b708a18f89811c0a8f9cc2112086",
+    "gold": "2ba11808bf935ca62827242055bd43eecc3b8565d6bcc6661f474f9eedaa0e35"
+  },
+  "interpretation": "Known transformations in fictitious text; separate post-field quality check, no human validation or estimate of field accuracy. Repeated families are not independent observations."
+}

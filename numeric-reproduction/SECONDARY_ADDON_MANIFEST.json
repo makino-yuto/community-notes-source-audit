@@ -1,0 +1,50 @@
+{
+  "schema": "newwave-secondary-public-addon-v1",
+  "status": "New secondary analysis add-on; original numeric CSVs, manifest and primary reproducer unchanged.",
+  "runtime": "Python standard library; manifest plus two CSVs only; no private inputs or network.",
+  "base_numeric_package_sha256": {
+    "manifest.json": "7282260374eb2e866ee9ee0e4eee7ae738aed07d41024d6e6decc386fd6ecbfd",
+    "data/machine_pairs_anonymous.csv": "2d89ae33aef8902f9f03b8ab0adb1effafc20bb4f80d52e6a262748d99e4f05a",
+    "data/browser_pairs_anonymous.csv": "1c83f60ac7da4c44d455a03f18647b24ffcbfb0fc1b2acaf77909abba521e3e4"
+  },
+  "files": {
+    "numeric_only_smoke_verification.json": {
+      "bytes": 727,
+      "sha256": "64b76b1c37e5884632846267c6e5a5a09f3b93ec1318d85d101d305b07b50171"
+    },
+    "SECONDARY_METHODS.md": {
+      "bytes": 7942,
+      "sha256": "dd286d7ff7e071f6f62157dd07961daae9d299210ee0cecc66795a7675202bbe"
+    },
+    "secondary_reproduced.json": {
+      "bytes": 11669,
+      "sha256": "aaef505ad6ce40614b621059ac46af4dad67134a958b38d94ea33256326429d5"
+    },
+    "src/reproduce_newwave_secondary_public.py": {
+      "bytes": 15950,
+      "sha256": "e0fc7061bbec5e2ef2f3165ea32106479a79e6b76f57dff26d995616fb0c8b66"
+    },
+    "support_validator_failure_breakdown.json": {
+      "bytes": 5907,
+      "sha256": "6696b30f21f4f999762b8554f00ff07aeb7c99c10700d0dadca2acc33829b8b1"
+    },
+    "support_validator_failure_breakdown.md": {
+      "bytes": 1370,
+      "sha256": "47b620139d217a050fc66476bb2c3e974c8ad2cd254d18723df575690eb6d793"
+    },
+    "verification_against_private_aggregates.json": {
+      "bytes": 1643,
+      "sha256": "3059205997eb3c27c40148b45c71ebe7e813e3d0f9f602af35c85efc857c7906"
+    }
+  },
+  "privacy": "Aggregate numeric values, methods, and checksums only. No URLs, identifiers, opaque cases, source text, or raw judgments.",
+  "public_reconstructible": [
+    "note-level design-weighted machine/browser disagreement",
+    "conservative finite-sample exact-tail outer interval",
+    "exhaustive small-state tail-inversion checks"
+  ],
+  "aggregate_only_not_reconstructible_from_CSVs": [
+    "support evidence-validator breakdown"
+  ],
+  "verification": "153 public-output numeric values matched private-key aggregate analyses within 1e-12; minimal numeric-only default-path smoke output matched exactly."
+}

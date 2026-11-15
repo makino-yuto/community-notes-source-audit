@@ -1,0 +1,11 @@
+{
+  "analysis_kind": "post_control_independent_rubric_review",
+  "controls": 60,
+  "agreement_with_planned_convention": 52,
+  "ambiguous_chosen_NONE_cases": 10,
+  "of_those_rated_PARTIAL": 8,
+  "field_labels_changed": false,
+  "control_labels_changed": false,
+  "human_gold_standard": false,
+  "interpretation": "The field prompt permits partial credit for some material details. All eight disagreements credit entity/type identity without the enablement predicate/date, so NONE versus PARTIAL is convention-sensitive. This is rubric behavior, not unequivocal semantic error or calibrated real-source accuracy."
+}
