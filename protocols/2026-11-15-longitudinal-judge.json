@@ -1,0 +1,46 @@
+{
+  "conditional_frame": {
+    "all_panel_replay_outcomes": {
+      "body_replayed_parseable_text": 31,
+      "body_too_large_unassessable": 1,
+      "cdx_error_no_body_replay": 1,
+      "no_eligible_exact_original_capture": 58,
+      "transport_failure": 9
+    },
+    "both_parseable_query_units": 31,
+    "frozen_panel_units": 100,
+    "single_source_judgment_items": 62,
+    "wrapper_markers": 0
+  },
+  "inputs": {
+    "claims_sha256": "125f670032cf6ea46962ce00bed7163c3887176f7cc475d3fc5a8360d5de8585",
+    "crosswalk_sha256": "2ea1782222c03049b91d1cfa26d61aca2b4b69163486f69875b257e814630fe8",
+    "current_manifest_sha256": "d8526dbd4c0595d1c7fd6cb062e7d2ed32f4947e3d9388b5031a9c741ed01df2",
+    "current_sha256": "c257722d92953e1a3e27b63831155dd547e56fd5580e3018df84ffb1e4db1d72",
+    "judge_script_sha256": "71ed973f8477caf46e88182893bee834821e9aeca26266394fcb85224eee7b94",
+    "packet_sha256": "5700d260dae77adc428389b2d2436af65a1202d8acd7777071cda8174ac4a2a6",
+    "prepare_script_sha256": "92a9680180fb6db82cc2a1a26988b542ca4201a9e77e85c5be80e39f4ad1d070",
+    "replay_protocol_sha256": "03b2df7f555023a24493ad540f1bba668d771bbffa7db5233b867a4ee6d8f8bd",
+    "replay_sha256": "504fae5f402b2946cb3dc3e09175da79f478b5e41bc1c843440a3062ff629c14",
+    "selection_sha256": "b7002926296de4f046f78e0aff601d882779ea375bddb5a0628ed69e89cd6ffb"
+  },
+  "method": {
+    "blinding": "Opaque codes and shuffled order hide author group and historical/current labels. Source text can itself expose dates.",
+    "claim": "Exact pre-source first main correction; never revise after source inspection.",
+    "judgment": "Independent one-claim/one-source labels FULL, PARTIAL, NONE, CONTRADICTS, UNASSESSABLE; pair only after all labels freeze.",
+    "quote": "Positive/contradictory labels require literal source quotation, at most 20 words per source.",
+    "scope": "Observed source-to-claim support, not external truth or note correctness; all 100 panel outcomes remain in availability denominator.",
+    "text_cap_characters": 24000,
+    "wrapper": "Archive wrapper/error markers are technical warnings, not support labels; absent substantive intended evidence is UNASSESSABLE."
+  },
+  "prepared_utc": "2026-11-15T06:23:32+00:00",
+  "private_filenames": {
+    "claims": "newwave_longitudinal_claims_PRIVATE.jsonl",
+    "crosswalk": "newwave_longitudinal_judge_mapping_PRIVATE.jsonl",
+    "current": "newwave_semantic_content_PRIVATE.jsonl",
+    "packet": "newwave_longitudinal_judge_packet_PRIVATE.json",
+    "replay": "newwave_longitudinal_replay_PRIVATE.jsonl"
+  },
+  "schema": "newwave-longitudinal-blinded-source-support-v1",
+  "status": "FROZEN BEFORE ANY NEW ARCHIVE SOURCE-SUPPORT MODEL LABEL"
+}
