@@ -1,11 +1,11 @@
 {
-  "version": "Uniform semantic content pass amendment 1",
-  "created_utc": "2026-11-15T03:42:51.035288+00:00",
+  "version": "Uniform semantic content pass amendment 1.1",
+  "created_utc": "2026-11-15T03:43:16.329707+00:00",
   "parent_plan": "2026-11-15-same-post-all-citation.json at commit 8fd38172c854d911f08e854ccd29395cd32ca18e",
   "stage": "After machine collection began and alignment annotations completed; before content-pass requests or support judgments. This is not a retroactive change to the primary browser endpoint.",
   "reason": "Code review found that the broad machine probe does not extract PDF bodies and retains navigation text. A uniform separate content pass improves measurement of the already fixed 100-pair diagnostic without choosing cases by observed accessibility or support.",
   "sample": "All URLs in both notes of the unchanged 100 random pairs: 357 citation references and 319 distinct defragmented network URLs. No cases excluded for access outcome or claim alignment.",
-  "collection": "Only after the full 5787-URL machine pass completes, make one bounded unauthenticated GET per semantic URL in a separately logged wave. At most four workers, host interval at least one second, global interval0.25seconds, public-target checks on every redirect, five redirects,2MB cap. Record all failures. No browser escalation or status-conditioned retries.",
+  "collection": "Only after the full 5787-URL machine pass completes, make one bounded unauthenticated GET per semantic URL in a separately logged wave. At most four workers, host interval at least one second, global interval0.20seconds, public-target checks on every redirect, five redirects,2MB cap. Record all failures. No browser escalation or status-conditioned retries.",
   "extraction": "HTML article then main then body; remove script/style/noscript/template/svg/nav/header/footer/aside/form. Preserve body and main text hashes and selector. PDFs extract at most first50pages; preserve page and truncation metadata. Save at most120000chars, and supply each source first24000main-text characters to the model.",
   "judgment": "Frozen main claims from alignment pass; isolated Codex CLI default model, record per-run advertised identity, no tools/network. FULL/PARTIAL/NONE/CONTRADICTS/UNASSESSABLE. Exact evidence at most20words per source, literal substring check against supplied text. Missing or truncated content cannot justify absence. Quote-validation failures remain in raw output and become UNASSESSABLE in strict summaries unless separately documented independent adjudication resolves them.",
   "reliability": "20 blinded alignment recodes agreed11/20, so alignment categories are diagnostic only and will not identify causal same-claim effects. Keep raw counts and disagreements. Fix an independent random source-support recode subset before support outputs are read. Human review of the separately fixed20-note queue is optional; report actual coverage and no human-gold claim if absent.",
@@ -18,5 +18,6 @@
     "results\\newwave_alignment_trials_PRIVATE.jsonl": "282fbde3e1cfe8100d2baa9798fdb0c0aa169d349a4bfd91893d18b1e096d8b1",
     "results\\newwave_alignment_recode20.jsonl": "1853f315023969e335b3068b83617320a2b5eb31e9889739f5b2e2384e534830",
     "results\\newwave_human_review20_selection.json": "a703422efe5ba57843a748f8f3124d2cb47fea875e0c013c7ed30ca56a0dc8ed"
-  }
+  },
+  "documentation_correction": "The previous text misstated the unchanged collector constant 0.20s as0.25s. Corrected before any content-pass GET; collector code and frozen319-URL sample unchanged."
 }
