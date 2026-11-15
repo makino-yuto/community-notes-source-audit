@@ -103,11 +103,17 @@ def prepare(protocol_path: Path, selection_path: Path, claims_path: Path,
     if sum(row.get("event") == "v2_stage_start" for row in log) != 1 or sum(
         row.get("event") == "v2_stage_end" for row in log) != 1:
         raise ValueError("V2 CDX stage has not ended cleanly")
-    if claims_path.stat().st_size == 0:
-        raise ValueError("Frozen claim file is empty")
+    claim_rows = cdx.read_jsonl(claims_path)
+    claim_keys = {(row["pair_code"], row["side"], row["note_id"]) for row in claim_rows}
+    if len(claim_rows) != 200 or len(claim_keys) != 200:
+        raise ValueError("Expected 200 distinct frozen note claims")
+    for unit in selection["entries"]:
+        for ref in unit["associated_citation_refs"]:
+            if (ref["pair_code"], ref["side"], ref["note_id"]) not in claim_keys:
+                raise ValueError("Panel citation has no matching frozen note claim")
     payload = {
         "schema": "newwave-longitudinal-archive-body-replay-v1",
-        "status": "FROZEN BEFORE ANY ARCHIVED BODY REQUEST",
+        "status": "FROZEN BEFORE ANY V2 PANEL ARCHIVED BODY REQUEST",
         "prepared_utc": now(),
         "public_methods": {
             "frame": "All 100 preselected URL+first-Helpful-anchor units remain in denominator; no substitution or outcome-based selection.",
@@ -136,13 +142,13 @@ def prepare(protocol_path: Path, selection_path: Path, claims_path: Path,
         "private_input_filenames": {"selection": selection_path.name,
                                     "frozen_claims": claims_path.name,
                                     "cdx_runlog": cdx_runlog_path.name},
-        "archived_body_requests_at_plan_time": 0,
+        "v2_panel_archived_body_requests_at_plan_time": 0,
     }
     protocol_path.parent.mkdir(parents=True, exist_ok=True)
     protocol_path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(json.dumps({"protocol_sha256": cdx.sha_file(protocol_path),
                       "eligible_for_replay": payload["input_counts"]["eligible_for_replay"],
-                      "archived_body_requests": 0}), flush=True)
+                      "v2_panel_body_requests": 0}), flush=True)
     return payload
 
 
