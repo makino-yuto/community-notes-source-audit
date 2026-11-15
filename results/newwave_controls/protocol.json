@@ -1,0 +1,25 @@
+{
+  "schema": "controlled-support-quality-check-v1",
+  "prepared_utc": "2026-11-15T05:10:43.296087+00:00",
+  "status": "Prepared before control model calls; conceived after field labels, not a preregistration of field outcomes.",
+  "families": 10,
+  "conditions_per_family": 6,
+  "cases": 60,
+  "languages": {
+    "English_families": 6,
+    "Japanese_families": 2,
+    "Spanish_families": 2
+  },
+  "gold_rule": "Exact enabled date FULL; month but no day PARTIAL; unrelated complete directory NONE; explicit not-on-date plus next-day CONTRADICTS; empty source or title-only subscriber teaser UNASSESSABLE. Gold concerns entailment in fictitious text, not outside factual truth.",
+  "model_rule": "Identical frozen prompt/schema and official CLI configuration as field support judgments. Gold/family/condition not passed to model. No tools, fitting or tuning. One attempt per case; invalid execution not credited as correct. Preserve all 60.",
+  "analysis": "Raw and strict confusion matrices, exact correctness by gold class and family; no independence-based confidence interval across repeated families. Strict quote-invalid outputs become UNASSESSABLE, technical failures score incorrect. Controls test only simple known transformations; cannot establish real-source semantic accuracy.",
+  "hashes": {
+    "packet": "eca878808b9e5d6c67de5bd0967dfc6ea0f2b708a18f89811c0a8f9cc2112086",
+    "gold": "2ba11808bf935ca62827242055bd43eecc3b8565d6bcc6661f474f9eedaa0e35",
+    "script": "28706ded391206f48d9370921f530e678ac7f6b75806c5250510237887a4b044",
+    "frozen_judge_script": "8165cd69de668d0bd01c500ef16f9a14bf97bb0cb636f49d67bc599cfec690a5",
+    "prompt": "af54868386008e63fff93760c258c9f79548c6bbab6d9e04d02860b951d111aa",
+    "schema": "8267cfe68515a39f20684b57818bb8af842cdf2a093080d70109ababe9a03dcf"
+  },
+  "prepublication_technical_revision": "Null-safe logging only, before any control model calls. Packet and gold unchanged."
+}

@@ -1,0 +1,302 @@
+{
+  "C001": {
+    "family": 3,
+    "condition": 0,
+    "gold": "FULL"
+  },
+  "C002": {
+    "family": 1,
+    "condition": 1,
+    "gold": "PARTIAL"
+  },
+  "C003": {
+    "family": 6,
+    "condition": 0,
+    "gold": "FULL"
+  },
+  "C004": {
+    "family": 1,
+    "condition": 3,
+    "gold": "CONTRADICTS"
+  },
+  "C005": {
+    "family": 4,
+    "condition": 4,
+    "gold": "UNASSESSABLE"
+  },
+  "C006": {
+    "family": 6,
+    "condition": 3,
+    "gold": "CONTRADICTS"
+  },
+  "C007": {
+    "family": 9,
+    "condition": 5,
+    "gold": "UNASSESSABLE"
+  },
+  "C008": {
+    "family": 7,
+    "condition": 2,
+    "gold": "NONE"
+  },
+  "C009": {
+    "family": 1,
+    "condition": 4,
+    "gold": "UNASSESSABLE"
+  },
+  "C010": {
+    "family": 5,
+    "condition": 0,
+    "gold": "FULL"
+  },
+  "C011": {
+    "family": 3,
+    "condition": 4,
+    "gold": "UNASSESSABLE"
+  },
+  "C012": {
+    "family": 9,
+    "condition": 3,
+    "gold": "CONTRADICTS"
+  },
+  "C013": {
+    "family": 4,
+    "condition": 2,
+    "gold": "NONE"
+  },
+  "C014": {
+    "family": 2,
+    "condition": 3,
+    "gold": "CONTRADICTS"
+  },
+  "C015": {
+    "family": 2,
+    "condition": 4,
+    "gold": "UNASSESSABLE"
+  },
+  "C016": {
+    "family": 2,
+    "condition": 5,
+    "gold": "UNASSESSABLE"
+  },
+  "C017": {
+    "family": 8,
+    "condition": 0,
+    "gold": "FULL"
+  },
+  "C018": {
+    "family": 5,
+    "condition": 5,
+    "gold": "UNASSESSABLE"
+  },
+  "C019": {
+    "family": 1,
+    "condition": 0,
+    "gold": "FULL"
+  },
+  "C020": {
+    "family": 6,
+    "condition": 1,
+    "gold": "PARTIAL"
+  },
+  "C021": {
+    "family": 4,
+    "condition": 1,
+    "gold": "PARTIAL"
+  },
+  "C022": {
+    "family": 1,
+    "condition": 5,
+    "gold": "UNASSESSABLE"
+  },
+  "C023": {
+    "family": 9,
+    "condition": 1,
+    "gold": "PARTIAL"
+  },
+  "C024": {
+    "family": 6,
+    "condition": 4,
+    "gold": "UNASSESSABLE"
+  },
+  "C025": {
+    "family": 2,
+    "condition": 0,
+    "gold": "FULL"
+  },
+  "C026": {
+    "family": 7,
+    "condition": 4,
+    "gold": "UNASSESSABLE"
+  },
+  "C027": {
+    "family": 5,
+    "condition": 1,
+    "gold": "PARTIAL"
+  },
+  "C028": {
+    "family": 1,
+    "condition": 2,
+    "gold": "NONE"
+  },
+  "C029": {
+    "family": 9,
+    "condition": 2,
+    "gold": "NONE"
+  },
+  "C030": {
+    "family": 3,
+    "condition": 1,
+    "gold": "PARTIAL"
+  },
+  "C031": {
+    "family": 5,
+    "condition": 2,
+    "gold": "NONE"
+  },
+  "C032": {
+    "family": 0,
+    "condition": 0,
+    "gold": "FULL"
+  },
+  "C033": {
+    "family": 8,
+    "condition": 4,
+    "gold": "UNASSESSABLE"
+  },
+  "C034": {
+    "family": 7,
+    "condition": 1,
+    "gold": "PARTIAL"
+  },
+  "C035": {
+    "family": 2,
+    "condition": 1,
+    "gold": "PARTIAL"
+  },
+  "C036": {
+    "family": 8,
+    "condition": 1,
+    "gold": "PARTIAL"
+  },
+  "C037": {
+    "family": 8,
+    "condition": 5,
+    "gold": "UNASSESSABLE"
+  },
+  "C038": {
+    "family": 7,
+    "condition": 0,
+    "gold": "FULL"
+  },
+  "C039": {
+    "family": 6,
+    "condition": 2,
+    "gold": "NONE"
+  },
+  "C040": {
+    "family": 5,
+    "condition": 4,
+    "gold": "UNASSESSABLE"
+  },
+  "C041": {
+    "family": 0,
+    "condition": 2,
+    "gold": "NONE"
+  },
+  "C042": {
+    "family": 3,
+    "condition": 5,
+    "gold": "UNASSESSABLE"
+  },
+  "C043": {
+    "family": 3,
+    "condition": 2,
+    "gold": "NONE"
+  },
+  "C044": {
+    "family": 4,
+    "condition": 3,
+    "gold": "CONTRADICTS"
+  },
+  "C045": {
+    "family": 8,
+    "condition": 2,
+    "gold": "NONE"
+  },
+  "C046": {
+    "family": 0,
+    "condition": 1,
+    "gold": "PARTIAL"
+  },
+  "C047": {
+    "family": 0,
+    "condition": 3,
+    "gold": "CONTRADICTS"
+  },
+  "C048": {
+    "family": 0,
+    "condition": 5,
+    "gold": "UNASSESSABLE"
+  },
+  "C049": {
+    "family": 7,
+    "condition": 3,
+    "gold": "CONTRADICTS"
+  },
+  "C050": {
+    "family": 9,
+    "condition": 0,
+    "gold": "FULL"
+  },
+  "C051": {
+    "family": 4,
+    "condition": 5,
+    "gold": "UNASSESSABLE"
+  },
+  "C052": {
+    "family": 4,
+    "condition": 0,
+    "gold": "FULL"
+  },
+  "C053": {
+    "family": 8,
+    "condition": 3,
+    "gold": "CONTRADICTS"
+  },
+  "C054": {
+    "family": 3,
+    "condition": 3,
+    "gold": "CONTRADICTS"
+  },
+  "C055": {
+    "family": 6,
+    "condition": 5,
+    "gold": "UNASSESSABLE"
+  },
+  "C056": {
+    "family": 7,
+    "condition": 5,
+    "gold": "UNASSESSABLE"
+  },
+  "C057": {
+    "family": 2,
+    "condition": 2,
+    "gold": "NONE"
+  },
+  "C058": {
+    "family": 0,
+    "condition": 4,
+    "gold": "UNASSESSABLE"
+  },
+  "C059": {
+    "family": 9,
+    "condition": 4,
+    "gold": "UNASSESSABLE"
+  },
+  "C060": {
+    "family": 5,
+    "condition": 3,
+    "gold": "CONTRADICTS"
+  }
+}

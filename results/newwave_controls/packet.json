@@ -1,0 +1,1982 @@
+[
+  {
+    "note_text": "Fictional-Protocol-34 was enabled on 2026-04-14.",
+    "fixed_main_claim": "Fictional-Protocol-34 was enabled on 2026-04-14.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete audit record. Fictional-Protocol-34 was enabled on 2026-04-14. End of entry.",
+        "coverage": {
+          "input_chars": 85,
+          "extracted_chars_total": 85,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "a45d7ee1019fe8e3b096997808a6c2e23b4332ba87d220068accd2e5e14fd82b",
+        "main_text_saved_sha256": "a45d7ee1019fe8e3b096997808a6c2e23b4332ba87d220068accd2e5e14fd82b"
+      }
+    ],
+    "code": "C001"
+  },
+  {
+    "note_text": "Fictional-Protocol-32 was enabled on 2026-04-12.",
+    "fixed_main_claim": "Fictional-Protocol-32 was enabled on 2026-04-12.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete audit record. Fictional-Protocol-32 was enabled sometime in April 2026. The day of the month is not recorded. End of entry.",
+        "coverage": {
+          "input_chars": 132,
+          "extracted_chars_total": 132,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "e15398b52fa6335282011a3c6bad90812ba148d50083c2d13a205cbd65d6c7fb",
+        "main_text_saved_sha256": "e15398b52fa6335282011a3c6bad90812ba148d50083c2d13a205cbd65d6c7fb"
+      }
+    ],
+    "code": "C002"
+  },
+  {
+    "note_text": "架空のプロトコルFictional-Protocol-37は2026-04-17に有効化された。",
+    "fixed_main_claim": "架空のプロトコルFictional-Protocol-37は2026-04-17に有効化された。",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "完全な監査記録。架空のプロトコルFictional-Protocol-37は2026-04-17に有効化された。記録はここで終わる。",
+        "coverage": {
+          "input_chars": 66,
+          "extracted_chars_total": 66,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "a2275bce7e9fa2cc750e4460eea65276dfa92cdd7d7efa2edbf7ad990cf1ea60",
+        "main_text_saved_sha256": "a2275bce7e9fa2cc750e4460eea65276dfa92cdd7d7efa2edbf7ad990cf1ea60"
+      }
+    ],
+    "code": "C003"
+  },
+  {
+    "note_text": "Fictional-Protocol-32 was enabled on 2026-04-12.",
+    "fixed_main_claim": "Fictional-Protocol-32 was enabled on 2026-04-12.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete audit record. Fictional-Protocol-32 was not enabled on 2026-04-12. It was enabled on 2026-04-13. End of entry.",
+        "coverage": {
+          "input_chars": 119,
+          "extracted_chars_total": 119,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "a2e3c984477d1d24d79d6ec6e56e56f22b49e643ee1efc17e17c2e05ac102c07",
+        "main_text_saved_sha256": "a2e3c984477d1d24d79d6ec6e56e56f22b49e643ee1efc17e17c2e05ac102c07"
+      }
+    ],
+    "code": "C004"
+  },
+  {
+    "note_text": "Fictional-Protocol-35 was enabled on 2026-04-15.",
+    "fixed_main_claim": "Fictional-Protocol-35 was enabled on 2026-04-15.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "",
+        "coverage": {
+          "input_chars": 0,
+          "extracted_chars_total": 0,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "main_text_saved_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "code": "C005"
+  },
+  {
+    "note_text": "架空のプロトコルFictional-Protocol-37は2026-04-17に有効化された。",
+    "fixed_main_claim": "架空のプロトコルFictional-Protocol-37は2026-04-17に有効化された。",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "完全な監査記録。架空のプロトコルFictional-Protocol-37は2026-04-17には有効化されなかった。2026-04-18に有効化された。記録はここで終わる。",
+        "coverage": {
+          "input_chars": 88,
+          "extracted_chars_total": 88,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "8527a2749ca217a865127b816a66ee4cb80d6843f5cd9134304ff5c11ed92c9c",
+        "main_text_saved_sha256": "8527a2749ca217a865127b816a66ee4cb80d6843f5cd9134304ff5c11ed92c9c"
+      }
+    ],
+    "code": "C006"
+  },
+  {
+    "note_text": "El protocolo ficticio Fictional-Protocol-40 se activó el 2026-04-20.",
+    "fixed_main_claim": "El protocolo ficticio Fictional-Protocol-40 se activó el 2026-04-20.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "El protocolo ficticio Fictional-Protocol-40 se activó el 2026-04-20.",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Inicie sesión para leer el registro completo. Solo se muestra un avance para suscriptores.",
+        "coverage": {
+          "input_chars": 90,
+          "extracted_chars_total": 90,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "8d339cdf233f90d16a4019c39899958afdb0622c29f95ce80b22ddd5ad01df21",
+        "main_text_saved_sha256": "8d339cdf233f90d16a4019c39899958afdb0622c29f95ce80b22ddd5ad01df21"
+      }
+    ],
+    "code": "C007"
+  },
+  {
+    "note_text": "架空のプロトコルFictional-Protocol-38は2026-04-18に有効化された。",
+    "fixed_main_claim": "架空のプロトコルFictional-Protocol-38は2026-04-18に有効化された。",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "完全な案内文。Fictional-Protocol-38は架空のプロトコルの名称である。問い合わせ窓口は2階にある。この案内文は窓口の場所だけを説明する。",
+        "coverage": {
+          "input_chars": 77,
+          "extracted_chars_total": 77,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "e025eec54158521d23b9d67ed0f34ea9d04011a09a8fbd3a26470078e0cdf4f0",
+        "main_text_saved_sha256": "e025eec54158521d23b9d67ed0f34ea9d04011a09a8fbd3a26470078e0cdf4f0"
+      }
+    ],
+    "code": "C008"
+  },
+  {
+    "note_text": "Fictional-Protocol-32 was enabled on 2026-04-12.",
+    "fixed_main_claim": "Fictional-Protocol-32 was enabled on 2026-04-12.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "",
+        "coverage": {
+          "input_chars": 0,
+          "extracted_chars_total": 0,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "main_text_saved_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "code": "C009"
+  },
+  {
+    "note_text": "Fictional-Protocol-36 was enabled on 2026-04-16.",
+    "fixed_main_claim": "Fictional-Protocol-36 was enabled on 2026-04-16.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete audit record. Fictional-Protocol-36 was enabled on 2026-04-16. End of entry.",
+        "coverage": {
+          "input_chars": 85,
+          "extracted_chars_total": 85,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "8de5fba59c6ea230bd2cb40592d03790a0a03cc0f4c27fc4afb7dad8b1d44ebd",
+        "main_text_saved_sha256": "8de5fba59c6ea230bd2cb40592d03790a0a03cc0f4c27fc4afb7dad8b1d44ebd"
+      }
+    ],
+    "code": "C010"
+  },
+  {
+    "note_text": "Fictional-Protocol-34 was enabled on 2026-04-14.",
+    "fixed_main_claim": "Fictional-Protocol-34 was enabled on 2026-04-14.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "",
+        "coverage": {
+          "input_chars": 0,
+          "extracted_chars_total": 0,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "main_text_saved_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "code": "C011"
+  },
+  {
+    "note_text": "El protocolo ficticio Fictional-Protocol-40 se activó el 2026-04-20.",
+    "fixed_main_claim": "El protocolo ficticio Fictional-Protocol-40 se activó el 2026-04-20.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Registro de auditoría completo. El protocolo ficticio Fictional-Protocol-40 no se activó el 2026-04-20. Se activó el 2026-04-21. Fin del registro.",
+        "coverage": {
+          "input_chars": 146,
+          "extracted_chars_total": 146,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "e85508a1e9d3b7d8b9dbc975400f05e2a5cafcc1c9c46c53dbf5eb68ba1b8dec",
+        "main_text_saved_sha256": "e85508a1e9d3b7d8b9dbc975400f05e2a5cafcc1c9c46c53dbf5eb68ba1b8dec"
+      }
+    ],
+    "code": "C012"
+  },
+  {
+    "note_text": "Fictional-Protocol-35 was enabled on 2026-04-15.",
+    "fixed_main_claim": "Fictional-Protocol-35 was enabled on 2026-04-15.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete public directory. Fictional-Protocol-35 is the name of a fictitious protocol. The contact desk is on the second floor. This entry only describes the desk location. End of entry.",
+        "coverage": {
+          "input_chars": 186,
+          "extracted_chars_total": 186,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "284e6f5ce71a93582515b52153ad38ca96f116f20192c7a9b701798344434e8e",
+        "main_text_saved_sha256": "284e6f5ce71a93582515b52153ad38ca96f116f20192c7a9b701798344434e8e"
+      }
+    ],
+    "code": "C013"
+  },
+  {
+    "note_text": "Fictional-Protocol-33 was enabled on 2026-04-13.",
+    "fixed_main_claim": "Fictional-Protocol-33 was enabled on 2026-04-13.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete audit record. Fictional-Protocol-33 was not enabled on 2026-04-13. It was enabled on 2026-04-14. End of entry.",
+        "coverage": {
+          "input_chars": 119,
+          "extracted_chars_total": 119,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "23fe2f961771e36d646cd62d933bc6dd1692e94a15c4116c3799249e366ac8a1",
+        "main_text_saved_sha256": "23fe2f961771e36d646cd62d933bc6dd1692e94a15c4116c3799249e366ac8a1"
+      }
+    ],
+    "code": "C014"
+  },
+  {
+    "note_text": "Fictional-Protocol-33 was enabled on 2026-04-13.",
+    "fixed_main_claim": "Fictional-Protocol-33 was enabled on 2026-04-13.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "",
+        "coverage": {
+          "input_chars": 0,
+          "extracted_chars_total": 0,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "main_text_saved_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "code": "C015"
+  },
+  {
+    "note_text": "Fictional-Protocol-33 was enabled on 2026-04-13.",
+    "fixed_main_claim": "Fictional-Protocol-33 was enabled on 2026-04-13.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictional-Protocol-33 was enabled on 2026-04-13.",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Sign in to read the full audit record. Subscriber preview only.",
+        "coverage": {
+          "input_chars": 63,
+          "extracted_chars_total": 63,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "3f58a2436e393af3765d4ed125822090d670a8b35290d254231bd52bda2602b5",
+        "main_text_saved_sha256": "3f58a2436e393af3765d4ed125822090d670a8b35290d254231bd52bda2602b5"
+      }
+    ],
+    "code": "C016"
+  },
+  {
+    "note_text": "El protocolo ficticio Fictional-Protocol-39 se activó el 2026-04-19.",
+    "fixed_main_claim": "El protocolo ficticio Fictional-Protocol-39 se activó el 2026-04-19.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Registro de auditoría completo. El protocolo ficticio Fictional-Protocol-39 se activó el 2026-04-19. Fin del registro.",
+        "coverage": {
+          "input_chars": 118,
+          "extracted_chars_total": 118,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "8e4dd5b16f3c5d93e0b20eb8073d8fab246097cb19d1fdfe6535d4e88cbc1aa3",
+        "main_text_saved_sha256": "8e4dd5b16f3c5d93e0b20eb8073d8fab246097cb19d1fdfe6535d4e88cbc1aa3"
+      }
+    ],
+    "code": "C017"
+  },
+  {
+    "note_text": "Fictional-Protocol-36 was enabled on 2026-04-16.",
+    "fixed_main_claim": "Fictional-Protocol-36 was enabled on 2026-04-16.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictional-Protocol-36 was enabled on 2026-04-16.",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Sign in to read the full audit record. Subscriber preview only.",
+        "coverage": {
+          "input_chars": 63,
+          "extracted_chars_total": 63,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "3f58a2436e393af3765d4ed125822090d670a8b35290d254231bd52bda2602b5",
+        "main_text_saved_sha256": "3f58a2436e393af3765d4ed125822090d670a8b35290d254231bd52bda2602b5"
+      }
+    ],
+    "code": "C018"
+  },
+  {
+    "note_text": "Fictional-Protocol-32 was enabled on 2026-04-12.",
+    "fixed_main_claim": "Fictional-Protocol-32 was enabled on 2026-04-12.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete audit record. Fictional-Protocol-32 was enabled on 2026-04-12. End of entry.",
+        "coverage": {
+          "input_chars": 85,
+          "extracted_chars_total": 85,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "e59992ab74a677dfe54b9f120028c9aef96ea6aa56929ba15ad6badca84afb82",
+        "main_text_saved_sha256": "e59992ab74a677dfe54b9f120028c9aef96ea6aa56929ba15ad6badca84afb82"
+      }
+    ],
+    "code": "C019"
+  },
+  {
+    "note_text": "架空のプロトコルFictional-Protocol-37は2026-04-17に有効化された。",
+    "fixed_main_claim": "架空のプロトコルFictional-Protocol-37は2026-04-17に有効化された。",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "完全な監査記録。架空のプロトコルFictional-Protocol-37は2026年4月中に有効化された。具体的な日は記録されていない。記録はここで終わる。",
+        "coverage": {
+          "input_chars": 79,
+          "extracted_chars_total": 79,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "a27c2faaa8be3065a6baa6eeccc89a72e34cac3d7faffb2224db9c96e3897228",
+        "main_text_saved_sha256": "a27c2faaa8be3065a6baa6eeccc89a72e34cac3d7faffb2224db9c96e3897228"
+      }
+    ],
+    "code": "C020"
+  },
+  {
+    "note_text": "Fictional-Protocol-35 was enabled on 2026-04-15.",
+    "fixed_main_claim": "Fictional-Protocol-35 was enabled on 2026-04-15.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete audit record. Fictional-Protocol-35 was enabled sometime in April 2026. The day of the month is not recorded. End of entry.",
+        "coverage": {
+          "input_chars": 132,
+          "extracted_chars_total": 132,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "3351a2e7a3d951b10761b72c0a932310855a05212614168dbffc4c0bf33c88dd",
+        "main_text_saved_sha256": "3351a2e7a3d951b10761b72c0a932310855a05212614168dbffc4c0bf33c88dd"
+      }
+    ],
+    "code": "C021"
+  },
+  {
+    "note_text": "Fictional-Protocol-32 was enabled on 2026-04-12.",
+    "fixed_main_claim": "Fictional-Protocol-32 was enabled on 2026-04-12.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictional-Protocol-32 was enabled on 2026-04-12.",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Sign in to read the full audit record. Subscriber preview only.",
+        "coverage": {
+          "input_chars": 63,
+          "extracted_chars_total": 63,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "3f58a2436e393af3765d4ed125822090d670a8b35290d254231bd52bda2602b5",
+        "main_text_saved_sha256": "3f58a2436e393af3765d4ed125822090d670a8b35290d254231bd52bda2602b5"
+      }
+    ],
+    "code": "C022"
+  },
+  {
+    "note_text": "El protocolo ficticio Fictional-Protocol-40 se activó el 2026-04-20.",
+    "fixed_main_claim": "El protocolo ficticio Fictional-Protocol-40 se activó el 2026-04-20.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Registro de auditoría completo. El protocolo ficticio Fictional-Protocol-40 se activó en abril de 2026. El día exacto no está registrado. Fin del registro.",
+        "coverage": {
+          "input_chars": 155,
+          "extracted_chars_total": 155,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "a7fa1680d51fb58a3cbea352569725bdb8f9280dc7c74b32fad9c48c311a21ba",
+        "main_text_saved_sha256": "a7fa1680d51fb58a3cbea352569725bdb8f9280dc7c74b32fad9c48c311a21ba"
+      }
+    ],
+    "code": "C023"
+  },
+  {
+    "note_text": "架空のプロトコルFictional-Protocol-37は2026-04-17に有効化された。",
+    "fixed_main_claim": "架空のプロトコルFictional-Protocol-37は2026-04-17に有効化された。",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "",
+        "coverage": {
+          "input_chars": 0,
+          "extracted_chars_total": 0,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "main_text_saved_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "code": "C024"
+  },
+  {
+    "note_text": "Fictional-Protocol-33 was enabled on 2026-04-13.",
+    "fixed_main_claim": "Fictional-Protocol-33 was enabled on 2026-04-13.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete audit record. Fictional-Protocol-33 was enabled on 2026-04-13. End of entry.",
+        "coverage": {
+          "input_chars": 85,
+          "extracted_chars_total": 85,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "01039e6c611610a513742087602b22eff4cc458756438c544fcd2d069f094ce3",
+        "main_text_saved_sha256": "01039e6c611610a513742087602b22eff4cc458756438c544fcd2d069f094ce3"
+      }
+    ],
+    "code": "C025"
+  },
+  {
+    "note_text": "架空のプロトコルFictional-Protocol-38は2026-04-18に有効化された。",
+    "fixed_main_claim": "架空のプロトコルFictional-Protocol-38は2026-04-18に有効化された。",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "",
+        "coverage": {
+          "input_chars": 0,
+          "extracted_chars_total": 0,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "main_text_saved_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "code": "C026"
+  },
+  {
+    "note_text": "Fictional-Protocol-36 was enabled on 2026-04-16.",
+    "fixed_main_claim": "Fictional-Protocol-36 was enabled on 2026-04-16.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete audit record. Fictional-Protocol-36 was enabled sometime in April 2026. The day of the month is not recorded. End of entry.",
+        "coverage": {
+          "input_chars": 132,
+          "extracted_chars_total": 132,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "f5d1faf7782caae37a20abb9d83273d85a9b806da1e74abbeee289e9812ac088",
+        "main_text_saved_sha256": "f5d1faf7782caae37a20abb9d83273d85a9b806da1e74abbeee289e9812ac088"
+      }
+    ],
+    "code": "C027"
+  },
+  {
+    "note_text": "Fictional-Protocol-32 was enabled on 2026-04-12.",
+    "fixed_main_claim": "Fictional-Protocol-32 was enabled on 2026-04-12.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete public directory. Fictional-Protocol-32 is the name of a fictitious protocol. The contact desk is on the second floor. This entry only describes the desk location. End of entry.",
+        "coverage": {
+          "input_chars": 186,
+          "extracted_chars_total": 186,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "d4db2cf8b8b4f1b352a990d9db3bec184c27d5fb9a2740d95d03ba1d49a57742",
+        "main_text_saved_sha256": "d4db2cf8b8b4f1b352a990d9db3bec184c27d5fb9a2740d95d03ba1d49a57742"
+      }
+    ],
+    "code": "C028"
+  },
+  {
+    "note_text": "El protocolo ficticio Fictional-Protocol-40 se activó el 2026-04-20.",
+    "fixed_main_claim": "El protocolo ficticio Fictional-Protocol-40 se activó el 2026-04-20.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Directorio público completo. Fictional-Protocol-40 es el nombre de un protocolo ficticio. El mostrador de información está en la segunda planta. Esta entrada solo describe su ubicación.",
+        "coverage": {
+          "input_chars": 185,
+          "extracted_chars_total": 185,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "ca89762cdf570bf9f8cb24b0dd9333d612089d26f95f033d3ac2d6bedc64c2a3",
+        "main_text_saved_sha256": "ca89762cdf570bf9f8cb24b0dd9333d612089d26f95f033d3ac2d6bedc64c2a3"
+      }
+    ],
+    "code": "C029"
+  },
+  {
+    "note_text": "Fictional-Protocol-34 was enabled on 2026-04-14.",
+    "fixed_main_claim": "Fictional-Protocol-34 was enabled on 2026-04-14.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete audit record. Fictional-Protocol-34 was enabled sometime in April 2026. The day of the month is not recorded. End of entry.",
+        "coverage": {
+          "input_chars": 132,
+          "extracted_chars_total": 132,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "22b36775036430975f9aad0c147187daa71cf5d76f51251a864c83ee5c7d3e58",
+        "main_text_saved_sha256": "22b36775036430975f9aad0c147187daa71cf5d76f51251a864c83ee5c7d3e58"
+      }
+    ],
+    "code": "C030"
+  },
+  {
+    "note_text": "Fictional-Protocol-36 was enabled on 2026-04-16.",
+    "fixed_main_claim": "Fictional-Protocol-36 was enabled on 2026-04-16.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete public directory. Fictional-Protocol-36 is the name of a fictitious protocol. The contact desk is on the second floor. This entry only describes the desk location. End of entry.",
+        "coverage": {
+          "input_chars": 186,
+          "extracted_chars_total": 186,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "72e4a972e11b2ca03b03a09deb2ab33c2031a57f168900a3c9122009d78f4f0b",
+        "main_text_saved_sha256": "72e4a972e11b2ca03b03a09deb2ab33c2031a57f168900a3c9122009d78f4f0b"
+      }
+    ],
+    "code": "C031"
+  },
+  {
+    "note_text": "Fictional-Protocol-31 was enabled on 2026-04-11.",
+    "fixed_main_claim": "Fictional-Protocol-31 was enabled on 2026-04-11.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete audit record. Fictional-Protocol-31 was enabled on 2026-04-11. End of entry.",
+        "coverage": {
+          "input_chars": 85,
+          "extracted_chars_total": 85,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "1e6129cfd6b39c1cd4aa4cf9cd2485342f07406de9df92dbc130b56ccf97f426",
+        "main_text_saved_sha256": "1e6129cfd6b39c1cd4aa4cf9cd2485342f07406de9df92dbc130b56ccf97f426"
+      }
+    ],
+    "code": "C032"
+  },
+  {
+    "note_text": "El protocolo ficticio Fictional-Protocol-39 se activó el 2026-04-19.",
+    "fixed_main_claim": "El protocolo ficticio Fictional-Protocol-39 se activó el 2026-04-19.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "",
+        "coverage": {
+          "input_chars": 0,
+          "extracted_chars_total": 0,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "main_text_saved_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "code": "C033"
+  },
+  {
+    "note_text": "架空のプロトコルFictional-Protocol-38は2026-04-18に有効化された。",
+    "fixed_main_claim": "架空のプロトコルFictional-Protocol-38は2026-04-18に有効化された。",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "完全な監査記録。架空のプロトコルFictional-Protocol-38は2026年4月中に有効化された。具体的な日は記録されていない。記録はここで終わる。",
+        "coverage": {
+          "input_chars": 79,
+          "extracted_chars_total": 79,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "3c83c3ec2e81d7167e3cbb07eb14181b327e3ea44d370635600272e72da189c9",
+        "main_text_saved_sha256": "3c83c3ec2e81d7167e3cbb07eb14181b327e3ea44d370635600272e72da189c9"
+      }
+    ],
+    "code": "C034"
+  },
+  {
+    "note_text": "Fictional-Protocol-33 was enabled on 2026-04-13.",
+    "fixed_main_claim": "Fictional-Protocol-33 was enabled on 2026-04-13.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete audit record. Fictional-Protocol-33 was enabled sometime in April 2026. The day of the month is not recorded. End of entry.",
+        "coverage": {
+          "input_chars": 132,
+          "extracted_chars_total": 132,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "93b4dd7ac0e42325efb061038132f9e879adc6c7a8247f1d7fdd13af36e610ad",
+        "main_text_saved_sha256": "93b4dd7ac0e42325efb061038132f9e879adc6c7a8247f1d7fdd13af36e610ad"
+      }
+    ],
+    "code": "C035"
+  },
+  {
+    "note_text": "El protocolo ficticio Fictional-Protocol-39 se activó el 2026-04-19.",
+    "fixed_main_claim": "El protocolo ficticio Fictional-Protocol-39 se activó el 2026-04-19.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Registro de auditoría completo. El protocolo ficticio Fictional-Protocol-39 se activó en abril de 2026. El día exacto no está registrado. Fin del registro.",
+        "coverage": {
+          "input_chars": 155,
+          "extracted_chars_total": 155,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "3932d932180cd9f54ba7edc2877a7528961142b7df1435384e39685c5b274447",
+        "main_text_saved_sha256": "3932d932180cd9f54ba7edc2877a7528961142b7df1435384e39685c5b274447"
+      }
+    ],
+    "code": "C036"
+  },
+  {
+    "note_text": "El protocolo ficticio Fictional-Protocol-39 se activó el 2026-04-19.",
+    "fixed_main_claim": "El protocolo ficticio Fictional-Protocol-39 se activó el 2026-04-19.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "El protocolo ficticio Fictional-Protocol-39 se activó el 2026-04-19.",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Inicie sesión para leer el registro completo. Solo se muestra un avance para suscriptores.",
+        "coverage": {
+          "input_chars": 90,
+          "extracted_chars_total": 90,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "8d339cdf233f90d16a4019c39899958afdb0622c29f95ce80b22ddd5ad01df21",
+        "main_text_saved_sha256": "8d339cdf233f90d16a4019c39899958afdb0622c29f95ce80b22ddd5ad01df21"
+      }
+    ],
+    "code": "C037"
+  },
+  {
+    "note_text": "架空のプロトコルFictional-Protocol-38は2026-04-18に有効化された。",
+    "fixed_main_claim": "架空のプロトコルFictional-Protocol-38は2026-04-18に有効化された。",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "完全な監査記録。架空のプロトコルFictional-Protocol-38は2026-04-18に有効化された。記録はここで終わる。",
+        "coverage": {
+          "input_chars": 66,
+          "extracted_chars_total": 66,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "632daf9b30ed651760e50d212ea99a58d637fa29a461e0f161f31bf748ba3b6a",
+        "main_text_saved_sha256": "632daf9b30ed651760e50d212ea99a58d637fa29a461e0f161f31bf748ba3b6a"
+      }
+    ],
+    "code": "C038"
+  },
+  {
+    "note_text": "架空のプロトコルFictional-Protocol-37は2026-04-17に有効化された。",
+    "fixed_main_claim": "架空のプロトコルFictional-Protocol-37は2026-04-17に有効化された。",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "完全な案内文。Fictional-Protocol-37は架空のプロトコルの名称である。問い合わせ窓口は2階にある。この案内文は窓口の場所だけを説明する。",
+        "coverage": {
+          "input_chars": 77,
+          "extracted_chars_total": 77,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "9f7c52b5ea9008b13af2a817b5d0c6974a77a76055a3c53e06219e320acbc4bb",
+        "main_text_saved_sha256": "9f7c52b5ea9008b13af2a817b5d0c6974a77a76055a3c53e06219e320acbc4bb"
+      }
+    ],
+    "code": "C039"
+  },
+  {
+    "note_text": "Fictional-Protocol-36 was enabled on 2026-04-16.",
+    "fixed_main_claim": "Fictional-Protocol-36 was enabled on 2026-04-16.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "",
+        "coverage": {
+          "input_chars": 0,
+          "extracted_chars_total": 0,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "main_text_saved_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "code": "C040"
+  },
+  {
+    "note_text": "Fictional-Protocol-31 was enabled on 2026-04-11.",
+    "fixed_main_claim": "Fictional-Protocol-31 was enabled on 2026-04-11.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete public directory. Fictional-Protocol-31 is the name of a fictitious protocol. The contact desk is on the second floor. This entry only describes the desk location. End of entry.",
+        "coverage": {
+          "input_chars": 186,
+          "extracted_chars_total": 186,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "a14d184924bb7e4e6bd32ed84dceec999f76508a722a4bb8f644e042896d882d",
+        "main_text_saved_sha256": "a14d184924bb7e4e6bd32ed84dceec999f76508a722a4bb8f644e042896d882d"
+      }
+    ],
+    "code": "C041"
+  },
+  {
+    "note_text": "Fictional-Protocol-34 was enabled on 2026-04-14.",
+    "fixed_main_claim": "Fictional-Protocol-34 was enabled on 2026-04-14.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictional-Protocol-34 was enabled on 2026-04-14.",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Sign in to read the full audit record. Subscriber preview only.",
+        "coverage": {
+          "input_chars": 63,
+          "extracted_chars_total": 63,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "3f58a2436e393af3765d4ed125822090d670a8b35290d254231bd52bda2602b5",
+        "main_text_saved_sha256": "3f58a2436e393af3765d4ed125822090d670a8b35290d254231bd52bda2602b5"
+      }
+    ],
+    "code": "C042"
+  },
+  {
+    "note_text": "Fictional-Protocol-34 was enabled on 2026-04-14.",
+    "fixed_main_claim": "Fictional-Protocol-34 was enabled on 2026-04-14.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete public directory. Fictional-Protocol-34 is the name of a fictitious protocol. The contact desk is on the second floor. This entry only describes the desk location. End of entry.",
+        "coverage": {
+          "input_chars": 186,
+          "extracted_chars_total": 186,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "7abdd622e24d890bc8ea5d01458886a2d00082c7e93a8d9cf2e57d3590d1d455",
+        "main_text_saved_sha256": "7abdd622e24d890bc8ea5d01458886a2d00082c7e93a8d9cf2e57d3590d1d455"
+      }
+    ],
+    "code": "C043"
+  },
+  {
+    "note_text": "Fictional-Protocol-35 was enabled on 2026-04-15.",
+    "fixed_main_claim": "Fictional-Protocol-35 was enabled on 2026-04-15.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete audit record. Fictional-Protocol-35 was not enabled on 2026-04-15. It was enabled on 2026-04-16. End of entry.",
+        "coverage": {
+          "input_chars": 119,
+          "extracted_chars_total": 119,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "5c655369a9923b0bce070d42149c672c63c8eea77814fa4cfae355241bd21d86",
+        "main_text_saved_sha256": "5c655369a9923b0bce070d42149c672c63c8eea77814fa4cfae355241bd21d86"
+      }
+    ],
+    "code": "C044"
+  },
+  {
+    "note_text": "El protocolo ficticio Fictional-Protocol-39 se activó el 2026-04-19.",
+    "fixed_main_claim": "El protocolo ficticio Fictional-Protocol-39 se activó el 2026-04-19.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Directorio público completo. Fictional-Protocol-39 es el nombre de un protocolo ficticio. El mostrador de información está en la segunda planta. Esta entrada solo describe su ubicación.",
+        "coverage": {
+          "input_chars": 185,
+          "extracted_chars_total": 185,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "1ecd34219a7847ddbe6b572aaf723f7593a401a688053b2a83d04ac9162f96ea",
+        "main_text_saved_sha256": "1ecd34219a7847ddbe6b572aaf723f7593a401a688053b2a83d04ac9162f96ea"
+      }
+    ],
+    "code": "C045"
+  },
+  {
+    "note_text": "Fictional-Protocol-31 was enabled on 2026-04-11.",
+    "fixed_main_claim": "Fictional-Protocol-31 was enabled on 2026-04-11.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete audit record. Fictional-Protocol-31 was enabled sometime in April 2026. The day of the month is not recorded. End of entry.",
+        "coverage": {
+          "input_chars": 132,
+          "extracted_chars_total": 132,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "a2c7ee63c9dfaab6446f84d48278a612c3ef5b1af8cdcdeb999642617c02b8bc",
+        "main_text_saved_sha256": "a2c7ee63c9dfaab6446f84d48278a612c3ef5b1af8cdcdeb999642617c02b8bc"
+      }
+    ],
+    "code": "C046"
+  },
+  {
+    "note_text": "Fictional-Protocol-31 was enabled on 2026-04-11.",
+    "fixed_main_claim": "Fictional-Protocol-31 was enabled on 2026-04-11.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete audit record. Fictional-Protocol-31 was not enabled on 2026-04-11. It was enabled on 2026-04-12. End of entry.",
+        "coverage": {
+          "input_chars": 119,
+          "extracted_chars_total": 119,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "a2bb4004bbd3ea01467144b9dd00d81bad2c9b80c1da6f2f33732722b1c361bd",
+        "main_text_saved_sha256": "a2bb4004bbd3ea01467144b9dd00d81bad2c9b80c1da6f2f33732722b1c361bd"
+      }
+    ],
+    "code": "C047"
+  },
+  {
+    "note_text": "Fictional-Protocol-31 was enabled on 2026-04-11.",
+    "fixed_main_claim": "Fictional-Protocol-31 was enabled on 2026-04-11.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictional-Protocol-31 was enabled on 2026-04-11.",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Sign in to read the full audit record. Subscriber preview only.",
+        "coverage": {
+          "input_chars": 63,
+          "extracted_chars_total": 63,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "3f58a2436e393af3765d4ed125822090d670a8b35290d254231bd52bda2602b5",
+        "main_text_saved_sha256": "3f58a2436e393af3765d4ed125822090d670a8b35290d254231bd52bda2602b5"
+      }
+    ],
+    "code": "C048"
+  },
+  {
+    "note_text": "架空のプロトコルFictional-Protocol-38は2026-04-18に有効化された。",
+    "fixed_main_claim": "架空のプロトコルFictional-Protocol-38は2026-04-18に有効化された。",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "完全な監査記録。架空のプロトコルFictional-Protocol-38は2026-04-18には有効化されなかった。2026-04-19に有効化された。記録はここで終わる。",
+        "coverage": {
+          "input_chars": 88,
+          "extracted_chars_total": 88,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "fb544ff99f894015d723808fc367b075837c17b28a45953bd4ee6cc3bbeb97fc",
+        "main_text_saved_sha256": "fb544ff99f894015d723808fc367b075837c17b28a45953bd4ee6cc3bbeb97fc"
+      }
+    ],
+    "code": "C049"
+  },
+  {
+    "note_text": "El protocolo ficticio Fictional-Protocol-40 se activó el 2026-04-20.",
+    "fixed_main_claim": "El protocolo ficticio Fictional-Protocol-40 se activó el 2026-04-20.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Registro de auditoría completo. El protocolo ficticio Fictional-Protocol-40 se activó el 2026-04-20. Fin del registro.",
+        "coverage": {
+          "input_chars": 118,
+          "extracted_chars_total": 118,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "3783024dab8c6b977d7d29623601d95189c6213f7165f41a5cd4a33e65f44ea9",
+        "main_text_saved_sha256": "3783024dab8c6b977d7d29623601d95189c6213f7165f41a5cd4a33e65f44ea9"
+      }
+    ],
+    "code": "C050"
+  },
+  {
+    "note_text": "Fictional-Protocol-35 was enabled on 2026-04-15.",
+    "fixed_main_claim": "Fictional-Protocol-35 was enabled on 2026-04-15.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictional-Protocol-35 was enabled on 2026-04-15.",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Sign in to read the full audit record. Subscriber preview only.",
+        "coverage": {
+          "input_chars": 63,
+          "extracted_chars_total": 63,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "3f58a2436e393af3765d4ed125822090d670a8b35290d254231bd52bda2602b5",
+        "main_text_saved_sha256": "3f58a2436e393af3765d4ed125822090d670a8b35290d254231bd52bda2602b5"
+      }
+    ],
+    "code": "C051"
+  },
+  {
+    "note_text": "Fictional-Protocol-35 was enabled on 2026-04-15.",
+    "fixed_main_claim": "Fictional-Protocol-35 was enabled on 2026-04-15.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete audit record. Fictional-Protocol-35 was enabled on 2026-04-15. End of entry.",
+        "coverage": {
+          "input_chars": 85,
+          "extracted_chars_total": 85,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "be436b8f658dcf741086970de96e5e1637a43c31364f6cdde6ee4b661612ad76",
+        "main_text_saved_sha256": "be436b8f658dcf741086970de96e5e1637a43c31364f6cdde6ee4b661612ad76"
+      }
+    ],
+    "code": "C052"
+  },
+  {
+    "note_text": "El protocolo ficticio Fictional-Protocol-39 se activó el 2026-04-19.",
+    "fixed_main_claim": "El protocolo ficticio Fictional-Protocol-39 se activó el 2026-04-19.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Registro de auditoría completo. El protocolo ficticio Fictional-Protocol-39 no se activó el 2026-04-19. Se activó el 2026-04-20. Fin del registro.",
+        "coverage": {
+          "input_chars": 146,
+          "extracted_chars_total": 146,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "5978f4f3d3f4001df7dc328190c1c8ebd67ef2fb22f9417b724b295a72992120",
+        "main_text_saved_sha256": "5978f4f3d3f4001df7dc328190c1c8ebd67ef2fb22f9417b724b295a72992120"
+      }
+    ],
+    "code": "C053"
+  },
+  {
+    "note_text": "Fictional-Protocol-34 was enabled on 2026-04-14.",
+    "fixed_main_claim": "Fictional-Protocol-34 was enabled on 2026-04-14.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete audit record. Fictional-Protocol-34 was not enabled on 2026-04-14. It was enabled on 2026-04-15. End of entry.",
+        "coverage": {
+          "input_chars": 119,
+          "extracted_chars_total": 119,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "ff5bbc848a5c42dc11572ca916ce70c95324f2e24a5f41cb286ff9e3765487c5",
+        "main_text_saved_sha256": "ff5bbc848a5c42dc11572ca916ce70c95324f2e24a5f41cb286ff9e3765487c5"
+      }
+    ],
+    "code": "C054"
+  },
+  {
+    "note_text": "架空のプロトコルFictional-Protocol-37は2026-04-17に有効化された。",
+    "fixed_main_claim": "架空のプロトコルFictional-Protocol-37は2026-04-17に有効化された。",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "架空のプロトコルFictional-Protocol-37は2026-04-17に有効化された。",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "監査記録の全文を読むにはログインしてください。購読者向け記事のプレビューです。",
+        "coverage": {
+          "input_chars": 39,
+          "extracted_chars_total": 39,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "8747cdce0f12733077c38f1a5a938cc3e4c7d73625d97556935f6ec80a4c3cee",
+        "main_text_saved_sha256": "8747cdce0f12733077c38f1a5a938cc3e4c7d73625d97556935f6ec80a4c3cee"
+      }
+    ],
+    "code": "C055"
+  },
+  {
+    "note_text": "架空のプロトコルFictional-Protocol-38は2026-04-18に有効化された。",
+    "fixed_main_claim": "架空のプロトコルFictional-Protocol-38は2026-04-18に有効化された。",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "架空のプロトコルFictional-Protocol-38は2026-04-18に有効化された。",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "監査記録の全文を読むにはログインしてください。購読者向け記事のプレビューです。",
+        "coverage": {
+          "input_chars": 39,
+          "extracted_chars_total": 39,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "8747cdce0f12733077c38f1a5a938cc3e4c7d73625d97556935f6ec80a4c3cee",
+        "main_text_saved_sha256": "8747cdce0f12733077c38f1a5a938cc3e4c7d73625d97556935f6ec80a4c3cee"
+      }
+    ],
+    "code": "C056"
+  },
+  {
+    "note_text": "Fictional-Protocol-33 was enabled on 2026-04-13.",
+    "fixed_main_claim": "Fictional-Protocol-33 was enabled on 2026-04-13.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete public directory. Fictional-Protocol-33 is the name of a fictitious protocol. The contact desk is on the second floor. This entry only describes the desk location. End of entry.",
+        "coverage": {
+          "input_chars": 186,
+          "extracted_chars_total": 186,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "e61b46840f03fefdcf8afa16040f8b0deb9eadeb5df07cbaab7f1b37fdac58d8",
+        "main_text_saved_sha256": "e61b46840f03fefdcf8afa16040f8b0deb9eadeb5df07cbaab7f1b37fdac58d8"
+      }
+    ],
+    "code": "C057"
+  },
+  {
+    "note_text": "Fictional-Protocol-31 was enabled on 2026-04-11.",
+    "fixed_main_claim": "Fictional-Protocol-31 was enabled on 2026-04-11.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "",
+        "coverage": {
+          "input_chars": 0,
+          "extracted_chars_total": 0,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "main_text_saved_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "code": "C058"
+  },
+  {
+    "note_text": "El protocolo ficticio Fictional-Protocol-40 se activó el 2026-04-20.",
+    "fixed_main_claim": "El protocolo ficticio Fictional-Protocol-40 se activó el 2026-04-20.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "",
+        "coverage": {
+          "input_chars": 0,
+          "extracted_chars_total": 0,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "main_text_saved_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "code": "C059"
+  },
+  {
+    "note_text": "Fictional-Protocol-36 was enabled on 2026-04-16.",
+    "fixed_main_claim": "Fictional-Protocol-36 was enabled on 2026-04-16.",
+    "other_material_claims_not_scored": [],
+    "original_post_or_media_available": false,
+    "sources": [
+      {
+        "source_id": "S1",
+        "citation_urls": [
+          "https://example.invalid/fictional-audit-record"
+        ],
+        "final_url": "https://example.invalid/fictional-audit-record",
+        "status_code": 200,
+        "fetch_status": "synthetic_control_no_request",
+        "fetched_utc": null,
+        "format": "html",
+        "title": "Fictitious audit or directory record",
+        "main_selector": "synthetic complete text or explicitly empty/teaser",
+        "main_text": "Complete audit record. Fictional-Protocol-36 was not enabled on 2026-04-16. It was enabled on 2026-04-17. End of entry.",
+        "coverage": {
+          "input_chars": 119,
+          "extracted_chars_total": 119,
+          "input_truncated": false,
+          "body_capped_2mb": false,
+          "pdf_pages_extracted": null,
+          "pdf_page_count": null
+        },
+        "body_sha256": "067609bdef55b7130330d93f00694d1917887e877995707e7fe868d4648bf37f",
+        "main_text_saved_sha256": "067609bdef55b7130330d93f00694d1917887e877995707e7fe868d4648bf37f"
+      }
+    ],
+    "code": "C060"
+  }
+]
