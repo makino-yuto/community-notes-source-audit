@@ -1,0 +1,22 @@
+{
+  "machine_aggregate_sha256": "4254f9f3e8fb19c27a5a1a536617f50ba7bb6e5b3a888cdf29be04a19884b3cb",
+  "browser_aggregate_sha256": "d94d0ddb3898b2446b6cf186107d3da621919c967637e67532d62a6461f77b7f",
+  "utility_sha256": "be452db69d39dbde5dbf10d4ca5c32dd7aa34709306e1cb85c15951e1e79e74d",
+  "width_inches": 6.5,
+  "height_inches": 3.72,
+  "png_dpi": 400,
+  "font": "Old Standard TT",
+  "paired_identified_set_percentage_points": [
+    -0.5703152674459794,
+    13.4156925256819
+  ],
+  "outer_95_design_interval_percentage_points": [
+    -4.870207788796188,
+    19.168382817768578
+  ],
+  "caption": "Figure 1. Current citation access and uncertainty in the same-post target population. (A) Machine census of 1,882 pairs: filled diamonds show any cited URL being machine-open; open circles show the expected open probability for one uniformly chosen distinct citation within each note. (B) Stratified browser-profile validation of 240 pairs. Group segments show weighted lower and upper estimates when unresolved content is respectively unavailable or available. The paired difference has an unresolved-content identified set of -0.6 to +13.4 percentage points (thick segment), with a Bonferroni 95% outer design interval of -4.9 to +19.2 points (thin line). The identified set is not a confidence interval. Browser-profile access may depend on existing cookies and does not establish claim support. Neither panel estimates a causal authorship effect.",
+  "outputs_sha256": {
+    ".pdf": "69e4174ec1d64c164ff402c97e9088d6bd7b2a6ab49f77d039b3a6126efb5e57",
+    ".png": "723f1dc5c8706741f18bb0a895cb9d5c001d2b2c0051d24a86af189f4bd16205"
+  }
+}
