@@ -1,5 +1,5 @@
 {
-  "version": "Uniform semantic content pass amendment 1.2",
+  "version": "Uniform semantic content pass amendment1.3",
   "created_utc": "2026-11-15T03:43:16.329707+00:00",
   "parent_plan": "2026-11-15-same-post-all-citation.json at commit 8fd38172c854d911f08e854ccd29395cd32ca18e",
   "stage": "After machine collection began and alignment annotations completed; before content-pass requests or support judgments. This is not a retroactive change to the primary browser endpoint.",
@@ -19,5 +19,8 @@
     "results\\newwave_alignment_recode20.jsonl": "1853f315023969e335b3068b83617320a2b5eb31e9889739f5b2e2384e534830",
     "results\\newwave_human_review20_selection.json": "a703422efe5ba57843a748f8f3124d2cb47fea875e0c013c7ed30ca56a0dc8ed"
   },
-  "documentation_correction": "The previous text misstated the unchanged collector constant 0.20s as0.25s. Corrected before any content-pass GET; collector code and frozen319-URL sample unchanged. Also corrected the removal-tag list to the unchanged eight tags actually implemented; no aside/form removal is claimed."
+  "documentation_correction": "The previous text misstated the unchanged collector constant 0.20s as0.25s. Corrected before any content-pass GET; collector code and frozen319-URL sample unchanged. Also corrected the removal-tag list to the unchanged eight tags actually implemented; no aside/form removal is claimed.",
+  "policy_censoring": "Previously browser-policy-blocked hosts tass.com,britannica.com,unicourt.com,voterrecords.com are not revisited through alternate content surfaces. One selected Tass URL is retained as policy_unassessable without a content request; all319 URLs and200 notes remain in denominators. This is observation censoring, not source failure. The existing machine census is unchanged; its transport metadata does not justify body access.",
+  "policy_censor_script_sha256": "7dd1f0a12e161398c07a016ced6d797e6adeb9cd6dd305d51d240296d87c7380",
+  "last_amended_utc": "2026-11-15T03:56:24.718884+00:00"
 }
