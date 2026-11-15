@@ -4,7 +4,9 @@ Companion materials for **Can Readers Still Check the Source? A Time-Matched Aud
 
 This revision audits current source access in a fixed, conditional population. It does not establish note truth, source independence, historical link decay, or a causal advantage of AI authorship. Primary browser and semantic labels are AI-assisted, without human gold validation.
 
-[Read the concise paper (8 pages; 4 main)](paper/Makino_Community_Notes_Source_Audit_Concise.pdf) | [Concise manuscript](paper/report_concise.md) | [Full technical record (18 pages)](paper/Makino_Community_Notes_Source_Audit_Revised.pdf)
+[Read the paper (7 pages; 3 main)](paper/Makino_Community_Notes_Source_Audit_Consistent.pdf) | [Concise manuscript](paper/report_concise.md) | [Earlier concise layout (8 pages)](paper/Makino_Community_Notes_Source_Audit_Concise.pdf) | [Full technical record (18 pages)](paper/Makino_Community_Notes_Source_Audit_Revised.pdf)
+
+The preferred edition changes formatting only: its scientific text and results are unchanged from the earlier concise manuscript. It contains three main pages, one reference page and three appendix pages.
 
 ## Main measurements
 
@@ -36,9 +38,13 @@ The follow-up plan was frozen locally 15 November at 03:21:20 UTC and [publicly 
 
 Rebuilding the frame requires the exact official snapshot bytes, roughly 800 MB. A later URL rerun measures the later web. The current study used ordinary HTTP and browser observation plus the official Codex CLI with an existing ChatGPT login; the numeric reproducer needs no model service or API key. Do not bypass site controls or use raw note/source data to target individual authors.
 
-## Rebuild the figure and PDF
+## Report editions and rendering
 
-Use the recorded optional report environment (`pip install -r requirements-report.txt`), then run:
+The preferred seven-page edition was assembled with `python-docx` from the unchanged concise manuscript and the author's retained Word template, then converted with Microsoft Word for Microsoft 365 using `ExportAsFixedFormat`. It matches the preceding sprint report: Times New Roman throughout, 10.5 pt body text, 18 pt title, 13 pt section headings, US Letter with one-inch margins, and a centered page-number footer. The figure uses Times New Roman labels and stays with its complete caption. The working DOCX and retained template are not distributed.
+
+The [Times New Roman figure](figures/newwave_access_figure1_times.pdf) uses the same aggregate plotting logic and results as the earlier figure. Font files are not redistributed.
+
+The commands below rebuild the **earlier ReportLab layouts**, rather than the preferred Word-exported edition. Use the recorded optional report environment (`pip install -r requirements-report.txt`), then run:
 
 ```powershell
 python src/newwave_figures.py --output-dir output/figures

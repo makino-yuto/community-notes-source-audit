@@ -13,8 +13,8 @@
       "sha256": "b6fabf3d1d3fde07cedcaaf8ae13773bf8af6e19972e3e12ad91aebe8692aafc"
     },
     "README.md": {
-      "bytes": 5798,
-      "sha256": "ae72f468bbe1af8696935d8e856f2f4c6dba84b30278aa749d86a1df5e83eea3"
+      "bytes": 6947,
+      "sha256": "1ff6e97fc9c3d35dce394e5486f5edf92c0c85d6ec3d6faa44515c95cb0a7f4f"
     },
     "assets/fonts/old-standard-tt/METADATA.pb": {
       "bytes": 1205,
@@ -539,6 +539,18 @@
     "paper/report_concise.md": {
       "bytes": 18559,
       "sha256": "a4f04c8fa09166f55f78b6c945f3c9cfdd82742e2511d7f302023193c0d318b5"
+    },
+    "paper/Makino_Community_Notes_Source_Audit_Consistent.pdf": {
+      "bytes": 320176,
+      "sha256": "fcf0dc3dcd9e9faee22ca945b670e590feb15d81e19fc309b3065203ac047768"
+    },
+    "figures/newwave_access_figure1_times.png": {
+      "bytes": 203284,
+      "sha256": "0a3b2a722a26df2cad6551879664867a9bc01ffe79c28f48ca2804bae0649061"
+    },
+    "figures/newwave_access_figure1_times.pdf": {
+      "bytes": 61007,
+      "sha256": "859bb43bcf3645679ac80e8c9798154f3a0efa391bbece05d970e61ef07b0826"
     }
   },
   "withheld_frozen_artifact_hashes": {
@@ -610,21 +622,24 @@
   "layout": {
     "title": "Can Readers Still Check the Source? A Time-Matched Audit of AI-API Community Notes",
     "author": "Yuto Makino",
-    "main_pages": 4,
-    "total_pages": 8,
+    "main_pages": 3,
+    "reference_pages": 1,
+    "appendix_pages": 3,
+    "total_pages": 7,
     "abstract_words": 155,
     "page_size_points": [
       612.0,
       792.0
     ],
     "margins_points": 72,
-    "body_point_size": 11,
-    "body_leading_points": 15,
-    "fonts_sha256": {
-      "OldStandard-Bold.ttf": "7d831e9d799ad23ee98e889381a9db2a283b2dac7f228dd5c06071decb9c54db",
-      "OldStandard-Italic.ttf": "4b9522f4711317fc06e2413a58b4662c249cb707df193d682b9d640e365ef564",
-      "OldStandard-Regular.ttf": "42717a1280b523a506ca2b0285cca380e77fe214b1f6e3d75a8b925005f19eac"
-    }
+    "font_family": "Times New Roman",
+    "body_point_size": 10.5,
+    "title_point_size": 18,
+    "section_heading_point_size": 13,
+    "body_line_spacing_multiple": 1.12,
+    "creator": "Microsoft Word for Microsoft 365",
+    "generation": "python-docx with retained Word template; Microsoft Word ExportAsFixedFormat",
+    "figure_and_caption_same_page": true
   },
   "limitations": [
     "Primary browser and semantic classifications are AI-assisted, without human gold validation.",
@@ -650,7 +665,7 @@
       "OldStandard-Regular.ttf": "42717a1280b523a506ca2b0285cca380e77fe214b1f6e3d75a8b925005f19eac"
     }
   },
-  "preferred_report": "paper/Makino_Community_Notes_Source_Audit_Concise.pdf",
+  "preferred_report": "paper/Makino_Community_Notes_Source_Audit_Consistent.pdf",
   "editorial_revision": {
     "description": "Condensed presentation only; all scientific data, protocols, analyses and numeric reproduction files unchanged.",
     "prior_complete_record_commit": "b6a40a2a7dc413f6bed1c88e87041eb91f4f7de8",
@@ -661,6 +676,38 @@
     "total_pages_before_after": [
       18,
       8
+    ]
+  },
+  "earlier_concise_layout": {
+    "title": "Can Readers Still Check the Source? A Time-Matched Audit of AI-API Community Notes",
+    "author": "Yuto Makino",
+    "main_pages": 4,
+    "total_pages": 8,
+    "abstract_words": 155,
+    "page_size_points": [
+      612.0,
+      792.0
+    ],
+    "margins_points": 72,
+    "body_point_size": 11,
+    "body_leading_points": 15,
+    "fonts_sha256": {
+      "OldStandard-Bold.ttf": "7d831e9d799ad23ee98e889381a9db2a283b2dac7f228dd5c06071decb9c54db",
+      "OldStandard-Italic.ttf": "4b9522f4711317fc06e2413a58b4662c249cb707df193d682b9d640e365ef564",
+      "OldStandard-Regular.ttf": "42717a1280b523a506ca2b0285cca380e77fe214b1f6e3d75a8b925005f19eac"
+    }
+  },
+  "formatting_revision": {
+    "description": "Word and Times New Roman formatting consistent with the preceding sprint report; scientific manuscript, data, protocols, analyses and numeric reproduction files unchanged.",
+    "prior_concise_release_commit": "6007bd8e0d06fd595b07bb6b437c99b3f1b15754",
+    "prior_concise_report": "paper/Makino_Community_Notes_Source_Audit_Concise.pdf",
+    "main_pages_before_after": [
+      4,
+      3
+    ],
+    "total_pages_before_after": [
+      8,
+      7
     ]
   }
 }
