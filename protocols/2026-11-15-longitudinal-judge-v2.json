@@ -1,0 +1,37 @@
+{
+  "inputs": {
+    "base_prompt_script_sha256": "8165cd69de668d0bd01c500ef16f9a14bf97bb0cb636f49d67bc599cfec690a5",
+    "cli_sha256": "83751f15cb6a0a7b97df67752c001e3fe1c20e18ffbfec3ff63567296205eb6c",
+    "packet_sha256": "5700d260dae77adc428389b2d2436af65a1202d8acd7777071cda8174ac4a2a6",
+    "preexisting_raw_outputs_sha256": {
+      "J004": {
+        "prompt.txt": "9f35223c55bb713c43eb4a81b26e339223657c7f55ca4355046a30357cb4ad4e",
+        "response.json": "0eb09f63dda7294123d659563c92f23ed6a0298abb87691fa77e4f2f25640086",
+        "stderr.txt": "374b712822d03fc9e827e3c00a2c999cae81b05a068f98028c057e090c589deb",
+        "stdout.txt": "bec8c827c6b146c2ae9c0cb8faf1fa62993e506720e0a814d895045445274908"
+      },
+      "J005": {
+        "prompt.txt": "ca03abe93ff3cb6dad76943516ffcba53cd0f5f6bf6d495c8545e5ed734f60fc",
+        "response.json": "6dee786a6ce091c9d5aa271fb3dac02d5f19229ff705728837e041e446db5295",
+        "stderr.txt": "02a4fcedd25a66ff91dd911e398b86f7834350b46a6990eb53664ba481dec388",
+        "stdout.txt": "abcb2a0fcc25e9846094dfb66eb89db1b7fab05fc9e4936ce9f131bb572cd1b6"
+      }
+    },
+    "v1_judge_script_sha256": "71ed973f8477caf46e88182893bee834821e9aeca26266394fcb85224eee7b94",
+    "v1_log_sha256": "d7441ccd4df7b09aa96a392596ada098500159589d50468de87c5c9902c1dc33",
+    "v1_protocol_sha256": "958fe79187d1d0e34821a271bb6743b869720135585c453fc1cbfa7c76f7a249",
+    "v2_script_sha256": "1a4dfa99792f7f4238f5a7e6e8a64b650c40107042b129d3a05433e7a82c6ceb"
+  },
+  "new_model_calls_at_freeze": 0,
+  "prepared_utc": "2026-11-15T06:30:36+00:00",
+  "reason": "Original J003 response exceeded the frozen 20-word literal quotation cap by one word; the original runner halted after logging J001–J003. Concurrent workers had already materialized J004/J005 raw outputs.",
+  "rules": {
+    "continuation": "Run only J006–J062 under the identical frozen prompt, packet, schema, and quote rule. Record every outcome, including invalid results, and never stop or retry based on labels or validation status.",
+    "denominators": "Retain all 62 judgment items and all 100 archive panel units. Invalid trial is unknown, never NONE.",
+    "fixed_sample": "All 62 opaque packet items remain; J003 is invalid/unknown in analysis.",
+    "interruption": "If a future worker materializes raw output before its row is appended, mechanically salvage it; partial raw output becomes invalid/unknown without retry.",
+    "salvage": "Mechanically validate both J004/J005 raw responses and prompt/log provenance regardless of labels, without re-calling either. Missing return codes are disclosed; schema/quote/tool checks still apply."
+  },
+  "schema": "newwave-longitudinal-judge-no-retry-continuation-v2",
+  "status": "FROZEN BEFORE ANY V2 CONTINUATION MODEL CALL"
+}
