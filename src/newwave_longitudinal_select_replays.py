@@ -119,6 +119,12 @@ def freeze(protocol_path: Path, queries_path: Path, cdx_manifest_path: Path,
     content_manifest = json.loads(content_manifest_path.read_text(encoding="utf-8"))
     if content_manifest.get("fixed_semantic_pairs") != 100:
         raise ValueError("Current content manifest is not the fixed 100-pair frame")
+    if (content_manifest.get("key_sha256") != protocol["input_integrity"]["newwave_semantic_key_PRIVATE.json"] or
+        content_manifest.get("candidate_sha256") != protocol["input_integrity"]["revision_samepost_candidates_v2_PRIVATE.jsonl"] or
+        content_manifest.get("script_sha256") != protocol["input_integrity"]["src/newwave_collect_semantic.py"] or
+        cdx.sha_file(content_manifest_path.parent / content_manifest["mapping_file"]) !=
+        content_manifest["mapping_sha256"]):
+        raise ValueError("Current-content preparation provenance mismatch")
     current_content = cdx.read_jsonl(content_path)
     if len(current_content) != content_manifest["unique_network_urls"]:
         raise ValueError("Current content collection incomplete")
@@ -128,6 +134,9 @@ def freeze(protocol_path: Path, queries_path: Path, cdx_manifest_path: Path,
     actual_urls = {(row["url_sha256"], row["url"]) for row in current_content}
     if len(expected_urls) != len(current_content) or actual_urls != expected_urls:
         raise ValueError("Current-content URL set differs from frozen manifest")
+    if any(cdx.sha_bytes(row["url"].encode("utf-8")) != row["url_sha256"]
+           for row in current_content):
+        raise ValueError("Current-content URL hash mismatch")
 
     panel = [item for item in ordered if item["unconditional_panel_selected"]]
     if len(panel) != 100:
