@@ -262,7 +262,7 @@ def fetch_capture(entry: dict, capture: dict, rate: Rate, deadline: float) -> di
                     row.update({"outcome": "parse_or_empty_unassessable",
                                 "reason": parsed.get("parse_status", "unknown"), "finished_utc": now()})
                     return row
-                row.update({"outcome": "body_replayed_assessable_text", "reason": "ok",
+                row.update({"outcome": "body_replayed_parseable_text", "reason": "ok",
                             "finished_utc": now()})
                 return row
             except requests.RequestException as exc:
