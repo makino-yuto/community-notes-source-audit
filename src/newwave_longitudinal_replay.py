@@ -279,6 +279,8 @@ def fetch_capture(entry: dict, capture: dict, rate: Rate, deadline: float) -> di
 
 def collect(protocol_path: Path, selection_path: Path, claims_path: Path,
             cdx_runlog_path: Path, results_path: Path, coverage_path: Path) -> dict:
+    if coverage_path.exists():
+        raise FileExistsError("Replay coverage already finalized")
     protocol = json.loads(protocol_path.read_text(encoding="utf-8"))
     selection = json.loads(selection_path.read_text(encoding="utf-8"))
     if cdx.sha_file(selection_path) != protocol["inputs"]["selection_sha256"]:
@@ -298,26 +300,34 @@ def collect(protocol_path: Path, selection_path: Path, claims_path: Path,
     if len(starts) != 1 or len(ends) != 1:
         raise ValueError("CDX stage start/end not frozen")
     deadline_wall = datetime.fromisoformat(starts[0]["utc"]).timestamp() + CAP_SECONDS
-    if time.time() >= deadline_wall:
-        raise RuntimeError("Combined 90-minute CDX+replay cap already exhausted")
     done = {}
     for item in cdx.read_jsonl(results_path):
         if item["query_id"] in done:
             raise ValueError("Duplicate replay result")
         done[item["query_id"]] = item
     rate = Rate()
-    stop_reason = None
+    # CDX has already ended, but force a full interval before the first
+    # archived-body request so pacing also spans the stage boundary.
+    rate.last_start = time.monotonic()
+    stop_reason = ("archive_http_429" if any(row["outcome"] == "archive_rate_limited_stop"
+                                          for row in done.values()) else
+                   "combined_90_minute_budget" if any(row["outcome"] in
+                                                      {"budget_not_attempted", "budget_unattempted_unknown"}
+                                                     for row in done.values()) else None)
     for item in selection["entries"]:
         if item["query_id"] in done:
             continue
-        if time.time() >= deadline_wall:
-            stop_reason = "combined_90_minute_budget"
-            break
         output = {"query_id": item["query_id"], "state": item["state"],
                   "network_url_sha256": item["network_url_sha256"], "started_utc": now(),
                   "primary": None, "fallback": None}
         if item["state"] != "eligible_for_replay":
             output["outcome"] = item["state"]
+        elif stop_reason:
+            output["outcome"] = ("service_unattempted_unknown" if stop_reason == "archive_http_429"
+                                 else "budget_unattempted_unknown")
+        elif time.time() >= deadline_wall:
+            stop_reason = "combined_90_minute_budget"
+            output["outcome"] = "budget_unattempted_unknown"
         else:
             if cdx.policy_censored(urlsplit(item["network_url"]).hostname or ""):
                 raise ValueError("Unsafe replay candidate in selected panel")
@@ -341,25 +351,28 @@ def collect(protocol_path: Path, selection_path: Path, claims_path: Path,
         output["finished_utc"] = now()
         cdx.append_jsonl(results_path, output)
         done[item["query_id"]] = output
-        if stop_reason:
-            break
     if stop_reason is None:
-        stop_reason = "all_100_panel_units_processed" if len(done) == 100 else "combined_90_minute_budget"
+        stop_reason = "all_100_panel_units_processed"
+    if len(done) != 100:
+        raise ValueError("Replay log omitted panel units")
+    eligible_unattempted = sum(row["state"] == "eligible_for_replay" and row["primary"] is None
+                               for row in done.values())
+    attempted = sum(row["primary"] is not None for row in done.values())
     coverage = {"schema": "newwave-longitudinal-replay-coverage-v1",
                 "generated_utc": now(), "selection_sha256": cdx.sha_file(selection_path),
                 "protocol_sha256": cdx.sha_file(protocol_path),
                 "claims_sha256": cdx.sha_file(claims_path),
                 "results_sha256": cdx.sha_file(results_path),
                 "stop_reason": stop_reason, "panel_units": 100,
-                "completed_units": len(done), "unattempted_units": 100 - len(done),
+                "recorded_units": len(done), "body_attempted_units": attempted,
+                "eligible_body_unattempted_units": eligible_unattempted,
                 "outcomes": {kind: sum(row["outcome"] == kind for row in done.values())
                              for kind in sorted({row["outcome"] for row in done.values()})},
                 "units": [{"query_id": item["query_id"],
-                           "outcome": done[item["query_id"]]["outcome"] if item["query_id"] in done
-                                      else "budget_or_service_unattempted_unknown"}
+                           "outcome": done[item["query_id"]]["outcome"]}
                           for item in selection["entries"]]}
     coverage_path.write_text(json.dumps(coverage, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    print(json.dumps({"completed_units": len(done), "unattempted_units": 100 - len(done),
+    print(json.dumps({"recorded_units": len(done), "eligible_body_unattempted_units": eligible_unattempted,
                       "stop_reason": stop_reason, "outcomes": coverage["outcomes"]}), flush=True)
     return coverage
 
