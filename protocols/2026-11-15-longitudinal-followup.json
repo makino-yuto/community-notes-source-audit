@@ -1,0 +1,225 @@
+{
+  "analysis_and_denominators": {
+    "coverage_census": "For all 357 citation references / 354 query units / 319 URLs / 200 notes, report attempted and valid CDX responses, any retained capture, exact-original HTTP200 candidate, and anchor quality separately; also show by author group. Missing/error queries are unknown, not zero coverage.",
+    "missingness_bounds": "For binary full support, unknown is not zero. Report lower/upper bounds allowing unknown historical/current labels to be either supportive or not. Show observed-support/reference-denominator and assessable-only denominators side by side. Partial support is separate from full support.",
+    "paired_comparison": "Show full historical/current transition table, including unknown. Complete-case contrasts are conditional on both bodies being assessable and are not the full-frame temporal effect.",
+    "primary_panel_target": "Citation-reference support within the fixed100-pair frame, using the unconditional 100/354 query-unit sample with known inclusion probabilities and associated-reference multiplicities. Do not infer note-level any-source support from partially sampled citation portfolios.",
+    "recovery_panel_reporting": "Publish its selection denominator and inclusion probabilities, historical support recovered per current-nonassessable stratum, and explicit inference bounds. Do not combine it unweighted with the unconditional panel.",
+    "replay_funnel": "Report selected units, candidate captures, attempted replays, successful temporally validated bodies, assessable historical bodies, assessable current bodies, and both-assessable claim-reference comparisons separately.",
+    "uncertainty": "No binomial CI for full-frame CDX census counts. Panel estimates use sampling weights and note-pair clustering; show URL-cluster sensitivity because sources are reused. Subgroup comparisons remain exploratory unless precision and missingness support a stable conclusion."
+  },
+  "anchor_rule": {
+    "interpretation": "A capture within 30 days before first Helpful represents that captured version, not necessarily the version at note creation or at the exact Helpful instant. Report capture-before-note-creation status and lag.",
+    "observed_exact_eligible_notes": 200,
+    "primary": "Use timestampMillisOfFirstNonNMRStatus only when firstNonNMRStatus is CURRENTLY_RATED_HELPFUL and timestamp is nonempty and >= note creation.",
+    "proxies_used_in_primary": 0,
+    "quality_fields": [
+      "firstNonNMRStatus",
+      "timestampMillisOfFirstNonNMRStatus",
+      "mostRecentNonNMRStatus",
+      "timestampMillisOfLatestNonNMRStatus",
+      "anchor_quality",
+      "created_at_millis"
+    ],
+    "unknown_rule": "If first non-NMR was Not Helpful, do not treat that timestamp as first Helpful. First Helpful is unknown unless a separately documented full transition history identifies it. Latest/current Helpful timestamp is at most a separately named proxy and is excluded from the primary pre-first-Helpful analysis."
+  },
+  "archived_body_texts_opened_at_plan_time": 0,
+  "assessor_type": "AI assessment, not human validation",
+  "body_replay_sampling": {
+    "budget_stop": "Use the frozen independent replay order; if the cap is reached, mark remaining selected units budget-not-attempted. No replacement and no stopping based on observed support.",
+    "capture_selection": "For every selected eligible unit, choose nearest strictly pre-anchor exact-original HTTP200 permitted-MIME capture; ties resolve by timestamp then original URL, MIME, digest, and length lexicographically. Preselect the next-nearest candidate as the sole fallback before opening either body.",
+    "fallback_policy": "Try the sole fallback only after transport failure, non200 response, replay-provenance failure, parse_status not ok, or zero saved main-text characters. Never fallback because the first readable source lacks support or receives a semantic nonassessable label. At most two candidate captures per unit.",
+    "frozen_before_any_archived_text": true,
+    "maximum_unique_body_replay_units": 140,
+    "recovery_enrichment": {
+      "eligibility": "Outside the unconditional panel, the completed uniform current-content GET has a metadata failure under the exact rule below, and CDX has an eligible primary body candidate.",
+      "inference": "A separately reported current-GET-metadata-failure recovery stratum, not a census of all semantically nonassessable current pages. Current nonassessability is unknown support, so historical support here is evidence recovery, not demonstrated support loss and not a population-wide temporal advantage.",
+      "max_additional_query_units": 40,
+      "metadata_nonassessable_rule": "Exactly: fetch_status is not http_response, or status_code is not 200, or parsed.parse_status is not ok, or parsed.main_text.chars_saved is zero. Use the uniform content GET output only. No current support/contradiction labels or partial machine-probe outcomes enter selection. A parseable HTTP200 access-interstitial is not automatically selected by this rule; semantic nonassessability is broader and is still represented by the unconditional panel. Body/char-cap flags alone do not trigger selection.",
+      "selection": "After all fixed current GET metadata and CDX metadata are frozen, take the 40 lowest independent ranks from 2026111517|recovery-enrichment among eligible units, or all if fewer. Save the exact selected IDs, denominator and inclusion probabilities before any archived body is opened."
+    },
+    "stage_wall_clock_cap_minutes": 60,
+    "unconditional_panel": {
+      "inclusion_probability": 0.2824858757062147,
+      "n": 100,
+      "no_replacement": "Keep all 100 selected units in the analysis, including CDX-negative, unsafe, failed-replay and nonassessable units. Do not replace them with positive captures.",
+      "selection": "The 100 lowest independent SHA-256 ranks from seed namespace 2026111517|primary-panel are already marked in the private manifest. Selection uses no current GET or CDX outcomes.",
+      "universe_query_units": 354
+    },
+    "unit": "Unique exact URL+anchor query unit, retaining every associated citation reference and claim."
+  },
+  "cdx_stage": {
+    "candidate_rule": "Eligible primary body candidate: retained exact-original capture with recorded status 200 and a declared HTML/PDF/plain-text/JSON/XML MIME type. Other/unknown MIME captures remain index coverage and are not counted as assessable bodies.",
+    "endpoint": "Internet Archive CDX search/cdx",
+    "exact_original_policy": "Store CDX original URL and whether it exactly equals the requested defragmented URL. Primary body candidates require literal-original equality; canonicalized variants are counted separately and never silently substituted.",
+    "global_failure_rule": "If a service-wide access block is confirmed through the first three scheduled queries, stop and report blocked/unresolved queries rather than treating them as zero coverage. Do not switch to handpicked cases.",
+    "local_time_filter": "Use capture timestamps as one-second-resolution intervals [t,t+1s). Keep a primary pre-Helpful capture only if its interval is wholly within [anchor-30days,anchor). Thus the anchor-containing second and lower-bound partial second are excluded conservatively. Store both raw and retained counts.",
+    "no_semantic_claim_from_digest": "CDX digest differences are metadata differences, not evidence of semantic drift, support loss, or truth.",
+    "outcomes": [
+      "query_not_attempted",
+      "unsafe_not_queried",
+      "transport_or_http_error",
+      "parse_error",
+      "valid_zero_retained_captures",
+      "valid_positive_any_capture",
+      "valid_positive_exact_original_http200_candidate",
+      "pagination_unresolved"
+    ],
+    "pagination": "1000-record limit/resume-key sequence, not CDX pageSize zipnum blocks; retain raw response, page status, capture rows, and resume chain. A full 1000-record response without resume key is unresolved.",
+    "pagination_limits": {
+      "if_limit_hit": "pagination_unresolved, never zero coverage",
+      "max_pages_per_query_unit": 100,
+      "max_response_bytes_per_page": 4000000,
+      "raw_response_retention": "private page JSONL including response SHA, status, body and resume marker"
+    },
+    "parameters": {
+      "collapse": "none",
+      "field_order_rationale": "urlkey is first because a documented CDX resume-key issue arises if omitted",
+      "fl": "urlkey,timestamp,original,mimetype,statuscode,digest,length",
+      "from": "UTC calendar date containing anchor minus 30 days",
+      "limit_records": 1000,
+      "matchType": "exact",
+      "output": "json",
+      "resumeKey": "server-returned key on subsequent pages only",
+      "showResumeKey": "true",
+      "status_filter": "none: retain errors and redirects as index records",
+      "to": "UTC calendar date containing anchor"
+    },
+    "query_order": "Frozen SHA-256 rank with seed namespace 2026111517|cdx-order.",
+    "query_universe": "All safe unique URL+exact-first-Helpful-anchor units; no filtering on current reachability, note text, support outcomes, previously selected archive cases, or archive availability.",
+    "rate_limits": {
+      "global_min_request_start_interval_seconds": 1,
+      "max_attempts_per_page": 2,
+      "max_workers": 4,
+      "per_attempt_total_timeout_seconds": 20,
+      "retry_only": "Transport errors, 429, or 5xx; fixed 5-second delay. A valid zero-capture result is not retried.",
+      "stage_wall_clock_cap_minutes": 60
+    },
+    "retry_limit_exception": "Response-size failures are not retried; they remain unresolved.",
+    "service_health_gate": "First three scheduled units sequential. Stop as service-wide unresolved only if all three have transport/HTTP or parse failures; individual pagination anomalies do not establish a service-wide block.",
+    "source_safety": "Fixed Archive HTTPS metadata endpoint only. Browser-policy-blocked original hosts may have CDX metadata queried but archived bodies are censored; no archive replay to route around a browser safety block."
+  },
+  "claim_and_assessment_freeze": {
+    "blindness": "Random opaque item IDs hide author group and source time labels. Judge historical and current bodies independently in shuffled order; pair them only after labels are frozen. Substantive dates remain in text, so time blindness can be imperfect.",
+    "claim_gate": "Before opening archived text, freeze and hash each of the 200 notes first substantive explicit corrective propositions, preserving all entities, numbers, times, negation and modality. Secondary claims stay separate. The archive comparison never redefines a claim after inspecting sources.",
+    "evidence": "Save a short source-text quotation and rationale preserving scope, with objective nonassessability reasons. This assesses provided-source support, not external truth.",
+    "labels": [
+      "supports the full frozen main correction",
+      "partially supports",
+      "does not support",
+      "contradicts",
+      "nonassessable"
+    ],
+    "no_human_validation_claim": true,
+    "same_claim_comparison": "Each historical/current body is judged against the same frozen note claim; a reused body can receive different labels for different notes.",
+    "semantic_change_standard": "A CDX digest difference or support-label difference alone is insufficient. A claimed source-version semantic change needs both assessable bodies, credible same-piece identity, explicit material text differences with quotations, and exclusion of obvious replay/redirect/truncation/extraction explanations."
+  },
+  "contains_private_urls": false,
+  "counts": {
+    "anchor_before_creation_anomalies": 0,
+    "anchor_quality_by_group": {
+      "AI_API": {
+        "exact_first_non_nmr_helpful": 100
+      },
+      "non_API": {
+        "exact_first_non_nmr_helpful": 100
+      }
+    },
+    "anchor_quality_notes": {
+      "exact_first_non_nmr_helpful": 200
+    },
+    "anchor_utc_max": "2026-09-09T23:54:20.298+00:00",
+    "anchor_utc_min": "2025-10-03T16:57:47.979+00:00",
+    "citation_references": 357,
+    "creation_to_helpful_hours_max": 306.72932555555553,
+    "creation_to_helpful_hours_median": 6.0950669444444445,
+    "creation_to_helpful_hours_min": 1.0467286111111112,
+    "distinct_url_anchor_query_units": 354,
+    "fixed_notes": 200,
+    "fixed_pairs": 100,
+    "repeated_citation_references_collapsed_for_network_queries": 3,
+    "safe_query_units": 354,
+    "unconditional_panel_citation_references": 100,
+    "unconditional_panel_citation_refs_by_group": {
+      "AI_API": 65,
+      "non_API": 35
+    },
+    "unconditional_panel_distinct_notes": 86,
+    "unconditional_panel_query_units": 100,
+    "unique_defragmented_network_urls": 319,
+    "unsafe_query_units": 0
+  },
+  "execution_order": [
+    "Root publicly freezes this plan and the private-manifest hashes before CDX access.",
+    "Run all frozen CDX queries and complete metadata-only parsing; keep old archive cases and outcomes out of selection.",
+    "Complete/freeze uniform current-content metadata; freeze the exact enrichment IDs and nearest/fallback capture IDs without opening archived text.",
+    "Freeze first-correction claim text and blinded judgment prompt.",
+    "Retrieve only the frozen replay candidates with provenance; do not change sample after body inspection.",
+    "Judge historical/current bodies independently and freeze labels.",
+    "Join groups and time pairs; publish funnel, transition tables, unknown-inclusive bounds and limitations, without raw private URLs or note IDs."
+  ],
+  "feasibility_and_claim_limits": {
+    "best_case_index_request_starts_minutes": 5.9,
+    "comparative_claim_requirement": "A directional generalization additionally needs an uncertainty interval and unknown-inclusive sensitivity compatible with that direction. A null or imprecise result is retained; no search for favorable examples or post hoc window widening.",
+    "coverage_does_not_establish": [
+      "page presence at every time",
+      "support when the note was written",
+      "the exact Helpful-time page version",
+      "semantic drift from digest changes",
+      "current nonassessability as lack of support",
+      "a causal effect of author type"
+    ],
+    "index_quality_threshold": "At least 95% of safe query units must yield valid exhausted CDX responses before describing an unqualified full-frame archive coverage proportion; otherwise show unresolved-query bounds.",
+    "nominal_worst_case_two_attempts_at20s_four_workers_minutes": 59.0,
+    "scope": "Fixed100 semantic-pair frame only. CDX and replay availability are selected and incomplete; no all-platform prevalence or causal authorship claim.",
+    "temporal_comparison_quality_threshold": "A substantive descriptive paired temporal comparison requires at least 30 both-assessable unconditional-panel query units across at least 20 notes, with group counts and capture lags disclosed. Below this, report an archival feasibility/recovery substudy rather than a general longitudinal support result."
+  },
+  "implementation": {
+    "cdx_docs": "https://github.com/internetarchive/wayback/blob/master/wayback-cdx-server/README.md",
+    "cdx_script": "src/newwave_longitudinal_cdx.py",
+    "cdx_script_sha256": "bc8b93c2379b4fe0faf9602bdf397a4a7d4d96b4d8b8bc1c073ea17ff43831e1",
+    "resume_field_issue": "https://github.com/internetarchive/wayback/issues/121"
+  },
+  "input_integrity": {
+    "newwave_semantic_key_PRIVATE.json": "8246f299b02fe7feb4a6dd8cef29e9861e22517e16c5aa5a8ac568b2b5ef3e4f",
+    "noteStatusHistory-00000.zip": "1e369098399a06dbd327cb33684ebc607fe9fffee034c64a2fe6fcfe456ca367",
+    "revision_samepost_candidates_v2_PRIVATE.jsonl": "fb2eb694f1d8bac74a98e5a27b8c7478ca4f6324d50cc05819281f94c942e39d",
+    "src/archive_cdx.py": "2c26b9d5b79674844778e8541730b690ecdb475ea7faa13c69f510adbf57fd3b",
+    "src/newwave_collect_semantic.py": "c51bd2a08c72ab5e97d2825d155cc30c38d41e322a239cf2c334411f538ccdfd"
+  },
+  "network_requests_made_at_plan_time": 0,
+  "prepared_utc": "2026-11-15T03:47:53+00:00",
+  "private_query_manifest": {
+    "dedupe_key": [
+      "exact_defragmented_network_url",
+      "first_helpful_anchor_millis"
+    ],
+    "file": "newwave_longitudinal_queries_PRIVATE.jsonl",
+    "refs_retained": "Every one of the 357 citation references remains linked to its note, claim and group; one network request set per 354 unique key.",
+    "sha256": "8eabaf6e37860792700cc04254e2b36ea006a73458f68c3375834c3b82b7fb1a",
+    "url_policy": "Private only: preserve normalized citation URL except remove fragment exactly as current-content collector. No host/path/query normalization, no redirect-target substitution, and no raw URLs/note IDs in public exports."
+  },
+  "prospective_scope": "Archive queries, capture selection, replay sampling, and historical/current comparison are prospective. Existing current-machine aggregate metadata has been seen; this is not a claim that the whole study was preregistered.",
+  "replay_provenance": {
+    "availability_warning": "An index record is not a successfully replayed body, and a replayed body is not automatically assessable or supportive.",
+    "mode": "Raw archived response without fetching live subresources; do not render current external assets.",
+    "record": [
+      "requested timestamp",
+      "resolved timestamp if identifiable",
+      "requested original URL hash",
+      "resolved original URL hash",
+      "Memento-Datetime if available",
+      "redirect chain",
+      "HTTP status",
+      "content type",
+      "body bytes/hash",
+      "parser status",
+      "capture-to-anchor lag",
+      "body/text truncation flags"
+    ],
+    "temporal_validation": "Reject a replay resolving outside the frozen pre-anchor window, to a different original URL, or to an unverifiable current/live page. Preserve the failure record.",
+    "uniform_limits": "Reuse the current-content collector body limit, parser and first-24000-character assessment cap for HTML/PDF/plain text. Save original and parsed hashes; PDF limits must match current collection."
+  },
+  "schema": "newwave-prospective-prehelpful-longitudinal-plan-v1",
+  "status": "FROZEN BEFORE ANY NEW CDX QUERY OR ARCHIVED BODY READ"
+}
