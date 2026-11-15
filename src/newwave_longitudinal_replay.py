@@ -127,7 +127,7 @@ def prepare(protocol_path: Path, selection_path: Path, claims_path: Path,
             "no_fallback_for": ["lack_of_claim_support", "semantic_nonassessability", "body_too_large_unassessable", "archive_http_429", "budget_not_attempted"],
             "source_safety": "Never replay original hosts previously blocked by browser safety policy; retain censored units in denominator. No alternative archive endpoint, live-source redirect, proxy, credentials or subresources.",
             "replay_mode": "Raw https://web.archive.org/web/{timestamp}id_/{exact-original-URL}; at most three archive-only redirects; require exact selected timestamp and original URL at every hop; verify Memento-Datetime if present.",
-            "network": "One worker, at least 10 seconds between request starts including redirects/fallback, no environment proxy or netrc, connect timeout 5 seconds, per-read timeout 10 seconds, stream guards before every blocking read and combined CDX+replay 90-minute wall cap; stop on HTTP429.",
+            "network": "One worker, at least 10 seconds between request starts including redirects/fallback, no environment proxy or netrc, connect timeout 5 seconds, per-read timeout 10 seconds, stream guards before every blocking read and combined CDX+replay 90-minute wall cap; do not begin body replay after CDX service-wide stop and stop on replay HTTP429.",
             "body": "At most 2 MB decoded body; same frozen HTML/PDF/text parser as current-content pass; PDF first 50 pages and text first 120000 characters; later semantic judge receives first 24000 characters per source.",
             "coverage": "Record all 100 panel units as assessable, nonassessable, policy-censored, CDX-missing, archive-failed or budget/service-unattempted unknown; no unknown=zero imputation.",
             "error_page_policy": "Archive transport/status/provenance/parse errors are not judged for claim support. A readable Archive wrapper or error page must be flagged nonassessable during blinded source review.",
@@ -340,7 +340,12 @@ def collect(protocol_path: Path, selection_path: Path, claims_path: Path,
     # CDX has already ended, but force a full interval before the first
     # archived-body request so pacing also spans the stage boundary.
     rate.last_start = time.monotonic()
-    stop_reason = ("archive_http_429" if any(row["outcome"] == "archive_rate_limited_stop"
+    cdx_service_stop = ends[0]["reason"] in {
+        "repeated_429_stop", "first_three_service_failures", "two_consecutive_service_failures",
+        "truncated_retry_headers_stop",
+    }
+    stop_reason = ("cdx_service_unavailable_no_replay" if cdx_service_stop else
+                   "archive_http_429" if any(row["outcome"] == "archive_rate_limited_stop"
                                           for row in done.values()) else
                    "combined_90_minute_budget" if any(row["outcome"] in
                                                       {"budget_not_attempted", "budget_unattempted_unknown"}
@@ -354,7 +359,8 @@ def collect(protocol_path: Path, selection_path: Path, claims_path: Path,
         if item["state"] != "eligible_for_replay":
             output["outcome"] = item["state"]
         elif stop_reason:
-            output["outcome"] = ("service_unattempted_unknown" if stop_reason == "archive_http_429"
+            output["outcome"] = ("service_unattempted_unknown" if stop_reason in
+                                 {"archive_http_429", "cdx_service_unavailable_no_replay"}
                                  else "budget_unattempted_unknown")
         elif time.time() >= deadline_wall:
             stop_reason = "combined_90_minute_budget"
