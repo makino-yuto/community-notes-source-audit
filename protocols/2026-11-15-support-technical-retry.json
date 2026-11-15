@@ -1,0 +1,15 @@
+{
+  "version": "2026-11-15 support technical completion amendment 1",
+  "created_utc": "2026-11-15T04:40:46.022980+00:00",
+  "prospective_stage": "After an interrupted primary support run, before any technical retry is executed. Independent 20-case recode already frozen before primary-label comparison.",
+  "reason": "One 240-second timeout caused ordered executor iteration to abort after 185 valid journaled cases. Fourteen later tasks completed artifacts without reaching the journal. These artifacts are preserved but not silently promoted to valid executions.",
+  "selection": "Retry all 15 cases lacking valid journaled execution, exactly once each, without inspecting or selecting on their semantic results. No change to the 200-note denominator.",
+  "procedure": "Separate adapter, directories, run manifest and append-only result journal. Same frozen 24000-character source packet, fixed claims, prompt, schema, validator, 240-second timeout, two-worker cap, existing official Codex CLI ChatGPT authentication, default advertised model and feature-disabling settings. No API keys or model override. Every retry is journaled even if invalid; no second retry.",
+  "analysis": "Use 185 valid original journaled executions plus the 15 prospective retries. Any invalid retry is UNASSESSABLE in raw and strict summaries. Preserve raw semantic labels; apply the predeclared strict rule that quote/validation errors become UNASSESSABLE. Report both, paired descriptive differences, source/coverage diagnostics, and 20-case AI-vs-AI blinded recode agreement. No human-gold or note-truth claim.",
+  "preservation": "Original timeout record, 14 unjournaled response/log sets, original journal, frozen scripts and inputs remain unchanged. A private amendment inventory freezes their hashes and case selection.",
+  "privacy": "Publish only generic code, this protocol, aggregate results and methods. No individual case codes, note/post identifiers, URLs, raw prompts, source bodies or case-level model outputs.",
+  "packet_sha256": "fe88000e7fd1074d838bd098038e03889466494d8312e5e4ddb53317c5165a8f",
+  "original_journal_sha256": "bb62a60a808500785548daf8a12b07e411c4d3f3bbdaeeb7055a8aa0af44235f",
+  "independent_recode_sha256": "fccd7efa1dd5a901cc9c0687ff7fc2554de4cdd1b11fda5216c58c54defbf5b5",
+  "adapter_sha256": "32b1256fefc32681567e7f139d5b201d2dc3628903028f3e5c70749913d4898e"
+}
